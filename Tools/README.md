@@ -35,15 +35,16 @@ Cinaclassics（[中华古籍全文库](../README.md)）的古籍刻本风格排�
 - `books_mr/02`（說文解字）：5 页 = 5 页，视觉一致（参考 PDF 全字嵌入的 ToUnicode 对生僻字提取失真，字符数差异系提取假象）
 - `books/02`（三国志通俗演义·嘉靖壬午本）：`scripts/ingest-sanguo.ts` 从库文本生成 24 卷 + 序/引/总目 + 宗僚附录，全书 914 页本地与线上生成一致
 - `books/03`（红楼梦·程高本 120 回）：`scripts/ingest-hongloumeng.ts` 从库文本生成 120 回 + 总目，全书 1151 页；正文回目标记整行/独立两种样式混杂，按目录回号顺序匹配解析
+- `books/04`（汉书·百卷本）：`scripts/ingest-hanshu.ts` 从库文本生成 100 卷（上下/中之上等分卷合并归位）+ 总目，全书 1172 页；目录条目含「（表略）」后缀与「中之上」类卷号，正则按序匹配
 - 文本懒加载：排版只读取 from..to 范围内的文本并并行加载（多文件书目在 Workers 上避免全量 R2 往返）
-- Node 全书约 2-3s（虞初新志规模）；三国演义全书约 35s、红楼梦约 34s；线上单请求受 Workers CPU 30s 限制，长书按 `from`/`to` 分卷请求
+- Node 全书约 2-3s（虞初新志规模）；三国演义全书约 35s、红楼梦约 34s、汉书约 39s；线上单请求受 Workers CPU 30s 限制，长书按 `from`/`to` 分卷请求
 
 ## 目录结构
 
 ```
 fonts/              排版字体（qiji-combo / HanaMinA / HanaMinB）
 canvas/             书叶背景底图与配置（每画布一对 .jpg/.cfg）
-books/              主版式书目（01 虞初新志、02 三国志通俗演义、03 红楼梦）
+books/              主版式书目（01 虞初新志、02 三国志通俗演义、03 红楼梦、04 汉书）
 books_mr/           多栏版式书目（01 賈府族譜、02 說文解字）
 db/                 中文数字表等素材数据
 src/engine/         排版引擎（纯计算，无 I/O）
@@ -63,6 +64,8 @@ scripts/
   generate-local.ts 本地 Node 生成（--mr 选择多栏书架）
   font-subset.ts    按书字体子集（--mr 支持两书架，未用字体置空；子集器为 fonteditor-core）
   ingest-sanguo.ts  三国志通俗演义（嘉靖壬午本）库文本 → books/02 排版素材
+  ingest-hongloumeng.ts 红楼梦（程高本 120 回）库文本 → books/03 排版素材
+  ingest-hanshu.ts  汉书（百卷本）库文本 → books/04 排版素材
   make-sanguo-cover.ts 三国志通俗演义封面图绘制
   indent.ts         S 缩进文本重排
   r2-push.ts        素材上传 R2（--local / --remote）
