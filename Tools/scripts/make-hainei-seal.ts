@@ -1,7 +1,8 @@
-// 生成「海内典籍」藏版印并烙入书叶画布（canvas/24_black_blank.jpg）：
-//   规格取自被移除的原兀雨書屋印 —— 21×123px @ (1259,1680)，赭红底 #8d493a 白文，
-//   竖排单列四字，圆角残边。印章以 6 倍超采样绘制后缩放烙入，保证抗锯齿。
-// 用法：npx tsx scripts/make-hainei-seal.ts [--canvas <画布路径>]
+// 生成「海内典籍」藏版印并烙入书叶画布（canvas/<id>.jpg）：
+//   白文竖排四字、赭红底 #8d493a、圆角残边，6 倍超采样绘制后缩放烙入。
+// 用法：npx tsx scripts/make-hainei-seal.ts --canvas canvas/<id>.jpg --x 1259 --y 1680 --w 21 --h 123
+//   各画布原兀雨印位：24_black_blank 1259,1680,21,123 | 24_black/18_red 1259,1680,21,124
+//   mr_4/mr_5/28_paper 1253,1680,24,128 | 24_paper 1257,1680,23,126 | iphone15pm 1408,1110,24,124
 
 import { writeFile } from 'node:fs/promises';
 import path from 'node:path';
@@ -9,10 +10,21 @@ import { createCanvas, loadImage } from '@napi-rs/canvas';
 import { resolveRepoRoot } from './repo.js';
 
 const REPO = resolveRepoRoot();
-const CANVAS_PATH = path.join(REPO, 'canvas', '24_black_blank.jpg');
+
+const arg = (n: string, d?: string) => {
+  const i = process.argv.indexOf(`--${n}`);
+  return i >= 0 ? process.argv[i + 1] : d;
+};
 
 // 印面规格（画布坐标系）
-const SEAL = { x: 1259, y: 1680, w: 21, h: 123, color: '#8d493a' };
+const SEAL = {
+  x: parseInt(arg('x', '1259')!, 10),
+  y: parseInt(arg('y', '1680')!, 10),
+  w: parseInt(arg('w', '21')!, 10),
+  h: parseInt(arg('h', '123')!, 10),
+  color: '#8d493a',
+};
+const CANVAS_PATH = path.resolve(REPO, 'canvas', arg('canvas', '24_black_blank.jpg')!);
 const TEXT = '海内典籍';
 const SS = 6; // 超采样倍率
 
@@ -82,17 +94,13 @@ function drawSeal(): ReturnType<typeof createCanvas> {
 }
 
 async function main() {
-  const canvasPath = process.argv.includes('--canvas')
-    ? path.resolve(process.argv[process.argv.indexOf('--canvas') + 1])
-    : CANVAS_PATH;
-
   // 字体注册（印章文字与正文同源：启功体）
   const { GlobalFonts } = await import('@napi-rs/canvas');
   GlobalFonts.registerFromPath(path.join(REPO, 'fonts', 'qiji-combo.ttf'), 'qiji');
 
   const seal = drawSeal();
 
-  const img = await loadImage(canvasPath);
+  const img = await loadImage(CANVAS_PATH);
   const cv = createCanvas(img.width, img.height);
   const ctx = cv.getContext('2d');
   ctx.imageSmoothingEnabled = true;
@@ -101,16 +109,17 @@ async function main() {
   ctx.drawImage(seal, SEAL.x, SEAL.y, SEAL.w, SEAL.h);
 
   const jpg = await cv.encode('jpeg', 92);
-  await writeFile(canvasPath, jpg);
-  console.log(`已烙入「${TEXT}」印：${canvasPath}（印面 ${SEAL.w}×${SEAL.h} @ ${SEAL.x},${SEAL.y}，${(jpg.length / 1024).toFixed(0)} KB）`);
+  await writeFile(CANVAS_PATH, jpg);
+  console.log(`已烙入「${TEXT}」印：${CANVAS_PATH}（印面 ${SEAL.w}×${SEAL.h} @ ${SEAL.x},${SEAL.y}，${(jpg.length / 1024).toFixed(0)} KB）`);
 
   // 复核裁剪图
   const check = createCanvas(SEAL.w * 12, SEAL.h * 12);
   const cctx = check.getContext('2d');
   cctx.imageSmoothingEnabled = true;
   cctx.drawImage(cv, SEAL.x - 8, SEAL.y - 12, SEAL.w + 16, SEAL.h + 24, 0, 0, check.width, check.height);
-  await writeFile('out/hainei-seal-check.png', check.toBuffer('image/png'));
-  console.log('复核图：out/hainei-seal-check.png');
+  const checkName = 'out/hainei-seal-check-' + path.basename(CANVAS_PATH, '.jpg') + '.png';
+  await writeFile(checkName, check.toBuffer('image/png'));
+  console.log('复核图：' + checkName);
 }
 
 main().catch((err) => {
