@@ -2,6 +2,11 @@ name = "cinaclassics"
 main = "src/index.ts"
 compatibility_date = "2025-09-01"
 
+# 自定义域名（cinaseek.ai zone 托管于同一 Cloudflare 账户）
+routes = [
+  { pattern = "classics.cinaseek.ai", custom_domain = true }
+]
+
 # 素材（字体/背景图/书籍文本）存放在 R2
 [[r2_buckets]]
 binding = "ASSETS"
