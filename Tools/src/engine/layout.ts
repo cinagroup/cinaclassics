@@ -270,15 +270,22 @@ export async function runLayout(
     .sort();
   let ifText000 = false;
   let ifText999 = false;
-  const dats: string[] = [''];
   for (const key of textKeys) {
     const name = key.split('/').pop() ?? '';
     if (/^0+\.txt$/i.test(name)) ifText000 = true;
     if (name === '999.txt') ifText999 = true;
-    const content = await assets.readText(key);
-    if (content === null) continue;
-    dats.push(prepareText(content, rowNum, rules));
   }
+  // 懒加载：只读取 from..to 范围内的文本并并行加载（Workers 上避免全量 R2 往返；
+  // 未命中槽位留空，排版循环本就只访问 from..to）
+  const dats: string[] = [''];
+  const lo = Math.max(1, from);
+  const hi = Math.min(to, textKeys.length);
+  await Promise.all(
+    Array.from({ length: Math.max(0, hi - lo + 1) }, (_, k) => lo + k).map(async (tid) => {
+      const content = await assets.readText(textKeys[tid - 1]);
+      dats[tid] = content === null ? '' : prepareText(content, rowNum, rules);
+    }),
+  );
 
   // ---------- 加载字体与度量微调 ----------
   for (const fn of fontSlots) {
@@ -451,7 +458,7 @@ export async function runLayout(
       const cid = ifText000 ? tid - 1 : tid;
       let tpost = titlePostfix.replace('X', ZH_NUMS[String(cid)] ?? '');
       if (cid === 0) tpost = '序';
-      if (ifText999 && tid === dats.length - 1) tpost = '附';
+      if (ifText999 && tid === textKeys.length) tpost = '附';
       tpchars = [...(title + tpost)];
     } else {
       tpchars = [...title];
