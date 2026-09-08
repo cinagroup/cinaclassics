@@ -2,9 +2,9 @@
 
 Cinaclassics（[中华古籍全文库](../README.md)）的古籍刻本风格排版引擎：将中文文本排版为刻本风格的直排（竖排）PDF 电子书，文字可选取、可检索，自带书签目录，支持普通版式与族谱/字典多栏版式、印章贴放、多字体回退与度量微调。排版核心为纯计算（位置网格、标点处理、批注双排、标记系统、多字体回退、度量微调、回退加粗），输出绘制指令流；渲染层用 [pdf-lib](https://github.com/Hopding/pdf-lib) + [fontkit](https://github.com/foliojs/fontkit) 生成 PDF（字体子集嵌入、底层算子实现文本填充+描边加粗、底层对象写入书签目录），可运行于 Cloudflare Workers（含本地 workerd）与 Node.js。
 
-> **标识说明**：品牌与基础设施标识统一为 Cinaclassics —— Worker 名 `cinaclassics`、R2 桶 `cinaclassics-assets`、素材仓库环境变量 `CINACLASSICS_ASSETS`（兼容历史值 `VRAIN_REPO`）。更名前的旧 Worker `vrain` 与旧桶 `vrain-assets` 如仍在运行，可择期下线（见[部署到 Cloudflare](#部署到-cloudflare)）。
+> **标识说明**：品牌与基础设施标识统一为 Cinaclassics —— Worker 名 `cinaclassics`、R2 桶 `cinaclassics-assets`、素材仓库环境变量 `CINACLASSICS_ASSETS`（兼容历史值 `VRAIN_REPO`）。更名前的旧 Worker `vrain` 与旧桶 `vrain-assets` 已下线。
 
-> **目录位置**：本包位于 `cinaclassics/Tools`（包体直接置于 Tools 根目录）。排版素材（字体/背景图/书籍文本，`fonts/` `canvas/` `books/` `books_mr/` `db/`）由独立的素材仓库提供：默认自本包位置逐级向上探测名为 `vRain` 的同级目录（当前为 `E:\cinagroup\vRain`）；素材仓库在别处时设置环境变量 `CINACLASSICS_ASSETS` 指向其根目录。
+> **目录位置**：本包位于 `cinaclassics/Tools`，排版素材（`fonts/` `canvas/` `books/` `books_mr/` `db/`）已并入本包根目录，引擎开箱即用；如需改用外部素材仓库，设置环境变量 `CINACLASSICS_ASSETS`（或 `VRAIN_REPO`）指向其根目录即可覆盖（未设置时按目录层级向上自动探测，探测标记为 `db/num2zh_jid.txt`）。
 
 ## 功能一览
 
@@ -39,6 +39,11 @@ Cinaclassics（[中华古籍全文库](../README.md)）的古籍刻本风格排�
 ## 目录结构
 
 ```
+fonts/              排版字体（qiji-combo / HanaMinA / HanaMinB）
+canvas/             书叶背景底图与配置（每画布一对 .jpg/.cfg）
+books/              主版式书目（01 虞初新志、02 三国志通俗演义）
+books_mr/           多栏版式书目（01 賈府族譜、02 說文解字）
+db/                 中文数字表等素材数据
 src/engine/         排版引擎（纯计算，无 I/O）
   cfg.ts            cfg 配置解析（兼容素材仓库注释/空白规则）
   text.ts           文本预处理（标点替换/归一化/段落补齐）
