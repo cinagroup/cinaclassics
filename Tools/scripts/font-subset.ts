@@ -1,16 +1,18 @@
 // 按书生成字体子集，用于 Workers 部署（绕开 128MB 内存限制）
 //
 // 原理：跑一遍全量字体排版，从 TextOp 精确收集每个字体实际绘制的字符集，
-// 用 subset-font（HarfBuzz WASM）生成保留 cmap 的子集 TTF（~40KB 级），
-// 输出到 .r2build/fonts/sub-<bookId>/，并生成改写 fontN 指向子集的 book.cfg。
+// 再用 fonteditor-core 生成保留 cmap 的子集 TTF，输出到
+// .r2build/fonts/sub-<bookId>/，并生成改写 fontN 指向子集的 book.cfg。
 // 最后用子集字体重跑排版，与全量版逐指令对比自检。
+//
+// 子集器说明：HarfBuzz（subset-font）对本素材仓的启功组合字体在大字符集下
+// 会静默产出空 glyf 或报错，故改用 fonteditor-core（字蛛等中文子集工作流同款）。
 //
 // 用法：npx tsx scripts/font-subset.ts --book 01 [--mr] [--from 1] [--to 2]
 
 import { mkdir, writeFile } from 'node:fs/promises';
-import { existsSync } from 'node:fs';
 import path from 'node:path';
-import subsetFont from 'subset-font';
+import { Font as FontEditor } from 'fonteditor-core';
 import { FsAssetSource, AssetSource } from '../src/engine/assets.js';
 import { parseCfg } from '../src/engine/cfg.js';
 import { FontSet } from '../src/engine/fonts.js';
@@ -44,15 +46,25 @@ class OverlayAssetSource implements AssetSource {
   }
 }
 
+// 用 fonteditor-core 生成子集字体：保留 cmap、compound2simple 拆解复合字形。
+// （HarfBuzz/subset-font 对本仓启功组合字体在大字符集下会静默产出空 glyf 或报错；
+//   pdf-lib 内嵌子集不含独立 cmap，无法作为独立 TTF 供 fontkit 复读，故用 fonteditor。）
+async function subsetFontFile(bytes: Buffer, chars: string[]): Promise<Buffer> {
+  const codes = chars.map((c) => c.codePointAt(0)!).filter((cp) => cp !== undefined);
+  const font = FontEditor.create(bytes, {
+    type: 'ttf', hinting: false, compound2simple: true, subset: codes,
+  });
+  return Buffer.from(font.write({ type: 'ttf', hinting: false }));
+}
+
 async function collectAndSubset(shelf: 'books' | 'books_mr', bookId: string, from: number, to: number) {
   const base = new FsAssetSource(REPO_ROOT);
-  const fonts = new FontSet();
   const subTag = shelf === 'books_mr' ? `sub-mr-${bookId}` : `sub-${bookId}`;
   console.log(`[${bookId}@${shelf}] 全量字体排版收集用字（文本 ${from} 至 ${to}）...`);
   const layoutOpts = { bookId, from, to };
   const layout = shelf === 'books_mr'
-    ? await runLayoutMr(base, fonts, layoutOpts)
-    : await runLayout(base, fonts, layoutOpts);
+    ? await runLayoutMr(base, new FontSet(), layoutOpts)
+    : await runLayout(base, new FontSet(), layoutOpts);
 
   // 每字体实际绘制字符集
   const used = new Map<string, Set<string>>();
@@ -75,10 +87,10 @@ async function collectAndSubset(shelf: 'books' | 'books_mr', bookId: string, fro
 
   for (const [fontName, chars] of used) {
     const all = new Set([...chars, ...insurance]);
-    const text = [...all].join('');
-    const bytes = fonts.get(fontName)!.bytes;
+    const bytes = await fontBytes(base, fontName);
     const t0 = Date.now();
-    const sub = await subsetFont(Buffer.from(bytes), text, { targetFormat: 'sfnt' });
+    const sub = await subsetFontFile(bytes, [...all]);
+    validateSubset(sub, fontName);
     const subName = `${subTag}/${fontName}`;
     await writeFile(path.join(subDir, fontName), sub);
     nameMap.set(fontName, subName);
@@ -127,7 +139,6 @@ async function collectAndSubset(shelf: 'books' | 'books_mr', bookId: string, fro
     }
     for (let k = 0; k < a.length; k++) {
       const oa = a[k] as { font?: string };
-      const ob = b[k] as { font?: string };
       const fa = oa.font ? nameMap.get(oa.font) ?? oa.font : undefined;
       if (JSON.stringify({ ...a[k], font: fa }) !== JSON.stringify(b[k])) {
         if (diff < 3) console.error(`  差异 第${i}页#${k}:`, JSON.stringify(a[k]).slice(0, 80), '!=', JSON.stringify(b[k]).slice(0, 80));
@@ -143,8 +154,31 @@ async function collectAndSubset(shelf: 'books' | 'books_mr', bookId: string, fro
   console.log(`产物：${path.relative(REPO_ROOT, BUILD_DIR)}（r2-push 将优先推送）`);
 }
 
+const fontBytesCache = new Map<string, Buffer>();
+async function fontBytes(base: FsAssetSource, fontName: string): Promise<Buffer> {
+  let b = fontBytesCache.get(fontName);
+  if (!b) {
+    const raw = await base.readBytes(`fonts/${fontName}`);
+    if (!raw) throw new Error(`未发现字体 fonts/${fontName}`);
+    b = Buffer.from(raw);
+    fontBytesCache.set(fontName, b);
+  }
+  return b;
+}
+
+// 校验子集字体：轮廓表非空（HarfBuzz 式静默失败的防护；字符覆盖由自检排版保证）
+function validateSubset(sub: Buffer, fontName: string): void {
+  const n = sub.readUInt16BE(4);
+  for (let i = 0; i < n; i++) {
+    const off = 12 + i * 16;
+    const tag = sub.toString('ascii', off, off + 4);
+    if ((tag === 'glyf' || tag === 'CFF ') && sub.readUInt32BE(off + 12) > 0) return;
+  }
+  throw new Error(`${fontName}: 子集轮廓表为空`);
+}
+
 const bookId = arg('book', '01')!;
 const shelf = (process.argv.includes('--mr') ? 'books_mr' : 'books') as 'books' | 'books_mr';
 const from = parseInt(arg('from', '1')!, 10);
-const to = parseInt(arg('to', '2')!, 10);
+const to = parseInt(arg('to', '1')!, 10);
 await collectAndSubset(shelf, bookId, from, to);

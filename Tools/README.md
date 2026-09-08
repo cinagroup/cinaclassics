@@ -33,7 +33,8 @@ Cinaclassics（[中华古籍全文库](../README.md)）的古籍刻本风格排�
 - `books/01`（虞初新志）：全书 29 页 = 29 页，逐页字符数一致；封面/正文印章位置与 export 版一致
 - `books_mr/01`（賈府族譜）：3 页 = 3 页，逐页字符数一致（275/275、33/33）
 - `books_mr/02`（說文解字）：5 页 = 5 页，视觉一致（参考 PDF 全字嵌入的 ToUnicode 对生僻字提取失真，字符数差异系提取假象）
-- Node 全书约 2-3s；线上 Workers 服务端 TTFB 4-9s
+- `books/02`（三国志通俗演义·嘉靖壬午本）：`scripts/ingest-sanguo.ts` 从库文本生成 24 卷 + 序/引/总目 + 宗僚附录，全书 914 页本地与线上生成一致
+- Node 全书约 2-3s（虞初新志规模）；三国演义全书约 50s；线上单请求受 Workers CPU 30s 限制，长书按 `from`/`to` 分卷请求
 
 ## 目录结构
 
@@ -53,7 +54,9 @@ src/index.ts        Worker 入口（路由）
 scripts/
   repo.ts           素材仓库定位（环境变量优先 + 逐级向上探测，各脚本共用）
   generate-local.ts 本地 Node 生成（--mr 选择多栏书架）
-  font-subset.ts    按书字体子集（--mr 支持两书架，未用字体置空）
+  font-subset.ts    按书字体子集（--mr 支持两书架，未用字体置空；子集器为 fonteditor-core）
+  ingest-sanguo.ts  三国志通俗演义（嘉靖壬午本）库文本 → books/02 排版素材
+  make-sanguo-cover.ts 三国志通俗演义封面图绘制
   indent.ts         S 缩进文本重排
   r2-push.ts        素材上传 R2（--local / --remote）
   pdf2png.ts        PDF 转 PNG（视觉对照用）

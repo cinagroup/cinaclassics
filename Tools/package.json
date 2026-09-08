@@ -20,6 +20,7 @@
     "@cloudflare/workers-types": "^5.20260903.1",
     "@napi-rs/canvas": "^1.0.8",
     "@types/node": "^22.7.0",
+    "fonteditor-core": "^2.6.3",
     "pdfjs-dist": "^6.3.289",
     "pngjs": "^7.0.0",
     "subset-font": "^2.7.0",
