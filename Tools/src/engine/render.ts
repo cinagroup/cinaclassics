@@ -60,7 +60,9 @@ export async function renderPdf(
   for (const name of usedFonts) {
     const file = fonts.get(name);
     if (!file) throw new Error(`字体未加载：${name}`);
-    fontCache.set(name, await doc.embedFont(file.bytes as unknown as ArrayBuffer, { subset: true }));
+    // subset:false：加载的字体已是按书子集（含完整 cmap/name 表）。pdf-lib 的二次子集
+    // 会产出缺 cmap 的 CID 字体，部分阅读器（Acrobat）报「无法提取内嵌字体」。
+    fontCache.set(name, await doc.embedFont(file.bytes as unknown as ArrayBuffer, { subset: false }));
   }
 
   // 嵌入背景图（画布/封面，整页复用同一对象）；印章等贴图按扩展名嵌入
