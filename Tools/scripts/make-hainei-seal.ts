@@ -1,10 +1,14 @@
 // 生成「海内典籍」藏版印并烙入书叶画布（canvas/<id>.jpg）：
 //   白文竖排四字、赭红底 #8d493a、圆角残边，6 倍超采样绘制后缩放烙入。
+//   烙印前自动以印章正上方同宽净底补掉旧印（可重复运行换字体/换位，不留残影）。
 // 用法：npx tsx scripts/make-hainei-seal.ts --canvas canvas/<id>.jpg --x 1259 --y 1680 --w 21 --h 123
-//   各画布原兀雨印位：24_black_blank 1259,1680,21,123 | 24_black/18_red 1259,1680,21,124
+//   [--font fonts/HYZhuanShuF.ttf] 缺省按 HYZhuanShuF（汉仪篆书繁）→ HYFangZhuanU（汉仪仿篆）
+//   → qiji-combo（启功体）顺序取 fonts/ 下首个存在者；细篆体自动描边加粗保白文笔力。
+//   各画布印位：24_black_blank 1259,1680,21,123 | 24_black/18_red 1259,1680,21,124
 //   mr_4/mr_5/28_paper 1253,1680,24,128 | 24_paper 1257,1680,23,126 | iphone15pm 1408,1110,24,124
 
-import { writeFile } from 'node:fs/promises';
+import { existsSync } from 'node:fs';
+import { readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { createCanvas, loadImage } from '@napi-rs/canvas';
 import { resolveRepoRoot } from './repo.js';
@@ -27,6 +31,21 @@ const SEAL = {
 const CANVAS_PATH = path.resolve(REPO, 'canvas', arg('canvas', '24_black_blank.jpg')!);
 const TEXT = '海内典籍';
 const SS = 6; // 超采样倍率
+
+// 印文字体：fonts/ 下按优先级取首个存在者（HYZhuanShuF.ttf 放入即自动启用）
+const FONT_FAMILY = 'HaineiSeal';
+const fontFile = (() => {
+  const explicit = arg('font');
+  if (explicit) {
+    const p = path.isAbsolute(explicit) ? explicit : path.join(REPO, 'fonts', explicit);
+    if (!existsSync(p)) throw new Error(`--font 指定的字体不存在：${p}`);
+    return p;
+  }
+  const candidates = ['HYZhuanShuF.ttf', 'HYFangZhuanU.ttf', 'qiji-combo.ttf'];
+  const hit = candidates.map((f) => path.join(REPO, 'fonts', f)).find((p) => existsSync(p));
+  if (!hit) throw new Error('fonts/ 下未找到任何可用印章字体');
+  return hit;
+})();
 
 // 可复现伪随机（残边形状固定，重跑不漂移）
 function rng(seed: number) {
@@ -51,17 +70,23 @@ function drawSeal(): ReturnType<typeof createCanvas> {
   ctx.roundRect(0, 0, w, h, r);
   ctx.fill();
 
-  // 白文：四字竖排均布
+  // 白文：四字竖排均布；细篆体描边加粗保笔力
   const n = TEXT.length;
   const padY = h * 0.075;
   const cell = (h - padY * 2) / n;
   const fs = Math.min(cell * 0.96, w * 0.94);
   ctx.fillStyle = '#f6efe7';
-  ctx.font = `${fs}px qiji`;
+  ctx.strokeStyle = '#f6efe7';
+  ctx.lineJoin = 'round';
+  ctx.lineWidth = fs * 0.08;
+  ctx.font = `${fs}px ${FONT_FAMILY}`;
   ctx.textAlign = 'center';
   ctx.textBaseline = 'middle';
   for (let i = 0; i < n; i++) {
-    ctx.fillText(TEXT[i], w / 2, padY + cell * (i + 0.5));
+    const cx = w / 2;
+    const cy = padY + cell * (i + 0.5);
+    ctx.fillText(TEXT[i], cx, cy);
+    ctx.strokeText(TEXT[i], cx, cy);
   }
 
   // 残边：沿四边随机剜去小豁口（模拟钤印磨损）
@@ -94,18 +119,33 @@ function drawSeal(): ReturnType<typeof createCanvas> {
 }
 
 async function main() {
-  // 字体注册（印章文字与正文同源：启功体）
+  // 字体注册（印文用篆书体系字体）
   const { GlobalFonts } = await import('@napi-rs/canvas');
-  GlobalFonts.registerFromPath(path.join(REPO, 'fonts', 'qiji-combo.ttf'), 'qiji');
+  GlobalFonts.registerFromPath(fontFile, FONT_FAMILY);
+  console.log(`印文用字：${path.basename(fontFile)}`);
 
   const seal = drawSeal();
 
-  const img = await loadImage(CANVAS_PATH);
+  // loadImage 对 Windows 盘符路径会按 URL 解析，须先读为 Buffer
+  const img = await loadImage(await readFile(CANVAS_PATH));
   const cv = createCanvas(img.width, img.height);
   const ctx = cv.getContext('2d');
   ctx.imageSmoothingEnabled = true;
   ctx.imageSmoothingQuality = 'high';
   ctx.drawImage(img, 0, 0);
+
+  // 旧印补底：取印章正上方 12px 净纸纹逐段下铺，盖掉旧印与残边豁口（可反复重烙）。
+  //   左右仅外扩 4px：再宽会扫到版心竖边框线（如 mr_4/iphone15pm 印位左邻即框线）。
+  const padX = 4;
+  const padY = 6;
+  const pw = SEAL.w + padX * 2;
+  const ph = SEAL.h + padY * 2;
+  const stripH = 12;
+  for (let oy = 0; oy < ph; oy += stripH) {
+    const sh = Math.min(stripH, ph - oy);
+    ctx.drawImage(img, SEAL.x - padX, SEAL.y - padY - stripH, pw, sh, SEAL.x - padX, SEAL.y - padY + oy, pw, sh);
+  }
+
   ctx.drawImage(seal, SEAL.x, SEAL.y, SEAL.w, SEAL.h);
 
   const jpg = await cv.encode('jpeg', 92);
