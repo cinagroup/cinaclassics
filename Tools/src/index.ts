@@ -35,7 +35,7 @@ const HELP_HTML = `<!doctype html>
 <pre><code>npx tsx scripts/font-subset.ts --book 01 [--mr]   # 按书字体子集（必须）
 npm run r2:push                                   # 素材上传 R2
 npm run deploy</code></pre>
-<p style="margin-top:32px;color:#888">Cinaclassics · <a href="https://github.com/cinagroup/cinaclassics" style="color:inherit">中华古籍全文库</a>排版服务</p>
+<p style="margin-top:32px;color:#888">Cinaclassics · <a href="https://github.com/cinagroup/cinaclassics" style="color:inherit">海内典籍</a>排版服务</p>
 </body>
 </html>`;
 

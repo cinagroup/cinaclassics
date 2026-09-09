@@ -106,8 +106,8 @@ export async function renderPdf(
   // 文档信息
   doc.setTitle(layout.title);
   doc.setAuthor(layout.author);
-  doc.setSubject('Cinaclassics · 中华古籍全文库');
-  doc.setKeywords(['Cinaclassics', '中华古籍全文库', '古籍', '直排']);
+  doc.setSubject('Cinaclassics · 海内典籍');
+  doc.setKeywords(['Cinaclassics', '海内典籍', '古籍', '直排']);
   doc.setCreator('Cinaclassics');
   doc.setProducer('Cinaclassics · 古籍刻本风格直排电子书排版引擎');
 
