@@ -97,12 +97,12 @@ async function main() {
   const tocText = toc
     .map((e) => `第${e.num}回@${couplet(e.p1 + e.p2)}`)
     .join(CRLF);
-  files.push(['00.txt', para(['（红楼梦总目）']) + CRLF + CRLF + tocText + CRLF]);
+  files.push(['00.md', para(['（红楼梦总目）']) + CRLF + CRLF + tocText + CRLF]);
   // 001..120.txt：一回一文件
   hui.forEach((h, z) => {
     const body = para(h.paras);
     files.push([
-      `${String(z + 1).padStart(3, '0')}.txt`,
+      `${String(z + 1).padStart(3, '0')}.md`,
       `（第${toc[z].num}回@${h.title}）` + CRLF + CRLF + body + CRLF,
     ]);
   });

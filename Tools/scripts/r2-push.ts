@@ -19,7 +19,7 @@ const BUILD_ROOT = path.resolve(import.meta.dirname, '../.r2build');
 const INCLUDE: Array<{ dir: string; test: (rel: string) => boolean }> = [
   { dir: 'fonts', test: (f) => /\.(ttf|otf)$/i.test(f) },
   { dir: 'canvas', test: (f) => /\.(jpg|cfg)$/i.test(f) },
-  { dir: 'books', test: (f) => /\.(cfg|txt|jpg|png)$/i.test(f) },
+  { dir: 'books', test: (f) => /\.(cfg|txt|md|jpg|png)$/i.test(f) },
   { dir: 'books_mr', test: (f) => /\.(cfg|txt|jpg|png)$/i.test(f) },
   { dir: 'db', test: (f) => /\.txt$/i.test(f) },
 ];

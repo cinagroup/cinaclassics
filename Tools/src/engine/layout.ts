@@ -265,15 +265,15 @@ export async function runLayout(
   const textKeys = (await assets.list(`books/${bookId}/text`))
     .filter((k) => {
       const name = k.split('/').pop() ?? '';
-      return !name.startsWith('.') && /\.txt$/i.test(name);
+      return !name.startsWith('.') && /\.md$/i.test(name);
     })
     .sort();
   let ifText000 = false;
   let ifText999 = false;
   for (const key of textKeys) {
     const name = key.split('/').pop() ?? '';
-    if (/^0+\.txt$/i.test(name)) ifText000 = true;
-    if (name === '999.txt') ifText999 = true;
+    if (/^0+\.md$/i.test(name)) ifText000 = true;
+    if (/^999\.md$/i.test(name)) ifText999 = true;
   }
   // 懒加载：只读取 from..to 范围内的文本并并行加载（Workers 上避免全量 R2 往返；
   // 未命中槽位留空，排版循环本就只访问 from..to）

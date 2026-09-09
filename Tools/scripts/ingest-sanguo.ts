@@ -145,7 +145,7 @@ async function main() {
     .map((titles, gi) => `（卷之${ZH_NUM[gi]}）` + CRLF + CRLF + titles.join(CRLF))
     .join(CRLF + CRLF);
   files.push([
-    '00.txt',
+    '00.md',
     para(['（庸愚子序）']) + CRLF + CRLF + xuParas + CRLF + CRLF +
       para(['（修髯子引）']) + CRLF + CRLF + yinParas + CRLF + CRLF +
       para(['（三国志通俗演义总目）']) + CRLF + CRLF + tocText + CRLF,
@@ -160,7 +160,7 @@ async function main() {
   }
   // 999.txt：附录（版心后缀「附」）
   files.push([
-    '999.txt',
+    '999.md',
     para(['（三国志宗僚）']) + CRLF + CRLF +
       para(lines.slice(bodyStart + appendixStart + 1, lines.length)) + CRLF,
   ]);

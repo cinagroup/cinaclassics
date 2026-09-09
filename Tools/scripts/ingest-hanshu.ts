@@ -80,7 +80,7 @@ async function main() {
   const baseOf = (num: string) => { let n = num; while (/[上下中之]$/.test(n)) n = n.slice(0, -1); return n; };
   await mkdir(TEXT_DIR, { recursive: true });
   const files: Array<[string, string]> = [];
-  files.push(['00.txt', para(['（汉书总目）']) + CRLF + CRLF + toc.map((e) => `卷${e.num}@${e.title}`).join(CRLF) + CRLF]);
+  files.push(['00.md', para(['（汉书总目）']) + CRLF + CRLF + toc.map((e) => `卷${e.num}@${e.title}`).join(CRLF) + CRLF]);
   const groups: Array<{ base: string; file: string; chunks: string[] }> = [];
   juan.forEach((h, z) => {
     const base = baseOf(toc[z].num);
@@ -89,7 +89,7 @@ async function main() {
     if (last && last.base === base) {
       last.chunks.push(chunk);
     } else {
-      groups.push({ base, file: `${String(groups.length + 1).padStart(3, '0')}.txt`, chunks: [chunk] });
+      groups.push({ base, file: `${String(groups.length + 1).padStart(3, '0')}.md`, chunks: [chunk] });
     }
   });
   for (const g of groups) {
