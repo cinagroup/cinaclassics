@@ -103,16 +103,21 @@ async function main() {
   }
   const zhiSegs: Array<{ tocIdx: number; title: string; start: number }> = [];
   {
+    // 志标记顺序匹配：行前缀 = 后汉书志 + 目录志号（篇名可能粘连数值，如「志第十三五行一」）
     let tj = 0;
-    for (const mk of zhiMarkers) {
-      while (tj < 30 && cnVal(tocZhi[tj].num.replace(/^第/, '')) < mk.v) {
-        zhiSegs.push({ tocIdx: tj, title: `（志${tocZhi[tj].num}@${tocZhi[tj].title}）`, start: mk.line });
-        tj++;
+    for (let n = bodyStart; n < lines.length && tj < 30; n++) {
+      const s = strip(lines[n]);
+      let hit = -1;
+      for (let d = 0; d <= 4 && tj + d < 30; d++) {
+        if (s.startsWith('后汉书志' + tocZhi[tj + d].num)) { hit = tj + d; break; }
       }
-      if (tj < 30 && cnVal(tocZhi[tj].num.replace(/^第/, '')) === mk.v) {
-        zhiSegs.push({ tocIdx: tj, title: `（志${tocZhi[tj].num}@${tocZhi[tj].title}）`, start: mk.line });
-        tj++;
+      if (hit < 0) continue;
+      // 跳过的志（源文献缺失标记）：以仅题名占位
+      for (let d = tj; d < hit; d++) {
+        zhiSegs.push({ tocIdx: d, title: `（志${tocZhi[d].num}@${tocZhi[d].title}）`, start: n });
       }
+      zhiSegs.push({ tocIdx: hit, title: `（志${tocZhi[hit].num}@${tocZhi[hit].title}）`, start: n });
+      tj = hit + 1;
     }
     while (tj < 30) {
       zhiSegs.push({ tocIdx: tj, title: `（志${tocZhi[tj].num}@${tocZhi[tj].title}）`, start: lines.length });
@@ -122,9 +127,10 @@ async function main() {
   if (segs.length !== 100) throw new Error(`基卷号分组 ${segs.length} ≠ 100`);
   if (zhiSegs.length !== 30) throw new Error(`志篇分组 ${zhiSegs.length} ≠ 30`);
 
-  // ---------- 切分正文（纪传按基卷号合并：上下分卷同文件） ----------
+  // ---------- 切分正文（纪传按基卷号合并：上下分卷同文件；志内容不并入纪传） ----------
+  const firstZhiLine = zhiMarkers.length ? zhiMarkers[0].line : lines.length;
   const segContents = segs.map((sg, gi) => {
-    const end = gi + 1 < segs.length ? segs[gi + 1].start : lines.length;
+    const end = gi + 1 < segs.length ? segs[gi + 1].start : firstZhiLine;
     const paras: string[] = [];
     for (let n = sg.start + 1; n < end; n++) {
       const s = strip(lines[n]);
