@@ -20,6 +20,9 @@ export interface GenerateOptions {
   debugBlue?: boolean;
   /** 印章：默认自动（存在 stamps.cfg 时应用），false 强制关闭 */
   stamps?: boolean;
+  /** 完整内嵌字体（含 cmap，Acrobat 兼容；内存占用较高，适合本地导出成品）。
+   *  默认 false：嵌入最小字体子集（内存友好，适合 Workers 按需生成）。 */
+  fullFontsEmbed?: boolean;
 }
 
 export interface GenerateResult {
@@ -73,6 +76,6 @@ export async function generate(
   const pageW = num(canvas, 'canvas_width');
   const pageH = num(canvas, 'canvas_height');
 
-  const pdfBytes = await renderPdf(layout, fonts, assets, pageW, pageH);
+  const pdfBytes = await renderPdf(layout, fonts, assets, pageW, pageH, { fullFontsEmbed: opts.fullFontsEmbed === true });
   return { pdfBytes, layout, pageW, pageH, stamped };
 }

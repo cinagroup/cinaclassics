@@ -52,6 +52,7 @@ async function main() {
   const t0 = Date.now();
   const result = await generate(assets, {
     bookId, shelf, from, to, maxPages, stamps,
+    fullFontsEmbed: true, // 本地成品导出：完整内嵌字体（Acrobat 兼容）
   });
   console.log(`排版完成：${result.layout.pages.length} 页，印章=${result.stamped}，${Date.now() - t0} ms`);
 

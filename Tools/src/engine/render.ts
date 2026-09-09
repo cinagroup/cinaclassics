@@ -39,17 +39,25 @@ function parseColor(c: string): [number, number, number] {
 
 type EmbeddedImage = Awaited<ReturnType<PDFDocument['embedJpg']>> | Awaited<ReturnType<PDFDocument['embedPng']>>;
 
+export interface RenderOptions {
+  /** 完整内嵌字体（subset:false，含 cmap，Acrobat 兼容；内存占用高，仅限本地导出）。
+   *  默认 false：pdf-lib 二次子集（嵌入最小字体，内存友好，适合 Workers）。 */
+  fullFontsEmbed?: boolean;
+}
+
 export async function renderPdf(
   layout: LayoutResult,
   fonts: FontSet,
   assets: AssetSource,
   pageW: number,
   pageH: number,
+  options?: RenderOptions,
 ): Promise<Uint8Array> {
+  const fullFontsEmbed = options?.fullFontsEmbed === true;
   const doc = await PDFDocument.create();
   doc.registerFontkit(fontkit);
 
-  // 嵌入字体（子集化：仅嵌入实际用到的字形）
+  // 嵌入字体
   const fontCache = new Map<string, PDFFont>();
   const usedFonts = new Set<string>();
   for (const page of layout.pages) {
@@ -60,9 +68,10 @@ export async function renderPdf(
   for (const name of usedFonts) {
     const file = fonts.get(name);
     if (!file) throw new Error(`字体未加载：${name}`);
-    // subset:false：加载的字体已是按书子集（含完整 cmap/name 表）。pdf-lib 的二次子集
-    // 会产出缺 cmap 的 CID 字体，部分阅读器（Acrobat）报「无法提取内嵌字体」。
-    fontCache.set(name, await doc.embedFont(file.bytes as unknown as ArrayBuffer, { subset: false }));
+    // fullFontsEmbed：加载的字体（按书子集）整体内嵌，保留 cmap/name 等全表，
+    // Acrobat 可正常提取；否则 pdf-lib 二次子集仅保留渲染必需表（缺 cmap，
+    // Acrobat 会报「无法提取内嵌字体」，浏览器渲染不受影响）。
+    fontCache.set(name, await doc.embedFont(file.bytes as unknown as ArrayBuffer, { subset: !fullFontsEmbed }));
   }
 
   // 嵌入背景图（画布/封面，整页复用同一对象）；印章等贴图按扩展名嵌入
