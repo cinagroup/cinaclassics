@@ -7,6 +7,9 @@ routes = [
   { pattern = "classics.cinaseek.ai", custom_domain = true }
 ]
 
+# 保留 workers.dev 入口作为备用
+workers_dev = true
+
 # 素材（字体/背景图/书籍文本）存放在 R2
 [[r2_buckets]]
 binding = "ASSETS"

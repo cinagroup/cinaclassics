@@ -36,15 +36,16 @@ Cinaclassics（[中华古籍全文库](../README.md)）的古籍刻本风格排�
 - `books/02`（三国志通俗演义·嘉靖壬午本）：`scripts/ingest-sanguo.ts` 从库文本生成 24 卷 + 序/引/总目 + 宗僚附录，全书 914 页本地与线上生成一致
 - `books/03`（红楼梦·程高本 120 回）：`scripts/ingest-hongloumeng.ts` 从库文本生成 120 回 + 总目，全书 1151 页；正文回目标记整行/独立两种样式混杂，按目录回号顺序匹配解析
 - `books/04`（汉书·百卷本）：`scripts/ingest-hanshu.ts` 从库文本生成 100 卷（上下/中之上等分卷合并归位）+ 总目，全书 1172 页；目录条目含「（表略）」后缀与「中之上」类卷号，正则按序匹配
+- `books/05`（后汉书·百二十卷）：`scripts/ingest-houhanshu.ts` 从库文本生成纪传 90 卷（上下分卷合并）+ 志 30 篇 + 总目，全书 1340 页；志单独立目（版心卷九十一..卷百二十），卷号采用中文数值精确比较
 - 文本懒加载：排版只读取 from..to 范围内的文本并并行加载（多文件书目在 Workers 上避免全量 R2 往返）
-- Node 全书约 2-3s（虞初新志规模）；三国演义全书约 35s、红楼梦约 34s、汉书约 39s；线上单请求受 Workers CPU 30s 限制，长书按 `from`/`to` 分卷请求
+- Node 全书约 2-3s（虞初新志规模）；三国演义全书约 35s、红楼梦约 34s、汉书约 39s、后汉书约 68s；线上单请求受 Workers CPU 30s 限制，长书按 `from`/`to` 分卷请求
 
 ## 目录结构
 
 ```
 fonts/              排版字体（qiji-combo / HanaMinA / HanaMinB）
 canvas/             书叶背景底图与配置（每画布一对 .jpg/.cfg）
-books/              主版式书目（01 虞初新志、02 三国志通俗演义、03 红楼梦、04 汉书）
+books/              主版式书目（01 虞初新志、02 三国志通俗演义、03 红楼梦、04 汉书、05 后汉书）
 books_mr/           多栏版式书目（01 賈府族譜、02 說文解字）
 db/                 中文数字表等素材数据
 src/engine/         排版引擎（纯计算，无 I/O）
@@ -66,6 +67,7 @@ scripts/
   ingest-sanguo.ts  三国志通俗演义（嘉靖壬午本）库文本 → books/02 排版素材
   ingest-hongloumeng.ts 红楼梦（程高本 120 回）库文本 → books/03 排版素材
   ingest-hanshu.ts  汉书（百卷本）库文本 → books/04 排版素材
+  ingest-houhanshu.ts 后汉书（纪传+志）库文本 → books/05 排版素材
   make-sanguo-cover.ts 三国志通俗演义封面图绘制
   indent.ts         S 缩进文本重排
   r2-push.ts        素材上传 R2（--local / --remote）
