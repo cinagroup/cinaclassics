@@ -19,7 +19,8 @@ import opencc
 cc = opencc.OpenCC("t2s")
 SKIP = set("，。、；：！？（）《》【】「」『』“”‘’…—·<>\n\r\t 　\"'·◇◆°±〔〕〖〗")
 
-JUAN_RE = re.compile(r"第([一二三四五六七八九十百]+)卷")
+JUAN_RE = re.compile(r"^第?([一二三四五六七八九十百]+)卷", re.M)
+V_PRE = re.compile(r"^(?:南史)?卷([一二三四五六七八九十百]+)(?= )", re.M)
 
 def clean_ws(p):
     t = Path(p).read_text(encoding="utf-8")
@@ -50,15 +51,20 @@ def normalize(t):
     return "".join(norm), mp
 
 def juan_split(local):
-    """按 第N卷 切分库内。返回 [(卷号, 文本)]。"""
+    """按 第N卷/卷N/南史卷N 切分库内；同卷号保留最长段（目录段短于正文段）。
+
+    返回 [(卷号, 文本)]。"""
+    local = V_PRE.sub(lambda m: f"第{m.group(1)}卷", local)
     ms = list(JUAN_RE.finditer(local))
-    segs = []
+    best = {}
     for k, m in enumerate(ms):
         start = m.start()
         end = ms[k + 1].start() if k + 1 < len(ms) else len(local)
         num = m.group(1)
-        segs.append((num, local[start:end]))
-    return segs
+        seg = local[start:end]
+        if num not in best or len(seg) > len(best[num]):
+            best[num] = seg
+    return [(num, seg) for num, seg in best.items()]
 
 CN = "一二三四五六七八九十"
 
@@ -74,12 +80,30 @@ def cn_to_int(s):
 
 def main():
     local_p, wsdir, out = sys.argv[1], sys.argv[2], sys.argv[3]
+    juan_pat = sys.argv[4] if len(sys.argv) > 4 else None
+    head_anchor = sys.argv[5] if len(sys.argv) > 5 else None
     local = Path(local_p).read_text(encoding="utf-8")
     ws_files = {int(f.stem[1:]): f for f in Path(wsdir).glob("卷*.txt")}
 
+    if juan_pat:
+        # 自定义卷标题正则：匹配「南史卷N」类标题，可用 head_anchor 指定卷1 起点（目录尾锚）
+        ms = list(re.compile(juan_pat).finditer(local))
+        segs = []
+        if head_anchor:
+            mh = re.search("^" + head_anchor + "$", local, re.M)
+            hi = mh.start() if mh else -1
+            if hi >= 0:
+                segs.append(("一", local[hi: ms[0].start()]))
+        for k, m in enumerate(ms):
+            start = m.start()
+            end = ms[k + 1].start() if k + 1 < len(ms) else len(local)
+            segs.append((m.group(1), local[start:end]))
+    else:
+        segs = juan_split(local)
+
     lines = []
     tot = cand2 = cand1 = cand0 = 0
-    for num, jt in juan_split(local):
+    for num, jt in segs:
         jno = cn_to_int(num)
         if jno is None or jno not in ws_files:
             continue

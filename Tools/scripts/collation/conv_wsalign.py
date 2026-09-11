@@ -27,12 +27,20 @@ def cn_to_int(s):
 
 def main():
     local_p, cand_p, rule_p, susp_p = sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4]
+    juan_pat = sys.argv[5] if len(sys.argv) > 5 else None
+    head_anchor = sys.argv[6] if len(sys.argv) > 6 else None
     t = Path(local_p).read_text(encoding="utf-8")
-    ms = list(JUAN_RE.finditer(t))
+    ms = list(re.compile(juan_pat).finditer(t)) if juan_pat else list(JUAN_RE.finditer(t))
     juan_ranges = {}
     for k, m in enumerate(ms):
         jno = cn_to_int(m.group(1))
         juan_ranges[jno] = (m.start(), ms[k + 1].start() if k + 1 < len(ms) else len(t))
+    if head_anchor and 1 not in juan_ranges:
+        mh = re.search("^" + head_anchor + "$", t, re.M)
+        if mh:
+            hi = mh.start()
+        if hi >= 0:
+            juan_ranges[1] = (hi, ms[0].start())
     box_order = {}
     for n, m in enumerate(re.finditer("□", t), 1):
         box_order[m.start()] = n
