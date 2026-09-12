@@ -15,7 +15,7 @@ from pathlib import Path
 import opencc
 
 cc = opencc.OpenCC("t2s")
-SKIP = set("，。、；：！？（）《》【】「」『』“”‘’…—·<>\n\r\t 　\"'·◇◆°±〔〕〖〗")
+SKIP = set("，。、；：！？（）《》【】「」『』“”‘’…—·<>\n\r\t 　\"'·◇◆°±〔〕〖〗〈〉")
 
 UI_STARTS = ("跳转到内容", "主菜单", "搜索", "外观", "资助", "创建账号", "登录",
              "[关闭]", "恭喜", "开关目录", "添加语言", "作品", "讨论", "不转换",
@@ -63,44 +63,72 @@ def main():
     local_p, wsdir, out = sys.argv[1], sys.argv[2], sys.argv[3]
     anchor_len = int(sys.argv[4]) if len(sys.argv) > 4 else 14
     local = Path(local_p).read_text(encoding="utf-8")
-    ws_files = sorted(Path(wsdir).glob("卷*.txt"), key=lambda f: int(f.stem[1:]))
+    n_local, mp_local = normalize(local)  # 去标点/注文括号的全库 normalize，mp_local: 归一idx→原文pos
+    import bisect
+
+    def nidx_of(pos):
+        return bisect.bisect_left(mp_local, pos)
+
+    def vol_key(f):
+        m = re.match(r"卷(\d+)([上下中]?)", f.stem)
+        return (int(m.group(1)), m.group(2)) if m else (10 ** 9, f.stem)
+
+    ws_files = sorted(Path(wsdir).glob("卷*.txt"), key=vol_key)
+    ws_by_name = {f.name: f for f in ws_files}
 
     def find_anchor(w, lo):
-        """从 ws 卷文本找库内锚：开头汉字串（标点断）+ 逐级缩短 + 距离约束。"""
+        """从 ws 卷文本找库内锚：开头汉字串（标点断）+ 逐级缩短 + 距离约束（在 normalize 库内查找，映射回原文）。"""
         s = cc.convert(w)
         s = re.sub(r"\s+", "", s)
+        s = re.sub(r"[〈〉《》「」『』]", "", s)  # 去注文括号使锚串跨注连续
         parts = re.findall(r"[\u4e00-\u9fff]{8,}", s[:300])
+        lo_n = nidx_of(lo)
         for p in parts[:8]:
             for L in (anchor_len, 12, 10, 8):
                 if len(p) >= L:
                     a = p[:L]
-                    i = local.find(a, lo)
-                    if 0 <= i < lo + 200000:
-                        return a, i
+                    i = n_local.find(a, lo_n)
+                    if 0 <= i < lo_n + 200000:
+                        return a, mp_local[i]
         return None, -1
 
-    # 1) 锚点定位
-    anchors = []  # (ws卷号, 库内起点)
-    lo = 0
-    for f in ws_files:
-        w = clean_ws(f)
-        if len(w) < 400:
-            print(f"跳过(过短): {f.name} {len(w)}")
-            continue
-        a, i = find_anchor(w, lo)
-        if i < 0:
-            print(f"锚失败: {f.name}")
-            continue
-        anchors.append((int(f.stem[1:]), i))
-        lo = i + 1
+    # 1) 锚点定位（按库内编排分组：纪1-10 / 志91-120 / 列传11-90，组内单调）
+    def group_of(fname):
+        m = re.match(r"卷(\d+)", fname)
+        n = int(m.group(1))
+        if n <= 10:
+            return 0
+        if n <= 90:
+            return 1
+        return 2
+
+    GROUP_LO = {0: 10000, 1: 340000, 2: 130000}  # 纪 / 列传 / 志（库内编排：纪→志→列传）
+    anchors = []  # (文件名, 库内起点)
+    for g in (0, 2, 1):
+        lo = GROUP_LO[g]
+        for f in [x for x in ws_files if group_of(x.name) == g]:
+            w = clean_ws(f)
+            if len(w) < 400:
+                print(f"跳过(过短): {f.name} {len(w)}")
+                continue
+            a, i = find_anchor(w, lo)
+            if i < 0:
+                print(f"锚失败: {f.name}")
+                continue
+            anchors.append((f.name, i))
+            lo = i + 1
     print(f"锚定 {len(anchors)}/{len(ws_files)} 卷")
+    if len(sys.argv) > 5:
+        Path(sys.argv[5]).write_text(
+            "\n".join(f"{fn}\t{i}" for fn, i in anchors) + "\n", encoding="utf-8")
+        print(f"锚点表: {sys.argv[5]}")
 
     # 2) 逐段对齐
     lines = []
-    for k, (num, start) in enumerate(anchors):
+    for k, (fname, start) in enumerate(anchors):
         end = anchors[k + 1][1] if k + 1 < len(anchors) else len(local)
         seg = local[start:end]
-        w = cc.convert(clean_ws(ws_files[num - 1]))
+        w = cc.convert(clean_ws(ws_by_name[fname]))
         n_local, mp_l = normalize(seg)
         n_ws, _ = normalize(w)
         sm = difflib.SequenceMatcher(None, n_local, n_ws, autojunk=False)
@@ -142,7 +170,7 @@ def main():
                 if block_idx < len(blocks):
                     b = blocks[block_idx]
                     ev = n_ws[max(0, b[1] - 10): b[1] + b.size + 10]
-                lines.append(f"{num}:{off}\t{cand}\t{conf}\t块«{ev}»\t{ctx}")
+                lines.append(f"{fname}:{off}\t{cand}\t{conf}\t块«{ev}»\t{ctx}")
     Path(out).write_text("\n".join(lines) + "\n", encoding="utf-8")
     c2 = sum(1 for l in lines if l.split("\t")[2] == "2")
     c1 = sum(1 for l in lines if l.split("\t")[2] == "1")
