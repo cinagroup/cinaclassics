@@ -1,0 +1,350 @@
+- generic [active] [ref=f35e1]:
+  - banner [ref=f35e2]:
+    - generic [ref=f35e4]:
+      - generic [ref=f35e5]:
+        - link [ref=f35e6] [cursor=pointer]:
+          - /url: /
+          - img "汉语国学" [ref=f35e7]
+        - link "•汉语字典" [ref=f35e8] [cursor=pointer]:
+          - /url: /zidian/
+      - generic [ref=f35e9]:
+        - link "字典" [ref=f35e10] [cursor=pointer]:
+          - /url: /zidian/
+        - link "成语" [ref=f35e11] [cursor=pointer]:
+          - /url: /chengyu/
+        - link "词典" [ref=f35e12] [cursor=pointer]:
+          - /url: /cidian/
+        - link "组词" [ref=f35e13] [cursor=pointer]:
+          - /url: /zuci/
+        - link "拼音" [ref=f35e14] [cursor=pointer]:
+          - /url: /pinyin/
+        - link "近义词" [ref=f35e15] [cursor=pointer]:
+          - /url: /jinyici/
+        - link "反义词" [ref=f35e16] [cursor=pointer]:
+          - /url: /fanyici/
+      - generic [ref=f35e17]:
+        - button "" [ref=f35e18] [cursor=pointer]
+        - button "light" [ref=f35e20] [cursor=pointer]
+        - button "" [ref=f35e32] [cursor=pointer]
+        - button "更多" [ref=f35e34] [cursor=pointer]
+  - text:  
+  - generic [ref=f35e41]:
+    - link "" [ref=f35e42] [cursor=pointer]:
+      - /url: javascript:;
+    - navigation [ref=f35e44]:
+      - list [ref=f35e45]:
+        - listitem [ref=f35e46]:
+          - link " 首页" [ref=f35e47] [cursor=pointer]:
+            - /url: /
+            - generic [ref=f35e48]: 
+            - text: 首页
+        - listitem [ref=f35e49]:
+          - link "汉语字典" [ref=f35e50] [cursor=pointer]:
+            - /url: /zidian/
+        - listitem [ref=f35e51]:
+          - heading "䑰的意思和解释" [level=1] [ref=f35e52]
+  - generic [ref=f35e54]:
+    - generic [ref=f35e55]:
+      - generic [ref=f35e56] [cursor=pointer]:
+        - generic [ref=f35e57]: 
+        - generic [ref=f35e59]: 目录
+      - text:  •
+    - generic [ref=f35e60]:
+      - generic [ref=f35e61]:
+        - generic [ref=f35e62]:
+          - img "䑰" [ref=f35e65]
+          - generic [ref=f35e66]:
+            - generic [ref=f35e67]:
+              - heading "䑰" [level=2] [ref=f35e68]
+              - generic [ref=f35e69]: 复制
+            - paragraph [ref=f35e71]:
+              - generic [ref=f35e72] [cursor=pointer]:
+                - emphasis [ref=f35e74]: bù
+                - emphasis [ref=f35e75]: ㄅㄨˋ
+            - generic [ref=f35e76]:
+              - generic [ref=f35e77]: 舟部
+              - generic [ref=f35e78]: 共13画
+              - generic [ref=f35e79]: 左右结构
+              - generic [ref=f35e80]: U+4470
+              - generic [ref=f35e81]: CJK 扩展A
+            - generic: 汉语字典
+        - list [ref=f35e83]:
+          - listitem [ref=f35e84]:
+            - link "汉语字典" [ref=f35e85] [cursor=pointer]:
+              - /url: /zidian/zi-17520
+          - listitem [ref=f35e86]:
+            - link "康熙字典" [ref=f35e87] [cursor=pointer]:
+              - /url: /kangxi/zi-17520
+          - listitem [ref=f35e88]:
+            - link "说文解字":
+              - /url: "#"
+          - listitem [ref=f35e89]:
+            - link "组词":
+              - /url: "#"
+        - generic [ref=f35e91]:
+          - paragraph [ref=f35e92]:
+            - generic [ref=f35e93]: 部首
+            - link "舟部" [ref=f35e95] [cursor=pointer]:
+              - /url: /zidian/bushou-33311
+          - paragraph [ref=f35e96]:
+            - generic [ref=f35e97]: 总笔画
+            - link "13画" [ref=f35e99] [cursor=pointer]:
+              - /url: /zidian/bihua-13
+          - paragraph [ref=f35e100]:
+            - generic [ref=f35e101]: 部外笔画
+            - generic [ref=f35e102]: 7画
+          - paragraph [ref=f35e103]:
+            - generic [ref=f35e104]: 结构
+            - generic [ref=f35e105]: 左右结构
+          - paragraph [ref=f35e106]:
+            - generic [ref=f35e107]: 五笔
+            - generic [ref=f35e108]:
+              - text: TEHI
+              - superscript [ref=f35e109]: "86"
+              - text: 、 TUHH
+              - superscript [ref=f35e110]: "98"
+          - paragraph [ref=f35e111]:
+            - generic [ref=f35e112]: 仓颉
+            - generic [ref=f35e113]: HYYLH
+          - paragraph [ref=f35e114]:
+            - generic [ref=f35e115]: 郑码
+            - generic [ref=f35e116]: PYIK
+          - paragraph [ref=f35e117]:
+            - generic [ref=f35e118]: 四角
+            - generic [ref=f35e119]: "21421"
+          - paragraph [ref=f35e120]:
+            - generic [ref=f35e121]: 中文电码
+            - generic [ref=f35e122]: 无
+          - paragraph [ref=f35e123]:
+            - generic [ref=f35e124]: 统一码
+            - generic [ref=f35e125]: U+4470
+          - paragraph [ref=f35e126]:
+            - generic [ref=f35e127]: 笔画
+            - emphasis [ref=f35e129]: "3354142121233"
+      - generic [ref=f35e131]:
+        - generic [ref=f35e132]:
+          - heading "䑰字概述" [level=2] [ref=f35e133]
+          - generic [ref=f35e134] [cursor=pointer]:
+            - generic [ref=f35e135]: 
+            - text: 纠错
+        - generic [ref=f35e137]:
+          - paragraph [ref=f35e138]:
+            - text: 〔䑰〕字拼音是（bù），部首是
+            - emphasis [ref=f35e139]: 舟部
+            - text: ，总笔画是
+            - emphasis [ref=f35e140]: 13画
+            - text: 。
+          - paragraph [ref=f35e141]:
+            - text: 〔䑰〕字是左右结构，可拆字为“
+            - emphasis [ref=f35e142]: 舟、步
+            - text: ”。
+          - paragraph [ref=f35e143]:
+            - text: 〔䑰〕字仓颉码是
+            - emphasis [ref=f35e144]: HYYLH
+            - text: ，五笔是
+            - emphasis [ref=f35e145]:
+              - text: TEHI
+              - superscript [ref=f35e146]: "86"
+              - text: ，TUHH
+              - superscript [ref=f35e147]: "98"
+            - text: ，四角号码是
+            - emphasis [ref=f35e148]: "21421"
+            - text: ，郑码是
+            - emphasis [ref=f35e149]: PYIK
+            - text: 。
+          - paragraph [ref=f35e150]:
+            - text: 〔䑰〕字的UNICODE是
+            - emphasis [ref=f35e151]: U+4470
+            - text: ，位于UNICODE的
+            - emphasis [ref=f35e152]: 中日韩统一表意文字扩展区A
+            - text: ，10进制： 17520，UTF-32：00004470，UTF-8：E4 91 B0。
+          - button "展开更多 " [ref=f35e154] [cursor=pointer]:
+            - text: 展开更多
+            - generic [ref=f35e155]: 
+      - generic [ref=f35e157]:
+        - generic [ref=f35e158]:
+          - heading "䑰的意思" [level=2] [ref=f35e159]
+          - generic [ref=f35e160] [cursor=pointer]:
+            - generic [ref=f35e161]: 
+            - text: 纠错
+        - generic [ref=f35e163]:
+          - heading "基本释义" [level=4] [ref=f35e165]
+          - generic [ref=f35e166]:
+            - heading "▶ 䑰" [level=3] [ref=f35e168]
+            - paragraph [ref=f35e170]:
+              - generic [ref=f35e171]: ◎
+              - text: 同“
+              - link "䒀" [ref=f35e172] [cursor=pointer]:
+                - /url: /zidian/zi-17536
+              - text: ”。
+      - generic [ref=f35e174]:
+        - generic [ref=f35e175]:
+          - heading "䑰字的翻译" [level=2] [ref=f35e176]
+          - generic [ref=f35e177] [cursor=pointer]:
+            - generic [ref=f35e178]: 
+            - text: 纠错
+        - list [ref=f35e180]:
+          - listitem [ref=f35e181]:
+            - generic [ref=f35e182]: 英语
+            - text: small boat
+    - generic [ref=f35e183]:
+      - generic [ref=f35e184]:
+        - img "䑰" [ref=f35e186]
+        - paragraph [ref=f35e187]: 䑰，位于中日韩统一表意文字扩展区A，Unihan编码U+4470，读音是（bù），舟部，共13画，左右结构。
+      - generic [ref=f35e188]:
+        - generic [ref=f35e189]:
+          - generic [ref=f35e190]:
+            - heading "同音字" [level=3] [ref=f35e191]
+            - generic [ref=f35e192]:
+              - text: （
+              - link "bù" [ref=f35e193] [cursor=pointer]:
+                - /url: /zidian/pinyin-bu
+              - text: ）
+          - list [ref=f35e195]:
+            - listitem [ref=f35e196]:
+              - link "㘵" [ref=f35e197] [cursor=pointer]:
+                - /url: /zidian/zi-13877
+            - listitem [ref=f35e199]:
+              - link "㚴" [ref=f35e200] [cursor=pointer]:
+                - /url: /zidian/zi-14004
+            - listitem [ref=f35e202]:
+              - link "㱛" [ref=f35e203] [cursor=pointer]:
+                - /url: /zidian/zi-15451
+            - listitem [ref=f35e205]:
+              - link "㳍" [ref=f35e206] [cursor=pointer]:
+                - /url: /zidian/zi-15565
+            - listitem [ref=f35e208]:
+              - link "㻉" [ref=f35e209] [cursor=pointer]:
+                - /url: /zidian/zi-16073
+            - listitem [ref=f35e211]:
+              - link "㾟" [ref=f35e212] [cursor=pointer]:
+                - /url: /zidian/zi-16287
+            - listitem [ref=f35e214]:
+              - link "䊇" [ref=f35e215] [cursor=pointer]:
+                - /url: /zidian/zi-17031
+            - listitem [ref=f35e217]:
+              - link "䍌" [ref=f35e218] [cursor=pointer]:
+                - /url: /zidian/zi-17228
+        - generic [ref=f35e220]:
+          - generic [ref=f35e221]:
+            - heading "同部首" [level=3] [ref=f35e222]
+            - generic [ref=f35e223]:
+              - text: (
+              - link "舟部" [ref=f35e224] [cursor=pointer]:
+                - /url: /zidian/bushou-33311
+              - text: )
+          - list [ref=f35e226]:
+            - listitem [ref=f35e227]:
+              - link "䑧" [ref=f35e228] [cursor=pointer]:
+                - /url: /zidian/zi-17511
+            - listitem [ref=f35e230]:
+              - link "䑨" [ref=f35e231] [cursor=pointer]:
+                - /url: /zidian/zi-17512
+            - listitem [ref=f35e233]:
+              - link "䑩" [ref=f35e234] [cursor=pointer]:
+                - /url: /zidian/zi-17513
+            - listitem [ref=f35e236]:
+              - link "䑪" [ref=f35e237] [cursor=pointer]:
+                - /url: /zidian/zi-17514
+            - listitem [ref=f35e239]:
+              - link "䑫" [ref=f35e240] [cursor=pointer]:
+                - /url: /zidian/zi-17515
+            - listitem [ref=f35e242]:
+              - link "䑬" [ref=f35e243] [cursor=pointer]:
+                - /url: /zidian/zi-17516
+            - listitem [ref=f35e245]:
+              - link "䑭" [ref=f35e246] [cursor=pointer]:
+                - /url: /zidian/zi-17517
+            - listitem [ref=f35e248]:
+              - link "䑮" [ref=f35e249] [cursor=pointer]:
+                - /url: /zidian/zi-17518
+        - generic [ref=f35e251]:
+          - generic [ref=f35e252]:
+            - heading "同笔画数" [level=3] [ref=f35e253]
+            - generic [ref=f35e254]:
+              - text: (
+              - link "13画" [ref=f35e255] [cursor=pointer]:
+                - /url: /zidian/bihua-13
+              - text: )
+          - list [ref=f35e257]:
+            - listitem [ref=f35e258]:
+              - link "䐕" [ref=f35e259] [cursor=pointer]:
+                - /url: /zidian/zi-17429
+            - listitem [ref=f35e261]:
+              - link "䐖" [ref=f35e262] [cursor=pointer]:
+                - /url: /zidian/zi-17430
+            - listitem [ref=f35e264]:
+              - link "䐗" [ref=f35e265] [cursor=pointer]:
+                - /url: /zidian/zi-17431
+            - listitem [ref=f35e267]:
+              - link "䐘" [ref=f35e268] [cursor=pointer]:
+                - /url: /zidian/zi-17432
+            - listitem [ref=f35e270]:
+              - link "䐙" [ref=f35e271] [cursor=pointer]:
+                - /url: /zidian/zi-17433
+            - listitem [ref=f35e273]:
+              - link "䐚" [ref=f35e274] [cursor=pointer]:
+                - /url: /zidian/zi-17434
+            - listitem [ref=f35e276]:
+              - link "䐛" [ref=f35e277] [cursor=pointer]:
+                - /url: /zidian/zi-17435
+            - listitem [ref=f35e279]:
+              - link "䑓" [ref=f35e280] [cursor=pointer]:
+                - /url: /zidian/zi-17491
+        - generic [ref=f35e282]:
+          - heading "大家都在搜" [level=3] [ref=f35e283]
+          - list [ref=f35e285]:
+            - listitem [ref=f35e286]:
+              - link "杀" [ref=f35e287] [cursor=pointer]:
+                - /url: /zidian/zi-26432
+            - listitem [ref=f35e288]:
+              - link "诚" [ref=f35e289] [cursor=pointer]:
+                - /url: /zidian/zi-35802
+            - listitem [ref=f35e290]:
+              - link "捉" [ref=f35e291] [cursor=pointer]:
+                - /url: /zidian/zi-25417
+            - listitem [ref=f35e292]:
+              - link "菜" [ref=f35e293] [cursor=pointer]:
+                - /url: /zidian/zi-33756
+            - listitem [ref=f35e294]:
+              - link "嫁" [ref=f35e295] [cursor=pointer]:
+                - /url: /zidian/zi-23233
+            - listitem [ref=f35e296]:
+              - link "呋" [ref=f35e297] [cursor=pointer]:
+                - /url: /zidian/zi-21579
+            - listitem [ref=f35e298]:
+              - link "咚" [ref=f35e299] [cursor=pointer]:
+                - /url: /zidian/zi-21658
+            - listitem [ref=f35e300]:
+              - link "菀" [ref=f35e301] [cursor=pointer]:
+                - /url: /zidian/zi-33728
+            - listitem [ref=f35e302]:
+              - link "蔫" [ref=f35e303] [cursor=pointer]:
+                - /url: /zidian/zi-34091
+            - listitem [ref=f35e304]:
+              - link "濑" [ref=f35e305] [cursor=pointer]:
+                - /url: /zidian/zi-28625
+            - listitem [ref=f35e306]:
+              - link "羝" [ref=f35e307] [cursor=pointer]:
+                - /url: /zidian/zi-32669
+            - listitem [ref=f35e308]:
+              - link "煋" [ref=f35e309] [cursor=pointer]:
+                - /url: /zidian/zi-29003
+  - contentinfo [ref=f35e310]:
+    - generic [ref=f35e312]:
+      - generic [ref=f35e313]: © 2026 汉语国学
+      - link "在线反馈" [ref=f35e314] [cursor=pointer]:
+        - /url: /supports
+  - generic [ref=f35e315]:
+    - button " 目录" [ref=f35e316] [cursor=pointer]:
+      - generic [ref=f35e317]: 
+      - generic [ref=f35e318]: 目录
+    - button " 分享" [ref=f35e319] [cursor=pointer]:
+      - generic [ref=f35e320]: 
+      - generic [ref=f35e321]: 分享
+    - button " 手机" [ref=f35e322] [cursor=pointer]:
+      - generic [ref=f35e323]: 
+      - generic [ref=f35e324]: 手机
+    - button " 反馈" [ref=f35e325] [cursor=pointer]:
+      - generic [ref=f35e326]: 
+      - generic [ref=f35e327]: 反馈

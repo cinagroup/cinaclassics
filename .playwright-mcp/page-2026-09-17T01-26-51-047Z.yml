@@ -1,0 +1,170 @@
+- generic [active] [ref=f24e1]:
+  - link "跳转到内容" [ref=f24e2] [cursor=pointer]:
+    - /url: "#bodyContent"
+  - banner [ref=f24e4]:
+    - generic [ref=f24e5]:
+      - navigation "站点" [ref=f24e6]:
+        - generic "主菜单" [ref=f24e7]:
+          - button "主菜单" [ref=f24e8] [cursor=pointer]
+          - generic [ref=f24e11]: 主菜单
+      - link [ref=f24e12] [cursor=pointer]:
+        - /url: /wiki/Wikisource:%E9%A6%96%E9%A1%B5
+        - img "Wikisource" [ref=f24e15]
+    - generic [ref=f24e16]:
+      - search [ref=f24e17]:
+        - generic [ref=f24e20]:
+          - searchbox "搜索Wikisource内容" [ref=f24e23]
+          - button "搜索" [ref=f24e25]
+      - navigation "个人工具" [ref=f24e26]:
+        - list [ref=f24e30]:
+          - listitem [ref=f24e31]:
+            - link "资助" [ref=f24e32] [cursor=pointer]:
+              - /url: https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=zh.wikisource.org&uselang=zh
+          - listitem [ref=f24e33]:
+            - link "创建账号" [ref=f24e34] [cursor=pointer]:
+              - /url: /w/index.php?title=Special:CreateAccount&returnto=%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%92%2F%E5%8D%B7%E4%B8%80%E7%99%BE%E5%85%AD%E5%8D%81%E4%BA%8C
+          - listitem [ref=f24e35]:
+            - link "登录" [ref=f24e36] [cursor=pointer]:
+              - /url: /w/index.php?title=Special:UserLogin&returnto=%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%92%2F%E5%8D%B7%E4%B8%80%E7%99%BE%E5%85%AD%E5%8D%81%E4%BA%8C
+  - generic [ref=f24e38]:
+    - generic [ref=f24e41]:
+      - generic [ref=f24e42]:
+        - text: "["
+        - button "关闭" [ref=f24e43] [cursor=pointer]
+        - text: "]"
+      - paragraph [ref=f24e47]:
+        - text: 恭喜！维基文库收录的文章数量达到
+        - link "三百万篇" [ref=f24e48] [cursor=pointer]:
+          - /url: /wiki/Special:Statistics
+        - text: ！
+    - main [ref=f24e51]:
+      - generic [ref=f24e52]:
+        - heading "資治通鑒/卷一百六十二" [level=1] [ref=f24e53]
+        - generic [ref=f24e55]:
+          - button "添加语言" [ref=f24e56] [cursor=pointer]
+          - generic [ref=f24e59]: 添加语言
+      - generic [ref=f24e61]:
+        - navigation "命名空间" [ref=f24e63]:
+          - list [ref=f24e66]:
+            - listitem [ref=f24e67]:
+              - link "作品" [ref=f24e68] [cursor=pointer]:
+                - /url: /w/index.php?title=%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%92/%E5%8D%B7%E4%B8%80%E7%99%BE%E5%85%AD%E5%8D%81%E4%BA%8C&action=edit&redlink=1
+            - listitem [ref=f24e70]:
+              - link "讨论" [ref=f24e71] [cursor=pointer]:
+                - /url: /w/index.php?title=Talk:%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%92/%E5%8D%B7%E4%B8%80%E7%99%BE%E5%85%AD%E5%8D%81%E4%BA%8C&action=edit&redlink=1
+          - generic [ref=f24e73]:
+            - button "更改语言变体" [ref=f24e74] [cursor=pointer]
+            - generic [ref=f24e76]: 不转换
+        - generic [ref=f24e77]:
+          - navigation "查看" [ref=f24e78]:
+            - list [ref=f24e81]:
+              - listitem [ref=f24e82]:
+                - link "创建" [ref=f24e83] [cursor=pointer]:
+                  - /url: /w/index.php?title=%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%92/%E5%8D%B7%E4%B8%80%E7%99%BE%E5%85%AD%E5%8D%81%E4%BA%8C&action=edit
+          - navigation "页面工具" [ref=f24e85]:
+            - generic [ref=f24e86]:
+              - button "工具" [ref=f24e87] [cursor=pointer]
+              - generic [ref=f24e90]: 工具
+      - navigation "外观" [ref=f24e93]:
+        - generic [ref=f24e95]:
+          - generic [ref=f24e96]:
+            - generic [ref=f24e97]: 外观
+            - button "隐藏外观" [ref=f24e98] [cursor=pointer]: 隐藏
+          - generic [ref=f24e99]:
+            - generic [ref=f24e100]: 文本
+            - list [ref=f24e102]:
+              - listitem [ref=f24e103]:
+                - generic [ref=f24e105]:
+                  - generic [ref=f24e106]:
+                    - radio "小" [ref=f24e107]
+                    - generic [ref=f24e109]: 小
+                  - generic [ref=f24e111]:
+                    - radio "标准" [checked] [ref=f24e112]
+                    - generic [ref=f24e114]: 标准
+                  - generic [ref=f24e116]:
+                    - radio "大" [ref=f24e117]
+                    - generic [ref=f24e119]: 大
+          - generic [ref=f24e121]:
+            - generic [ref=f24e122]: 宽度
+            - list [ref=f24e124]:
+              - listitem [ref=f24e125]:
+                - generic [ref=f24e127]:
+                  - generic [ref=f24e128]:
+                    - radio "标准" [checked] [ref=f24e129]
+                    - generic [ref=f24e131]: 标准
+                  - generic [ref=f24e133]:
+                    - radio "宽" [ref=f24e134]
+                    - generic [ref=f24e136]: 宽
+          - generic [ref=f24e138]:
+            - generic [ref=f24e139]:
+              - text: 颜色
+              - generic [ref=f24e140]: （测试版）
+            - list [ref=f24e142]:
+              - listitem [ref=f24e143]:
+                - generic [ref=f24e145]:
+                  - generic [ref=f24e146]:
+                    - radio "自动" [ref=f24e147]
+                    - generic [ref=f24e149]: 自动
+                  - generic [ref=f24e151]:
+                    - radio "浅色" [checked] [ref=f24e152]
+                    - generic [ref=f24e154]: 浅色
+                  - generic [ref=f24e156]:
+                    - radio "深色" [ref=f24e157]
+                    - generic [ref=f24e159]: 深色
+      - generic "資治通鑒/卷一百六十二" [ref=f24e161]:
+        - generic [ref=f24e165]:
+          - text: <
+          - link "資治通鑒" [ref=f24e167] [cursor=pointer]:
+            - /url: /wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%92
+        - paragraph [ref=f24e170]:
+          - text: 此页面目前没有内容。您可以在其他页面内
+          - link "搜索此页面标题" [ref=f24e171] [cursor=pointer]:
+            - /url: /wiki/Special:Search/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%92/%E5%8D%B7%E4%B8%80%E7%99%BE%E5%85%AD%E5%8D%81%E4%BA%8C
+          - text: ，
+          - generic [ref=f24e172]:
+            - link "搜索相关日志" [ref=f24e173] [cursor=pointer]:
+              - /url: https://zh.wikisource.org/w/index.php?title=Special:Log&page=%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%92%2F%E5%8D%B7%E4%B8%80%E7%99%BE%E5%85%AD%E5%8D%81%E4%BA%8C
+            - text: ，或
+            - link "创建此页面" [ref=f24e174] [cursor=pointer]:
+              - /url: https://zh.wikisource.org/w/index.php?title=%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%92/%E5%8D%B7%E4%B8%80%E7%99%BE%E5%85%AD%E5%8D%81%E4%BA%8C&action=edit
+          - text: 。
+    - contentinfo [ref=f24e176]:
+      - list:
+        - listitem [ref=f24e177]:
+          - link "隐私政策" [ref=f24e178] [cursor=pointer]:
+            - /url: https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy
+        - listitem [ref=f24e179]:
+          - link "关于维基文库" [ref=f24e180] [cursor=pointer]:
+            - /url: /wiki/Wikisource:%E5%85%B3%E4%BA%8E
+        - listitem [ref=f24e181]:
+          - link "免责声明" [ref=f24e182] [cursor=pointer]:
+            - /url: /wiki/Wikisource:%E5%85%8D%E8%B4%A3%E5%A3%B0%E6%98%8E
+        - listitem [ref=f24e183]:
+          - link "法律与安全事项联系方式" [ref=f24e184] [cursor=pointer]:
+            - /url: https://foundation.wikimedia.org/wiki/Special:MyLanguage/Legal:Wikimedia_Foundation_Legal_and_Safety_Contact_Information
+        - listitem [ref=f24e185]:
+          - link "行为准则" [ref=f24e186] [cursor=pointer]:
+            - /url: https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct
+        - listitem [ref=f24e187]:
+          - link "开发者" [ref=f24e188] [cursor=pointer]:
+            - /url: https://developer.wikimedia.org
+        - listitem [ref=f24e189]:
+          - link "统计" [ref=f24e190] [cursor=pointer]:
+            - /url: https://stats.wikimedia.org/#/zh.wikisource.org
+        - listitem [ref=f24e191]:
+          - link "Cookie声明" [ref=f24e192] [cursor=pointer]:
+            - /url: https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement
+        - listitem [ref=f24e193]:
+          - link "移动版视图" [ref=f24e194] [cursor=pointer]:
+            - /url: //zh.wikisource.org/w/index.php?title=%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%92/%E5%8D%B7%E4%B8%80%E7%99%BE%E5%85%AD%E5%8D%81%E4%BA%8C&mobileaction=toggle_view_mobile
+      - list [ref=f24e195]:
+        - listitem [ref=f24e196]:
+          - link [ref=f24e197] [cursor=pointer]:
+            - /url: https://www.wikimedia.org/
+            - img "Wikimedia Foundation" [ref=f24e199]
+        - listitem [ref=f24e200]:
+          - link [ref=f24e201] [cursor=pointer]:
+            - /url: https://www.mediawiki.org/
+            - img "Powered by MediaWiki" [ref=f24e203]
+  - generic [ref=f24e204]:
+    - list

@@ -1,0 +1,38 @@
+- generic [ref=f21e4]:
+  - generic [ref=f21e11]:
+    - link "识典古籍" [ref=f21e12] [cursor=pointer]:
+      - /url: /
+    - link "All Books" [ref=f21e14] [cursor=pointer]:
+      - /url: /library
+  - generic [ref=f21e19]:
+    - link "识典古籍" [ref=f21e20] [cursor=pointer]:
+      - /url: /
+    - link "All Books" [ref=f21e22] [cursor=pointer]:
+      - /url: /library
+  - generic [ref=f21e31]:
+    - tablist [ref=f21e32]:
+      - tab "Search Text" [selected] [ref=f21e33]
+      - tab "Search Book" [ref=f21e34] [cursor=pointer]
+    - tabpanel "Search Text" [ref=f21e36]:
+      - generic [ref=f21e38]:
+        - generic [ref=f21e39]:
+          - list [ref=f21e40]:
+            - listitem [ref=f21e41] [cursor=pointer]: Relevance
+            - listitem [ref=f21e42] [cursor=pointer]: Sort by Time
+          - generic [ref=f21e46]:
+            - generic [ref=f21e47] [cursor=pointer]:
+              - checkbox "Skip Annotation" [ref=f21e49]
+              - generic [ref=f21e51]: Skip Annotation
+            - generic [ref=f21e53] [cursor=pointer]:
+              - checkbox "Original Character" [ref=f21e55]
+              - generic [ref=f21e57]: Original Character
+            - generic [ref=f21e59] [cursor=pointer]:
+              - generic [ref=f21e60]:
+                - checkbox "Fuzzy Search" [checked] [ref=f21e61]
+                - img "checkbox_tick" [ref=f21e63]
+              - generic [ref=f21e66]: Fuzzy Search
+        - generic [ref=f21e68]: "Found 0 results:"
+        - generic [ref=f21e117]:
+          - text: Not satisfied with the results?
+          - link "Let us know" [ref=f21e118] [cursor=pointer]:
+            - /url: https://bytedance.larkoffice.com/share/base/form/shrcnahqsIOUY12uR8M3LAGPiif?prefill_搜索词=&prefill_source=pc_&hide_source=1

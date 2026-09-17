@@ -1,0 +1,41 @@
+- generic [active] [ref=f15e1]:
+  - generic [ref=f15e2]:
+    - text: Access unavailable
+    - generic [ref=f15e3]:
+      - paragraph [ref=f15e4]:
+        - text: Access to ctext.org is unavailable from your current location. Please note that the use of automatic download software on this website is
+        - generic [ref=f15e5]: strictly prohibited
+        - text: .
+      - paragraph [ref=f15e6]:
+        - text: "If you are accessing from a university, academic, or commercial network and are having difficulty accessing the site, please contact your institution (e.g. your university library staff) to arrange an institutional subscription:"
+        - link "https://ctext.org/tools/subscribe" [ref=f15e7] [cursor=pointer]:
+          - /url: https://ctext.org/tools/subscribe
+        - text: .
+      - paragraph [ref=f15e8]: "If you frequently see this error and are not using automated software to access the site, this error is most likely caused by one of the following:"
+      - list [ref=f15e9]:
+        - listitem [ref=f15e10]: Software other than a web browser running on your computer that is sending automated requests to ctext.org.
+        - listitem [ref=f15e11]: Malware running on your computer - e.g. your computer itself has been compromised and is now part of a botnet. ctext.org receives millions of automated requests from these every day.
+        - listitem [ref=f15e12]: The network you are accessing from is a frequent source of network abuse. Note that this includes almost all public VPNs and open proxies, as well as networks (including home and office networks) with poor network security that fail to prevent botnets from running on them.
+      - paragraph
+      - paragraph
+      - heading "無法提供服務" [level=1] [ref=f15e13]
+      - paragraph [ref=f15e14]:
+        - text: 很抱歉，暫時無法向您所在網絡位置提供服務。請留意，本網站
+        - generic [ref=f15e15]: 嚴禁使用自動下載軟体
+        - text: 下載或訪問本站的內容。
+      - paragraph [ref=f15e16]:
+        - text: 如果您在學校內（或機構內）網路遇到這個問題，建議您聯繫貴校（或機構）並提議他們開通
+        - link "機構服務" [ref=f15e17] [cursor=pointer]:
+          - /url: https://ctext.org/tools/subscribe/zh
+        - text: ，以免再次遇到這種問題。
+      - paragraph [ref=f15e18]: 如果您經常看到此錯誤，且並未使用自動化軟體存取本網站，則此錯誤最有可能由以下其中一項原因造成：
+      - list [ref=f15e19]:
+        - listitem [ref=f15e20]: 在您的電腦上執行的非網頁瀏覽器軟體，正在向ctext.org發送自動化請求。
+        - listitem [ref=f15e21]: 您的電腦上正在執行惡意軟體——例如您的電腦本身已遭入侵，並成為殭屍網路的一部分。ctext.org每天都會收到來自這些來源的數百萬筆自動化請求。
+        - listitem [ref=f15e22]: 您目前使用的網路是網路濫用的常見來源。請注意，這包括幾乎所有公共VPN與開放式代理伺服器，以及（包括家庭與辦公室網路在內）網路安全性不足、未能防止殭屍網路在其中運作的網路。
+      - paragraph
+  - generic [ref=f15e23]:
+    - text: "Robots and scrapers: feel free to follow"
+    - link "this link" [ref=f15e24] [cursor=pointer]:
+      - /url: https://ctext.org/hp.pl?src=403
+    - text: and include it in your next index.

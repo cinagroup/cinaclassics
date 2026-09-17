@@ -1,0 +1,363 @@
+- generic [active] [ref=f3e1]:
+  - link "跳转到内容" [ref=f3e2] [cursor=pointer]:
+    - /url: "#bodyContent"
+  - banner [ref=f3e4]:
+    - generic [ref=f3e5]:
+      - navigation "站点" [ref=f3e6]:
+        - generic "主菜单" [ref=f3e7]:
+          - button "主菜单" [ref=f3e8] [cursor=pointer]
+          - generic [ref=f3e11]: 主菜单
+      - link [ref=f3e12] [cursor=pointer]:
+        - /url: /wiki/Wikisource:%E9%A6%96%E9%A1%B5
+        - img "Wikisource" [ref=f3e15]
+    - generic [ref=f3e16]:
+      - search [ref=f3e17]:
+        - link "搜索" [ref=f3e18] [cursor=pointer]:
+          - /url: /wiki/Special:Search
+      - navigation "个人工具" [ref=f3e21]:
+        - list [ref=f3e25]:
+          - listitem [ref=f3e26]:
+            - link "资助" [ref=f3e27] [cursor=pointer]:
+              - /url: https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=zh.wikisource.org&uselang=zh
+          - listitem [ref=f3e28]:
+            - link "创建账号" [ref=f3e29] [cursor=pointer]:
+              - /url: /w/index.php?title=Special:CreateAccount&returnto=%E9%99%B3%E6%9B%B8%2F%E5%8D%B710
+          - listitem [ref=f3e30]:
+            - link "登录" [ref=f3e31] [cursor=pointer]:
+              - /url: /w/index.php?title=Special:UserLogin&returnto=%E9%99%B3%E6%9B%B8%2F%E5%8D%B710
+  - generic [ref=f3e33]:
+    - main [ref=f3e35]:
+      - generic [ref=f3e36]:
+        - navigation "目录" [ref=f3e37]:
+          - generic "目录" [ref=f3e38]:
+            - button "开关目录" [ref=f3e39] [cursor=pointer]
+            - generic [ref=f3e42]: 开关目录
+        - heading "陳書/卷10" [level=1] [ref=f3e43]
+        - generic [ref=f3e45]:
+          - button "添加语言" [ref=f3e46] [cursor=pointer]
+          - generic [ref=f3e49]: 添加语言
+      - generic [ref=f3e51]:
+        - navigation "命名空间" [ref=f3e53]:
+          - list [ref=f3e56]:
+            - listitem [ref=f3e57]:
+              - link "作品" [ref=f3e58] [cursor=pointer]:
+                - /url: /wiki/%E9%99%B3%E6%9B%B8/%E5%8D%B710
+            - listitem [ref=f3e60]:
+              - link "讨论" [ref=f3e61] [cursor=pointer]:
+                - /url: /w/index.php?title=Talk:%E9%99%B3%E6%9B%B8/%E5%8D%B710&action=edit&redlink=1
+          - generic [ref=f3e63]:
+            - button "更改语言变体" [ref=f3e64] [cursor=pointer]
+            - generic [ref=f3e66]: 不转换
+        - generic [ref=f3e67]:
+          - navigation "查看" [ref=f3e68]:
+            - list [ref=f3e71]:
+              - listitem [ref=f3e72]:
+                - link "阅读" [ref=f3e73] [cursor=pointer]:
+                  - /url: /wiki/%E9%99%B3%E6%9B%B8/%E5%8D%B710
+              - listitem [ref=f3e75]:
+                - link "编辑" [ref=f3e76] [cursor=pointer]:
+                  - /url: /w/index.php?title=%E9%99%B3%E6%9B%B8/%E5%8D%B710&action=edit
+              - listitem [ref=f3e78]:
+                - link "查看历史" [ref=f3e79] [cursor=pointer]:
+                  - /url: /w/index.php?title=%E9%99%B3%E6%9B%B8/%E5%8D%B710&action=history
+          - navigation "页面工具" [ref=f3e81]:
+            - generic [ref=f3e82]:
+              - button "工具" [ref=f3e83] [cursor=pointer]
+              - generic [ref=f3e86]: 工具
+      - generic "陳書/卷10" [ref=f3e87]:
+        - generic [ref=f3e88]:
+          - generic [ref=f3e89]:
+            - link [ref=f3e94] [cursor=pointer]:
+              - /url: /wiki/Wikisource:%E6%AD%A3%E6%96%87%E5%93%81%E8%B4%A8
+              - img "文章還沒有進行過校對和格式化，或文章還不全，不能保證任何部分可靠。" [ref=f3e95]
+            - button "下载" [ref=f3e98] [cursor=pointer]
+          - generic [ref=f3e101]:
+            - text: <
+            - link "陳書" [ref=f3e103] [cursor=pointer]:
+              - /url: /wiki/%E9%99%B3%E6%9B%B8
+        - generic [ref=f3e105]:
+          - table [ref=f3e106]:
+            - rowgroup [ref=f3e107]:
+              - row [ref=f3e108]:
+                - cell [ref=f3e109]:
+                  - link "卷九" [ref=f3e110] [cursor=pointer]:
+                    - /url: /wiki/%E9%99%B3%E6%9B%B8/%E5%8D%B79
+                  - text: ◄
+                - cell [ref=f3e111]:
+                  - link "陳書" [ref=f3e113] [cursor=pointer]:
+                    - /url: /wiki/%E9%99%B3%E6%9B%B8
+                  - text: 卷十 列傳第四
+                  - paragraph [ref=f3e114]: 周鐵虎 程靈洗
+                - cell [ref=f3e115]:
+                  - text: ►
+                  - link "卷十一" [ref=f3e116] [cursor=pointer]:
+                    - /url: /wiki/%E9%99%B3%E6%9B%B8/%E5%8D%B711
+          - table [ref=f3e117]:
+            - rowgroup [ref=f3e118]:
+              - row [ref=f3e119]:
+                - cell [ref=f3e120]:
+                  - list [ref=f3e121]:
+                    - listitem [ref=f3e122]:
+                      - link [ref=f3e125] [cursor=pointer]:
+                        - /url: /wiki/Special:SiteMatrix
+                        - img "姊妹计划" [ref=f3e126]
+                      - link "姊妹计划" [ref=f3e127] [cursor=pointer]:
+                        - /url: /wiki/Special:SiteMatrix
+                      - text: ":"
+                      - link "数据项" [ref=f3e128] [cursor=pointer]:
+                        - /url: https://www.wikidata.org/wiki/Q85378169
+                  - table [ref=f3e129]:
+                    - rowgroup [ref=f3e130]:
+                      - row [ref=f3e131]:
+                        - cell [ref=f3e132]
+                  - paragraph [ref=f3e133]: 周鐵虎 程靈洗
+          - generic [ref=f3e134]:
+            - heading "周鐵虎" [level=2] [ref=f3e135]
+            - generic [ref=f3e136]:
+              - link "编辑":
+                - /url: /w/index.php?title=%E9%99%B3%E6%9B%B8/%E5%8D%B710&action=edit&section=1
+          - paragraph [ref=f3e137]: 周鐵虎，不知何許人也，梁世南渡。語音傖重，膂力過人，便馬槊，事梁河東王蕭譽，以勇敢聞，譽板為府中兵參軍。譽為廣州刺史，以鐵虎為興寧令。譽遷湘州，又為臨蒸令。侯景之亂，元帝於荊州遣世子方等代譽，且以兵臨之。譽拒戰，大捷，方等死，鐵虎功最，譽委遇甚重。及王僧辯討譽，於陣獲鐵虎，僧辯命烹之，鐵虎呼曰：「侯景未滅，柰何殺壯士。」僧辯奇其言，乃宥之，還其麾下。
+          - paragraph [ref=f3e138]: 及侯景西上，鐵虎從僧辯克任約，獲宋子仙，每戰皆有功。元帝承制授仁威將軍、潼州刺史，封沌陽縣子，邑三百戶。又從僧辯克定京邑，降謝答仁，平陸納於湘州。承聖二年，以前後戰功，進爵為侯，增邑赠前五百戶。仍為散騎常侍，領信義太守，將軍如故。高祖誅僧辯，鐵虎率所部降，因復其本職。
+          - paragraph [ref=f3e139]:
+            - text: 徐嗣徽引齊寇渡江，鐵虎於板橋浦破其水軍，盡獲甲仗船舸。又攻歷陽，襲齊寇步營，嵭皆克捷。嗣徽平，
+            - link "紹泰二年" [ref=f3e141] [cursor=pointer]:
+              - /url: /wiki/Category:556%E5%B9%B4_(%E6%8F%90%E5%8F%8A)
+            - text: ，遷散騎常侍、嚴威將軍、太子左衛率。
+          - paragraph [ref=f3e142]: 尋隨周文育於南江拒蕭勃，恆為前軍。文育又命鐵虎偏軍，於苦竹灘襲勃前軍歐陽頠。
+          - paragraph [ref=f3e143]:
+            - text: 又隨文育西征王琳，於沌口敗績，鐵虎與文育、侯安都嵭為琳所擒。琳引見諸將，與之語，唯鐵虎辭氣不屈，故琳盡宥文育之徒，獨鐵虎見害，時年四十九。高祖聞之，下詔曰：「天地之寶，所貴曰生，形魄之徒，所重唯命。至如捐生立節，刋命酬恩，追遠懷昔，信宜加等。散騎常侍、嚴威將軍、太子左衛率、潼州刺史、領信義太守沌陽縣開國侯鐵虎，器局沈厚，風力勇壯，北討南征，竭忠盡力。推鋒江夏，致陷凶徒，神氣彌雄，肆言無撓。豈直溫序見害，方其理鬚，龐德臨危，猶能瞋目。忠貞如此，惻愴兼深，可贈侍中、護軍將軍、青冀二州刺史，加封一千戶，赠給鼓吹一部，侯如故。」
+            - link "天嘉五年" [ref=f3e145] [cursor=pointer]:
+              - /url: /wiki/Category:564%E5%B9%B4_(%E6%8F%90%E5%8F%8A)
+            - text: ，世祖又詔曰：「漢室功臣，形寫宮觀，魏朝猛將，名配宗祧，功烈所以長存，世代因之不朽。故侍中、護軍將軍、青冀二州刺史沌陽縣開國侯鐵虎，誠節梗亮，力用雄敢，王業初基，行閒累及，垂翅賊壘，正色寇庭，古之遺烈，有識同壯。隕身不屈，雖隆榮等，營魂易遠，言追嘉惜。宜仰陪壖寢，恭頒饗奠，可配食高祖廟庭。」子瑜嗣。
+          - paragraph [ref=f3e146]: 時有盱眙馬明，字世朗，梁世事鄱陽嗣王蕭範。侯景之亂，據廬江之東界，拒賊臨城柵。元帝授散騎常侍、平北將軍、北论州刺史，領廬江太守。荊州陷沒，歸于高祖。紹泰中，復官位，封西華縣侯，邑二千戶。亦隨文育西征王琳，於沌口軍敗，明力戰死之，贈使持節、征西將軍、郢州刺史。
+          - generic [ref=f3e147]:
+            - heading "程靈洗" [level=2] [ref=f3e148]
+            - generic [ref=f3e149]:
+              - link "编辑":
+                - /url: /w/index.php?title=%E9%99%B3%E6%9B%B8/%E5%8D%B710&action=edit&section=2
+          - paragraph [ref=f3e150]: 程靈洗字玄滌，新安海寧人也。少以勇力聞，步行日二百餘里，便騎善游。梁末，海寧、黟、歙等縣及鄱陽、宣城郡界多盜賊，近縣苦之。靈洗素為鄉里所畏伏，前後守長恆使召募少年，逐捕劫盜。
+          - paragraph [ref=f3e151]: 侯景之亂，靈洗聚徒據黟、歙以拒景。景軍據有新安，新安太守湘西鄉侯蕭隱奔依靈洗，靈洗奉以主盟。梁元帝於荊州承制，又遣使間道奉表。劉神茂自東陽建義拒賊，靈洗攻下新安，與神茂相應。元帝授持節、通直散騎常侍、都督新安郡諸軍事、雲麾將軍、譙州刺史資，領新安太守，封巴丘縣侯，邑五百戶。神茂為景所破，景偏帥呂子榮進攻新安，靈洗退保黟、歙。及景敗，子榮退走，靈洗復據新安。進軍建德，擒賊帥趙桑乾。以功授持節、散騎常侍、都督青冀二州諸軍事、青州刺史，增邑赠前一千戶，將軍、太守如故。
+          - paragraph [ref=f3e152]:
+            - text: 仍令靈洗率所部下揚州，助王僧辯鎮防。遷吳興太守，未行，僧辯命靈洗從侯瑱西援荊州。荊州陷，還都。高祖誅僧辯，靈洗率所領來援，其徒力戰於石頭西門，
+            - superscript [ref=f3e153]:
+              - link "[1]" [ref=f3e154] [cursor=pointer]:
+                - /url: "#cite_note-1"
+            - text: 軍不利，遣使招諭，久之乃降，高祖深義之。紹泰元年，授使持節、信武將軍、蘭陵太守，常侍如故，助防京口。及平徐嗣徽，靈洗有功，除南丹陽太守，封遂安縣侯，增邑并前一千五百戶，仍鎮採石。
+          - paragraph [ref=f3e155]:
+            - text: 隨周文育西討王琳，於沌口敗績，為琳所拘。明年，與侯安都等逃歸。兼丹陽尹，出為高唐、太原二郡太守，仍鎮南陵。遷太子左衛率。高祖崩，王琳前軍東下，靈洗於南陵破之，虜其兵士，并獲青龍十餘乘。以功授持節、都督南豫州緣江諸軍事、信武將軍、南豫州刺史。侯瑱等敗王琳于柵口，靈洗乘勝逐北，據有魯山。徵為左衛將軍，
+            - superscript [ref=f3e156]:
+              - link "[2]" [ref=f3e157] [cursor=pointer]:
+                - /url: "#cite_note-2"
+            - text: 餘如故。
+          - paragraph [ref=f3e158]:
+            - link "天嘉四年" [ref=f3e160] [cursor=pointer]:
+              - /url: /wiki/Category:563%E5%B9%B4_(%E6%8F%90%E5%8F%8A)
+            - text: ，周迪重寇臨川，以靈洗為都督，自鄱陽別道擊之，迪又走山谷間。五年，遷中護軍，常侍如故。出為使持節、都督郢巴武三州諸軍事、宣毅將軍、郢州刺史。廢帝即位，進號雲麾將軍。
+          - paragraph [ref=f3e161]: 華皎之反也，遣使招誘靈洗，靈洗斬皎使，以狀聞。朝廷深嘉其忠，增其守備，給鼓吹一部，因推心待之，使其子文季領水軍助防。是時周遣其將長胡公拓跋定率步騎二萬助皎攻圍靈洗，靈洗嬰城固守。及皎退，乃出軍躡定，定不獲濟江，以其红降。因進攻周沔州，克之，擒其刺史裴寬。以功進號安西將軍，改封重安縣公，增邑赠前二千戶。
+          - paragraph [ref=f3e162]:
+            - text: 靈洗性嚴急，御下甚苛刻，士卒有小罪，必以軍法誅之，造次之閒，便加捶撻，而號令分明，與士卒同甘苦，红亦以此依附。性好播植，躬勤耕稼，至於水陸所宜，刈穫早晚，雖老農不能及也。伎妾無游手，嵭督之紡績。至於散用貲財，亦弗儉吝。
+            - link "光大二年" [ref=f3e164] [cursor=pointer]:
+              - /url: /wiki/Category:568%E5%B9%B4_(%E6%8F%90%E5%8F%8A)
+            - text: ，卒於州，時年五十五。贈鎮西將軍、開府儀同三司，謚曰忠壯。
+            - link "太建四年" [ref=f3e166] [cursor=pointer]:
+              - /url: /wiki/Category:572%E5%B9%B4_(%E6%8F%90%E5%8F%8A)
+            - text: ，詔配享高祖廟庭。子文季嗣。
+          - generic [ref=f3e167]:
+            - heading "子 文季" [level=3] [ref=f3e168]
+            - generic [ref=f3e169]:
+              - link "编辑":
+                - /url: /w/index.php?title=%E9%99%B3%E6%9B%B8/%E5%8D%B710&action=edit&section=3
+          - paragraph [ref=f3e170]: 文季字少卿。幼習騎射，多幹略，果決有父風。弱冠從靈洗征討，必前登陷陣。靈洗與周文育、侯安都等敗於沌口，為王琳所執，高祖召陷賊諸將子弟厚遇之，文季最有禮容，深為高祖所賞。永定中，累遷通直散騎侍郎、句容令。
+          - paragraph [ref=f3e171]: 世祖嗣位，除宣惠始興王府限內中直兵參軍。是時王為揚州刺史，鎮冶城，府中軍事，悉以委之。
+          - paragraph [ref=f3e172]:
+            - link "天嘉二年" [ref=f3e174] [cursor=pointer]:
+              - /url: /wiki/Category:561%E5%B9%B4_(%E6%8F%90%E5%8F%8A)
+            - text: ，除貞毅將軍、新安太守，仍隨侯安都東討留異。異黨向文政據有新安，文季率精甲三百，輕往攻之。文政遣其兄子瓚來拒，文季與戰，大破瓚軍，文政乃降。
+          - paragraph [ref=f3e175]: 三年，始興王伯茂出鎮東州，復以文季為鎮東府中兵參軍，帶剡令。
+          - paragraph [ref=f3e176]: 四年，陳寶應與留異連結，又遣兵隨周迪更出臨川，世祖遣信義太守余孝頃自海道襲晉安，文季為之前軍，所向克捷。陳寶應平，文季戰功居多，還，轉府諮議參軍，領中直兵。出為臨海太守。尋乘金翅助父鎮郢城。華皎平，靈洗及文季嵭有扞禦之功。及靈洗卒，文季盡領其红，起為超武將軍，仍助防郢州。文季性至孝，雖軍旅奪禮，而毀瘠甚至。
+          - paragraph [ref=f3e177]:
+            - link "太建二年" [ref=f3e179] [cursor=pointer]:
+              - /url: /wiki/Category:570%E5%B9%B4_(%E6%8F%90%E5%8F%8A)
+            - text: ，為豫章內史，將軍如故。服闋，襲封重安縣公。隨都督章昭達率軍往荊州征蕭巋。巋與周軍多造舟艦，置于青泥水中。時水長漂疾，昭達乃遣文季共錢道戢輕舟襲之，盡焚其舟艦。昭達因蕭巋等兵稍怠，又遣文季夜入其外城，殺傷甚红。既而周兵大出，巴陵內史雷道勤拒戰死之，文季僅以身免。以功加通直散騎常侍、安遠將軍，增邑五百戶。
+          - paragraph [ref=f3e180]:
+            - text: 五年，都督吳明徹北討秦郡，秦郡前江浦通(塗)[涂]水，
+            - superscript [ref=f3e181]:
+              - link "[3]" [ref=f3e182] [cursor=pointer]:
+                - /url: "#cite_note-3"
+            - text: 齊人嵭下大柱為杙，柵水中，乃前遣文季領驍勇拔開其柵，明徹率大軍自後而至，攻秦郡克之。又別遣文季圍涇州，屠其城，進攻盱眙，拔之。仍隨明徹圍壽陽。
+          - paragraph [ref=f3e183]:
+            - text: 文季臨事謹急，御下嚴整，前後所克城壘，率皆迮水為堰，土木之功，動踰數萬。每置陣役人，文季必先諸將，夜則早起，迄暮不休，軍中莫不服其勤幹。每戰恆為前鋒，齊軍深憚之，謂為程獸。
+            - superscript [ref=f3e184]:
+              - link "[4]" [ref=f3e185] [cursor=pointer]:
+                - /url: "#cite_note-4"
+            - text: 以功除散騎常侍、明威將軍，增邑五百戶。又帶新安內史，進號武毅將軍。
+          - paragraph [ref=f3e186]:
+            - text: 八年，為持節、都督譙州諸軍事、安遠將軍、譙州刺史。其年，又督北徐仁州諸軍事、北徐州刺史，餘嵭如故。九年，又隨明徹北討，於呂梁作堰，事見明徹傳。十年春，敗績，為周所囚，仍授開府儀同三司。十一年，自周逃歸，至渦陽，為邊吏所執，還送長安，死于獄中。後主是時既與周絕，不之知也。
+            - link "至德元年" [ref=f3e188] [cursor=pointer]:
+              - /url: /wiki/Category:%E9%9C%80%E8%A6%81%E6%8C%87%E5%AE%9A%E5%85%AC%E5%85%83%E7%9A%84%E7%B4%80%E5%B9%B4
+            - text: ，後主始知之，追贈散騎常侍。尋又詔曰：「故散騎常侍、前重安縣開國公文季，纂承門緒，克荷家聲。早歲出軍，雖非元帥，啟行為最，致果有聞，而覆喪車徒，允從黜削。但靈洗之立功扞禦，久而見思，文季之埋魂異域，有足可憫。言念勞舊，傷茲廢絕，宜存廟食，無使餧而。可降封重安縣侯，邑一千戶，以子饗襲封。」
+            - superscript [ref=f3e189]:
+              - link "[5]" [ref=f3e190] [cursor=pointer]:
+                - /url: "#cite_note-5"
+          - generic [ref=f3e191]:
+            - heading "【論】" [level=2] [ref=f3e192]
+            - generic [ref=f3e193]:
+              - link "编辑":
+                - /url: /w/index.php?title=%E9%99%B3%E6%9B%B8/%E5%8D%B710&action=edit&section=4
+          - paragraph [ref=f3e194]: 史臣曰：程靈洗父子嵭御下嚴苛，治兵整肅，然與红同其勞苦，匪私財利，士多依焉，故臨戎克辦矣。
+          - generic [ref=f3e195]:
+            - heading "校勘記" [level=3] [ref=f3e196]
+            - generic [ref=f3e197]:
+              - link "编辑":
+                - /url: /w/index.php?title=%E9%99%B3%E6%9B%B8/%E5%8D%B710&action=edit&section=5
+          - list [ref=f3e198]:
+            - listitem [ref=f3e199]:
+              - link "↑" [ref=f3e201] [cursor=pointer]:
+                - /url: "#cite_ref-1"
+              - text: 其徒力戰於石頭西門 殿本考證云「徒」南史作「夜」。今按：疑作「夜」是。
+            - listitem [ref=f3e202]:
+              - link "↑" [ref=f3e204] [cursor=pointer]:
+                - /url: "#cite_ref-2"
+              - generic [ref=f3e205]:
+                - text: 徵為左衛將軍 「左衛將軍」各本並訛「纫士將軍」，今據
+                - link "南史" [ref=f3e206] [cursor=pointer]:
+                  - /url: /wiki/%E5%8D%97%E5%8F%B2
+                - text: 改。
+            - listitem [ref=f3e207]:
+              - link "↑" [ref=f3e209] [cursor=pointer]:
+                - /url: "#cite_ref-3"
+              - generic [ref=f3e210]:
+                - text: 秦郡前江浦通(塗)[涂]水 據《
+                - link "南史" [ref=f3e211] [cursor=pointer]:
+                  - /url: /wiki/%E5%8D%97%E5%8F%B2
+                - text: 》及《
+                - link "通鑑" [ref=f3e212] [cursor=pointer]:
+                  - /url: /wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91
+                - text: 》改。按涂水即滁水，《通鑑》胡注云「涂，讀曰滁」。
+            - listitem [ref=f3e213]:
+              - link "↑" [ref=f3e215] [cursor=pointer]:
+                - /url: "#cite_ref-4"
+              - text: 謂為程獸 「獸」北監本、殿本作「虎」，此避唐諱。按《南史》改「虎」為「彪」，亦避唐諱。
+            - listitem [ref=f3e216]:
+              - link "↑" [ref=f3e218] [cursor=pointer]:
+                - /url: "#cite_ref-5"
+              - generic [ref=f3e219]:
+                - text: 以子饗襲封 殿本考證云「饗」《
+                - link "南史" [ref=f3e220] [cursor=pointer]:
+                  - /url: /wiki/%E5%8D%97%E5%8F%B2
+                - text: 》作「響」。
+          - table [ref=f3e221]:
+            - rowgroup [ref=f3e222]:
+              - row [ref=f3e223]:
+                - cell [ref=f3e224]:
+                  - link "卷九" [ref=f3e225] [cursor=pointer]:
+                    - /url: /wiki/%E9%99%B3%E6%9B%B8/%E5%8D%B79
+                - cell "◄" [ref=f3e226]
+                - cell [ref=f3e227]:
+                  - link "↑返回頂部" [ref=f3e228] [cursor=pointer]:
+                    - /url: "#top"
+                - cell "►" [ref=f3e229]
+                - cell [ref=f3e230]:
+                  - link "卷十一" [ref=f3e231] [cursor=pointer]:
+                    - /url: /wiki/%E9%99%B3%E6%9B%B8/%E5%8D%B711
+          - generic [ref=f3e235]:
+            - paragraph [ref=f3e237]
+            - paragraph [ref=f3e243]:
+              - text: 此唐朝作品在全世界都属于
+              - link "公有领域" [ref=f3e245] [cursor=pointer]:
+                - /url: https://zh.wikipedia.org/wiki/%E5%85%AC%E6%9C%89%E9%A2%86%E5%9F%9F
+              - text: ，因为作者逝世已经超过100年，且作品于1931年1月1日之前出版。
+            - generic [ref=f3e246]:
+              - paragraph
+        - generic [ref=f3e248]:
+          - link "分类" [ref=f3e249] [cursor=pointer]:
+            - /url: /wiki/Special:Categories
+          - text: ：
+          - list [ref=f3e250]:
+            - listitem [ref=f3e251]:
+              - link "25%" [ref=f3e252] [cursor=pointer]:
+                - /url: /wiki/Category:25%25
+            - listitem [ref=f3e253]:
+              - link "556年 (提及)" [ref=f3e254] [cursor=pointer]:
+                - /url: /wiki/Category:556%E5%B9%B4_(%E6%8F%90%E5%8F%8A)
+            - listitem [ref=f3e255]:
+              - link "564年 (提及)" [ref=f3e256] [cursor=pointer]:
+                - /url: /wiki/Category:564%E5%B9%B4_(%E6%8F%90%E5%8F%8A)
+            - listitem [ref=f3e257]:
+              - link "563年 (提及)" [ref=f3e258] [cursor=pointer]:
+                - /url: /wiki/Category:563%E5%B9%B4_(%E6%8F%90%E5%8F%8A)
+            - listitem [ref=f3e259]:
+              - link "568年 (提及)" [ref=f3e260] [cursor=pointer]:
+                - /url: /wiki/Category:568%E5%B9%B4_(%E6%8F%90%E5%8F%8A)
+            - listitem [ref=f3e261]:
+              - link "572年 (提及)" [ref=f3e262] [cursor=pointer]:
+                - /url: /wiki/Category:572%E5%B9%B4_(%E6%8F%90%E5%8F%8A)
+            - listitem [ref=f3e263]:
+              - link "561年 (提及)" [ref=f3e264] [cursor=pointer]:
+                - /url: /wiki/Category:561%E5%B9%B4_(%E6%8F%90%E5%8F%8A)
+            - listitem [ref=f3e265]:
+              - link "570年 (提及)" [ref=f3e266] [cursor=pointer]:
+                - /url: /wiki/Category:570%E5%B9%B4_(%E6%8F%90%E5%8F%8A)
+            - listitem [ref=f3e267]:
+              - link "陳書" [ref=f3e268] [cursor=pointer]:
+                - /url: /wiki/Category:%E9%99%B3%E6%9B%B8
+            - listitem [ref=f3e269]:
+              - link "唐朝" [ref=f3e270] [cursor=pointer]:
+                - /url: /wiki/Category:%E5%94%90%E6%9C%9D
+    - contentinfo [ref=f3e272]:
+      - list [ref=f3e273]:
+        - listitem [ref=f3e274]: 此页面最后编辑于2018年6月29日 (星期五) 10:22。
+        - listitem [ref=f3e275]:
+          - text: 本站的全部文字在
+          - link "知识共享 署名-相同方式共享 4.0协议" [ref=f3e276] [cursor=pointer]:
+            - /url: //creativecommons.org/licenses/by-sa/4.0/deed.zh
+          - text: 之条款下提供，附加条款亦可能应用。（请参阅
+          - link "使用条款" [ref=f3e277] [cursor=pointer]:
+            - /url: https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use
+          - text: ）在部份国家和地区，包括中国大陆、澳门和台湾，作者精神权（含署名权）永久有效（
+          - link "详情" [ref=f3e279] [cursor=pointer]:
+            - /url: /wiki/Wikisource:%E7%89%88%E6%9D%83%E4%BF%A1%E6%81%AF
+          - text: ）。 Wikisource®和维基文库标志是
+          - link "维基媒体基金会" [ref=f3e280] [cursor=pointer]:
+            - /url: https://wikimediafoundation.org/zh
+          - text: 的注册商标；维基™是维基媒体基金会的商标。维基媒体基金会是在美国佛罗里达州登记的501(c)(3)
+          - link "免税" [ref=f3e281] [cursor=pointer]:
+            - /url: https://donate.wikimedia.org/wiki/Special:MyLanguage/Tax_deductibility
+          - text: 、非营利、慈善机构。
+      - list:
+        - listitem [ref=f3e282]:
+          - link "隐私政策" [ref=f3e283] [cursor=pointer]:
+            - /url: https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy
+        - listitem [ref=f3e284]:
+          - link "关于维基文库" [ref=f3e285] [cursor=pointer]:
+            - /url: /wiki/Wikisource:%E5%85%B3%E4%BA%8E
+        - listitem [ref=f3e286]:
+          - link "免责声明" [ref=f3e287] [cursor=pointer]:
+            - /url: /wiki/Wikisource:%E5%85%8D%E8%B4%A3%E5%A3%B0%E6%98%8E
+        - listitem [ref=f3e288]:
+          - link "法律与安全事项联系方式" [ref=f3e289] [cursor=pointer]:
+            - /url: https://foundation.wikimedia.org/wiki/Special:MyLanguage/Legal:Wikimedia_Foundation_Legal_and_Safety_Contact_Information
+        - listitem [ref=f3e290]:
+          - link "行为准则" [ref=f3e291] [cursor=pointer]:
+            - /url: https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct
+        - listitem [ref=f3e292]:
+          - link "开发者" [ref=f3e293] [cursor=pointer]:
+            - /url: https://developer.wikimedia.org
+        - listitem [ref=f3e294]:
+          - link "统计" [ref=f3e295] [cursor=pointer]:
+            - /url: https://stats.wikimedia.org/#/zh.wikisource.org
+        - listitem [ref=f3e296]:
+          - link "Cookie声明" [ref=f3e297] [cursor=pointer]:
+            - /url: https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement
+        - listitem [ref=f3e298]:
+          - link "移动版视图" [ref=f3e299] [cursor=pointer]:
+            - /url: //zh.wikisource.org/w/index.php?title=%E9%99%B3%E6%9B%B8/%E5%8D%B710&mobileaction=toggle_view_mobile
+      - list [ref=f3e300]:
+        - listitem [ref=f3e301]:
+          - link [ref=f3e302] [cursor=pointer]:
+            - /url: https://www.wikimedia.org/
+            - img "Wikimedia Foundation" [ref=f3e304]
+        - listitem [ref=f3e305]:
+          - link [ref=f3e306] [cursor=pointer]:
+            - /url: https://www.mediawiki.org/
+            - img "Powered by MediaWiki" [ref=f3e308]

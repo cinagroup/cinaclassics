@@ -1,0 +1,1949 @@
+- generic [active] [ref=f33e1]:
+  - banner [ref=f33e2]:
+    - generic [ref=f33e4]:
+      - generic [ref=f33e5]:
+        - link [ref=f33e6] [cursor=pointer]:
+          - /url: /
+          - img "汉语国学" [ref=f33e7]
+        - link "•汉语字典" [ref=f33e8] [cursor=pointer]:
+          - /url: /zidian/
+      - generic [ref=f33e9]:
+        - link "字典" [ref=f33e10] [cursor=pointer]:
+          - /url: /zidian/
+        - link "成语" [ref=f33e11] [cursor=pointer]:
+          - /url: /chengyu/
+        - link "词典" [ref=f33e12] [cursor=pointer]:
+          - /url: /cidian/
+        - link "组词" [ref=f33e13] [cursor=pointer]:
+          - /url: /zuci/
+        - link "拼音" [ref=f33e14] [cursor=pointer]:
+          - /url: /pinyin/
+        - link "近义词" [ref=f33e15] [cursor=pointer]:
+          - /url: /jinyici/
+        - link "反义词" [ref=f33e16] [cursor=pointer]:
+          - /url: /fanyici/
+      - generic [ref=f33e17]:
+        - button "" [ref=f33e18] [cursor=pointer]
+        - button "light" [ref=f33e20] [cursor=pointer]
+        - button "" [ref=f33e32] [cursor=pointer]
+        - button "更多" [ref=f33e34] [cursor=pointer]
+  - text:  
+  - generic [ref=f33e41]:
+    - link "" [ref=f33e42] [cursor=pointer]:
+      - /url: javascript:;
+    - navigation [ref=f33e44]:
+      - list [ref=f33e45]:
+        - listitem [ref=f33e46]:
+          - link " 首页" [ref=f33e47] [cursor=pointer]:
+            - /url: /
+            - generic [ref=f33e48]: 
+            - text: 首页
+        - listitem [ref=f33e49]:
+          - link "汉语字典" [ref=f33e50] [cursor=pointer]:
+            - /url: /zidian/
+        - listitem [ref=f33e51]:
+          - heading "按部首查字" [level=1] [ref=f33e52]
+  - generic [ref=f33e54]:
+    - generic [ref=f33e55]:
+      - generic [ref=f33e56]:
+        - list [ref=f33e57]:
+          - listitem [ref=f33e58]:
+            - link "笔画查字" [ref=f33e59] [cursor=pointer]:
+              - /url: /zidian/bihua
+          - listitem [ref=f33e60]:
+            - link "拼音查字" [ref=f33e61] [cursor=pointer]:
+              - /url: /zidian/pinyin
+          - listitem [ref=f33e62]:
+            - link "部首查字" [ref=f33e63] [cursor=pointer]:
+              - /url: /zidian/bushou
+        - generic [ref=f33e64]:
+          - heading "部首查字" [level=2] [ref=f33e65]
+          - paragraph [ref=f33e66]: （共 298 个部首）
+          - paragraph [ref=f33e67]:
+            - strong [ref=f33e68]: 部首
+            - text: 是汉语字典的排序方式之一，可以极大的提高查字效率。部首也是偏旁，但偏旁不全是部首。汉语国学网的汉语字典对简繁汉字的部首采取兼收并取，整理了298个部首，按部首的笔画数从小到大分组排序。
+        - generic [ref=f33e69]:
+          - heading "部首笔画数索引" [level=2] [ref=f33e70]
+          - generic [ref=f33e72]:
+            - link "1画" [ref=f33e73] [cursor=pointer]:
+              - /url: "#bihua_1"
+            - link "2画" [ref=f33e74] [cursor=pointer]:
+              - /url: "#bihua_2"
+            - link "3画" [ref=f33e75] [cursor=pointer]:
+              - /url: "#bihua_3"
+            - link "4画" [ref=f33e76] [cursor=pointer]:
+              - /url: "#bihua_4"
+            - link "5画" [ref=f33e77] [cursor=pointer]:
+              - /url: "#bihua_5"
+            - link "6画" [ref=f33e78] [cursor=pointer]:
+              - /url: "#bihua_6"
+            - link "7画" [ref=f33e79] [cursor=pointer]:
+              - /url: "#bihua_7"
+            - link "8画" [ref=f33e80] [cursor=pointer]:
+              - /url: "#bihua_8"
+            - link "9画" [ref=f33e81] [cursor=pointer]:
+              - /url: "#bihua_9"
+            - link "10画" [ref=f33e82] [cursor=pointer]:
+              - /url: "#bihua_10"
+            - link "11画" [ref=f33e83] [cursor=pointer]:
+              - /url: "#bihua_11"
+            - link "12画" [ref=f33e84] [cursor=pointer]:
+              - /url: "#bihua_12"
+            - link "13画" [ref=f33e85] [cursor=pointer]:
+              - /url: "#bihua_13"
+            - link "14画" [ref=f33e86] [cursor=pointer]:
+              - /url: "#bihua_14"
+            - link "15画" [ref=f33e87] [cursor=pointer]:
+              - /url: "#bihua_15"
+            - link "16画" [ref=f33e88] [cursor=pointer]:
+              - /url: "#bihua_16"
+            - link "17画" [ref=f33e89] [cursor=pointer]:
+              - /url: "#bihua_17"
+        - generic [ref=f33e90]:
+          - generic [ref=f33e91]:
+            - heading [level=3] [ref=f33e93]:
+              - link "#1画" [ref=f33e94] [cursor=pointer]:
+                - /url: "#bihua_1"
+            - list [ref=f33e96]:
+              - listitem [ref=f33e97]:
+                - link "一" [ref=f33e98] [cursor=pointer]:
+                  - /url: /zidian/bushou-19968
+              - listitem [ref=f33e99]:
+                - link "丨" [ref=f33e100] [cursor=pointer]:
+                  - /url: /zidian/bushou-20008
+              - listitem [ref=f33e101]:
+                - link "丿" [ref=f33e102] [cursor=pointer]:
+                  - /url: /zidian/bushou-20031
+              - listitem [ref=f33e103]:
+                - link "丶" [ref=f33e104] [cursor=pointer]:
+                  - /url: /zidian/bushou-20022
+              - listitem [ref=f33e105]:
+                - link "乛" [ref=f33e106] [cursor=pointer]:
+                  - /url: /zidian/bushou-20059
+              - listitem [ref=f33e107]:
+                - link "㇕" [ref=f33e108] [cursor=pointer]:
+                  - /url: /zidian/bushou-12757
+              - listitem [ref=f33e109]:
+                - link "⺄" [ref=f33e110] [cursor=pointer]:
+                  - /url: /zidian/bushou-11908
+              - listitem [ref=f33e111]:
+                - link "乚" [ref=f33e112] [cursor=pointer]:
+                  - /url: /zidian/bushou-20058
+              - listitem [ref=f33e113]:
+                - link "乙" [ref=f33e114] [cursor=pointer]:
+                  - /url: /zidian/bushou-20057
+              - listitem [ref=f33e115]:
+                - link "亅" [ref=f33e116] [cursor=pointer]:
+                  - /url: /zidian/bushou-20101
+          - generic [ref=f33e117]:
+            - heading [level=3] [ref=f33e119]:
+              - link "#2画" [ref=f33e120] [cursor=pointer]:
+                - /url: "#bihua_2"
+            - list [ref=f33e122]:
+              - listitem [ref=f33e123]:
+                - link "㔾" [ref=f33e124] [cursor=pointer]:
+                  - /url: /zidian/bushou-13630
+              - listitem [ref=f33e125]:
+                - link "廴" [ref=f33e126] [cursor=pointer]:
+                  - /url: /zidian/bushou-24308
+              - listitem [ref=f33e127]:
+                - link "讠" [ref=f33e128] [cursor=pointer]:
+                  - /url: /zidian/bushou-35744
+              - listitem [ref=f33e129]:
+                - link "阝" [ref=f33e130] [cursor=pointer]:
+                  - /url: /zidian/bushou-38429
+              - listitem [ref=f33e131]:
+                - link "又" [ref=f33e132] [cursor=pointer]:
+                  - /url: /zidian/bushou-21448
+              - listitem [ref=f33e133]:
+                - link "厶" [ref=f33e134] [cursor=pointer]:
+                  - /url: /zidian/bushou-21430
+              - listitem [ref=f33e135]:
+                - link "厂" [ref=f33e136] [cursor=pointer]:
+                  - /url: /zidian/bushou-21378
+              - listitem [ref=f33e137]:
+                - link "卩" [ref=f33e138] [cursor=pointer]:
+                  - /url: /zidian/bushou-21353
+              - listitem [ref=f33e139]:
+                - link "卜" [ref=f33e140] [cursor=pointer]:
+                  - /url: /zidian/bushou-21340
+              - listitem [ref=f33e141]:
+                - link "十" [ref=f33e142] [cursor=pointer]:
+                  - /url: /zidian/bushou-21313
+              - listitem [ref=f33e143]:
+                - link "匚" [ref=f33e144] [cursor=pointer]:
+                  - /url: /zidian/bushou-21274
+              - listitem [ref=f33e145]:
+                - link "匕" [ref=f33e146] [cursor=pointer]:
+                  - /url: /zidian/bushou-21269
+              - listitem [ref=f33e147]:
+                - link "二" [ref=f33e148] [cursor=pointer]:
+                  - /url: /zidian/bushou-20108
+              - listitem [ref=f33e149]:
+                - link "勹" [ref=f33e150] [cursor=pointer]:
+                  - /url: /zidian/bushou-21241
+              - listitem [ref=f33e151]:
+                - link "力" [ref=f33e152] [cursor=pointer]:
+                  - /url: /zidian/bushou-21147
+              - listitem [ref=f33e153]:
+                - link "刂" [ref=f33e154] [cursor=pointer]:
+                  - /url: /zidian/bushou-20994
+              - listitem [ref=f33e155]:
+                - link "刀" [ref=f33e156] [cursor=pointer]:
+                  - /url: /zidian/bushou-20992
+              - listitem [ref=f33e157]:
+                - link "凵" [ref=f33e158] [cursor=pointer]:
+                  - /url: /zidian/bushou-20981
+              - listitem [ref=f33e159]:
+                - link "几" [ref=f33e160] [cursor=pointer]:
+                  - /url: /zidian/bushou-20960
+              - listitem [ref=f33e161]:
+                - link "冫" [ref=f33e162] [cursor=pointer]:
+                  - /url: /zidian/bushou-20907
+              - listitem [ref=f33e163]:
+                - link "冖" [ref=f33e164] [cursor=pointer]:
+                  - /url: /zidian/bushou-20886
+              - listitem [ref=f33e165]:
+                - link "冂" [ref=f33e166] [cursor=pointer]:
+                  - /url: /zidian/bushou-20866
+              - listitem [ref=f33e167]:
+                - link "八" [ref=f33e168] [cursor=pointer]:
+                  - /url: /zidian/bushou-20843
+              - listitem [ref=f33e169]:
+                - link "亻" [ref=f33e170] [cursor=pointer]:
+                  - /url: /zidian/bushou-20155
+              - listitem [ref=f33e171]:
+                - link "儿" [ref=f33e172] [cursor=pointer]:
+                  - /url: /zidian/bushou-20799
+              - listitem [ref=f33e173]:
+                - link "入" [ref=f33e174] [cursor=pointer]:
+                  - /url: /zidian/bushou-20837
+              - listitem [ref=f33e175]:
+                - link "亠" [ref=f33e176] [cursor=pointer]:
+                  - /url: /zidian/bushou-20128
+              - listitem [ref=f33e177]:
+                - link "人" [ref=f33e178] [cursor=pointer]:
+                  - /url: /zidian/bushou-20154
+              - listitem [ref=f33e179]:
+                - link "丷" [ref=f33e180] [cursor=pointer]:
+                  - /url: /zidian/bushou-20023
+              - listitem [ref=f33e181]:
+                - link "⺁" [ref=f33e182] [cursor=pointer]:
+                  - /url: /zidian/bushou-11905
+              - listitem [ref=f33e183]:
+                - link "⺈" [ref=f33e184] [cursor=pointer]:
+                  - /url: /zidian/bushou-11912
+          - generic [ref=f33e185]:
+            - heading [level=3] [ref=f33e187]:
+              - link "#3画" [ref=f33e188] [cursor=pointer]:
+                - /url: "#bihua_3"
+            - list [ref=f33e190]:
+              - listitem [ref=f33e191]:
+                - link "扌" [ref=f33e192] [cursor=pointer]:
+                  - /url: /zidian/bushou-25164
+              - listitem [ref=f33e193]:
+                - link "马" [ref=f33e194] [cursor=pointer]:
+                  - /url: /zidian/bushou-39532
+              - listitem [ref=f33e195]:
+                - link "饣" [ref=f33e196] [cursor=pointer]:
+                  - /url: /zidian/bushou-39267
+              - listitem [ref=f33e197]:
+                - link "飞" [ref=f33e198] [cursor=pointer]:
+                  - /url: /zidian/bushou-39134
+              - listitem [ref=f33e199]:
+                - link "门" [ref=f33e200] [cursor=pointer]:
+                  - /url: /zidian/bushou-38376
+              - listitem [ref=f33e201]:
+                - link "辶" [ref=f33e202] [cursor=pointer]:
+                  - /url: /zidian/bushou-36790
+              - listitem [ref=f33e203]:
+                - link "艹" [ref=f33e204] [cursor=pointer]:
+                  - /url: /zidian/bushou-33401
+              - listitem [ref=f33e205]:
+                - link "犭" [ref=f33e206] [cursor=pointer]:
+                  - /url: /zidian/bushou-29357
+              - listitem [ref=f33e207]:
+                - link "纟" [ref=f33e208] [cursor=pointer]:
+                  - /url: /zidian/bushou-32415
+              - listitem [ref=f33e209]:
+                - link "氵" [ref=f33e210] [cursor=pointer]:
+                  - /url: /zidian/bushou-27701
+              - listitem [ref=f33e211]:
+                - link "忄" [ref=f33e212] [cursor=pointer]:
+                  - /url: /zidian/bushou-24516
+              - listitem [ref=f33e213]:
+                - link "川" [ref=f33e214] [cursor=pointer]:
+                  - /url: /zidian/bushou-24029
+              - listitem [ref=f33e215]:
+                - link "彳" [ref=f33e216] [cursor=pointer]:
+                  - /url: /zidian/bushou-24435
+              - listitem [ref=f33e217]:
+                - link "彡" [ref=f33e218] [cursor=pointer]:
+                  - /url: /zidian/bushou-24417
+              - listitem [ref=f33e219]:
+                - link "弓" [ref=f33e220] [cursor=pointer]:
+                  - /url: /zidian/bushou-24339
+              - listitem [ref=f33e221]:
+                - link "彐" [ref=f33e222] [cursor=pointer]:
+                  - /url: /zidian/bushou-24400
+              - listitem [ref=f33e223]:
+                - link "彑" [ref=f33e224] [cursor=pointer]:
+                  - /url: /zidian/bushou-24401
+              - listitem [ref=f33e225]:
+                - link "弋" [ref=f33e226] [cursor=pointer]:
+                  - /url: /zidian/bushou-24331
+              - listitem [ref=f33e227]:
+                - link "廾" [ref=f33e228] [cursor=pointer]:
+                  - /url: /zidian/bushou-24318
+              - listitem [ref=f33e229]:
+                - link "广" [ref=f33e230] [cursor=pointer]:
+                  - /url: /zidian/bushou-24191
+              - listitem [ref=f33e231]:
+                - link "幺" [ref=f33e232] [cursor=pointer]:
+                  - /url: /zidian/bushou-24186
+              - listitem [ref=f33e233]:
+                - link "干" [ref=f33e234] [cursor=pointer]:
+                  - /url: /zidian/bushou-24178
+              - listitem [ref=f33e235]:
+                - link "巾" [ref=f33e236] [cursor=pointer]:
+                  - /url: /zidian/bushou-24062
+              - listitem [ref=f33e237]:
+                - link "巳" [ref=f33e238] [cursor=pointer]:
+                  - /url: /zidian/bushou-24051
+              - listitem [ref=f33e239]:
+                - link "已" [ref=f33e240] [cursor=pointer]:
+                  - /url: /zidian/bushou-24050
+              - listitem [ref=f33e241]:
+                - link "己" [ref=f33e242] [cursor=pointer]:
+                  - /url: /zidian/bushou-24049
+              - listitem [ref=f33e243]:
+                - link "工" [ref=f33e244] [cursor=pointer]:
+                  - /url: /zidian/bushou-24037
+              - listitem [ref=f33e245]:
+                - link "巛" [ref=f33e246] [cursor=pointer]:
+                  - /url: /zidian/bushou-24027
+              - listitem [ref=f33e247]:
+                - link "屮" [ref=f33e248] [cursor=pointer]:
+                  - /url: /zidian/bushou-23662
+              - listitem [ref=f33e249]:
+                - link "山" [ref=f33e250] [cursor=pointer]:
+                  - /url: /zidian/bushou-23665
+              - listitem [ref=f33e251]:
+                - link "尸" [ref=f33e252] [cursor=pointer]:
+                  - /url: /zidian/bushou-23608
+              - listitem [ref=f33e253]:
+                - link "小" [ref=f33e254] [cursor=pointer]:
+                  - /url: /zidian/bushou-23567
+              - listitem [ref=f33e255]:
+                - link "兀" [ref=f33e256] [cursor=pointer]:
+                  - /url: /zidian/bushou-20800
+              - listitem [ref=f33e257]:
+                - link "尢" [ref=f33e258] [cursor=pointer]:
+                  - /url: /zidian/bushou-23586
+              - listitem [ref=f33e259]:
+                - link "宀" [ref=f33e260] [cursor=pointer]:
+                  - /url: /zidian/bushou-23424
+              - listitem [ref=f33e261]:
+                - link "寸" [ref=f33e262] [cursor=pointer]:
+                  - /url: /zidian/bushou-23544
+              - listitem [ref=f33e263]:
+                - link "子" [ref=f33e264] [cursor=pointer]:
+                  - /url: /zidian/bushou-23376
+              - listitem [ref=f33e265]:
+                - link "女" [ref=f33e266] [cursor=pointer]:
+                  - /url: /zidian/bushou-22899
+              - listitem [ref=f33e267]:
+                - link "大" [ref=f33e268] [cursor=pointer]:
+                  - /url: /zidian/bushou-22823
+              - listitem [ref=f33e269]:
+                - link "夕" [ref=f33e270] [cursor=pointer]:
+                  - /url: /zidian/bushou-22805
+              - listitem [ref=f33e271]:
+                - link "夂" [ref=f33e272] [cursor=pointer]:
+                  - /url: /zidian/bushou-22786
+              - listitem [ref=f33e273]:
+                - link "士" [ref=f33e274] [cursor=pointer]:
+                  - /url: /zidian/bushou-22763
+              - listitem [ref=f33e275]:
+                - link "口" [ref=f33e276] [cursor=pointer]:
+                  - /url: /zidian/bushou-21475
+              - listitem [ref=f33e277]:
+                - link "囗" [ref=f33e278] [cursor=pointer]:
+                  - /url: /zidian/bushou-22231
+              - listitem [ref=f33e279]:
+                - link "土" [ref=f33e280] [cursor=pointer]:
+                  - /url: /zidian/bushou-22303
+              - listitem [ref=f33e281]:
+                - link "丬" [ref=f33e282] [cursor=pointer]:
+                  - /url: /zidian/bushou-20012
+              - listitem [ref=f33e283]:
+                - link "⺌" [ref=f33e284] [cursor=pointer]:
+                  - /url: /zidian/bushou-11916
+          - generic [ref=f33e285]:
+            - heading [level=3] [ref=f33e287]:
+              - link "#4画" [ref=f33e288] [cursor=pointer]:
+                - /url: "#bihua_4"
+            - list [ref=f33e290]:
+              - listitem [ref=f33e291]:
+                - link "风" [ref=f33e292] [cursor=pointer]:
+                  - /url: /zidian/bushou-39118
+              - listitem [ref=f33e293]:
+                - link "韦" [ref=f33e294] [cursor=pointer]:
+                  - /url: /zidian/bushou-38886
+              - listitem [ref=f33e295]:
+                - link "车" [ref=f33e296] [cursor=pointer]:
+                  - /url: /zidian/bushou-36710
+              - listitem [ref=f33e297]:
+                - link "贝" [ref=f33e298] [cursor=pointer]:
+                  - /url: /zidian/bushou-36125
+              - listitem [ref=f33e299]:
+                - link "见" [ref=f33e300] [cursor=pointer]:
+                  - /url: /zidian/bushou-35265
+              - listitem [ref=f33e301]:
+                - link "肀" [ref=f33e302] [cursor=pointer]:
+                  - /url: /zidian/bushou-32896
+              - listitem [ref=f33e303]:
+                - link "罓" [ref=f33e304] [cursor=pointer]:
+                  - /url: /zidian/bushou-32595
+              - listitem [ref=f33e305]:
+                - link "耂" [ref=f33e306] [cursor=pointer]:
+                  - /url: /zidian/bushou-32770
+              - listitem [ref=f33e307]:
+                - link "礻" [ref=f33e308] [cursor=pointer]:
+                  - /url: /zidian/bushou-31035
+              - listitem [ref=f33e309]:
+                - link "瓦" [ref=f33e310] [cursor=pointer]:
+                  - /url: /zidian/bushou-29926
+              - listitem [ref=f33e311]:
+                - link "王" [ref=f33e312] [cursor=pointer]:
+                  - /url: /zidian/bushou-29579
+              - listitem [ref=f33e313]:
+                - link "犬" [ref=f33e314] [cursor=pointer]:
+                  - /url: /zidian/bushou-29356
+              - listitem [ref=f33e315]:
+                - link "牛" [ref=f33e316] [cursor=pointer]:
+                  - /url: /zidian/bushou-29275
+              - listitem [ref=f33e317]:
+                - link "牙" [ref=f33e318] [cursor=pointer]:
+                  - /url: /zidian/bushou-29273
+              - listitem [ref=f33e319]:
+                - link "片" [ref=f33e320] [cursor=pointer]:
+                  - /url: /zidian/bushou-29255
+              - listitem [ref=f33e321]:
+                - link "爿" [ref=f33e322] [cursor=pointer]:
+                  - /url: /zidian/bushou-29247
+              - listitem [ref=f33e323]:
+                - link "爻" [ref=f33e324] [cursor=pointer]:
+                  - /url: /zidian/bushou-29243
+              - listitem [ref=f33e325]:
+                - link "父" [ref=f33e326] [cursor=pointer]:
+                  - /url: /zidian/bushou-29238
+              - listitem [ref=f33e327]:
+                - link "爪" [ref=f33e328] [cursor=pointer]:
+                  - /url: /zidian/bushou-29226
+              - listitem [ref=f33e329]:
+                - link "爫" [ref=f33e330] [cursor=pointer]:
+                  - /url: /zidian/bushou-29227
+              - listitem [ref=f33e331]:
+                - link "灬" [ref=f33e332] [cursor=pointer]:
+                  - /url: /zidian/bushou-28780
+              - listitem [ref=f33e333]:
+                - link "厄" [ref=f33e334] [cursor=pointer]:
+                  - /url: /zidian/bushou-21380
+              - listitem [ref=f33e335]:
+                - link "火" [ref=f33e336] [cursor=pointer]:
+                  - /url: /zidian/bushou-28779
+              - listitem [ref=f33e337]:
+                - link "水" [ref=f33e338] [cursor=pointer]:
+                  - /url: /zidian/bushou-27700
+              - listitem [ref=f33e339]:
+                - link "气" [ref=f33e340] [cursor=pointer]:
+                  - /url: /zidian/bushou-27668
+              - listitem [ref=f33e341]:
+                - link "氏" [ref=f33e342] [cursor=pointer]:
+                  - /url: /zidian/bushou-27663
+              - listitem [ref=f33e343]:
+                - link "毛" [ref=f33e344] [cursor=pointer]:
+                  - /url: /zidian/bushou-27611
+              - listitem [ref=f33e345]:
+                - link "比" [ref=f33e346] [cursor=pointer]:
+                  - /url: /zidian/bushou-27604
+              - listitem [ref=f33e347]:
+                - link "毋" [ref=f33e348] [cursor=pointer]:
+                  - /url: /zidian/bushou-27595
+              - listitem [ref=f33e349]:
+                - link "殳" [ref=f33e350] [cursor=pointer]:
+                  - /url: /zidian/bushou-27571
+              - listitem [ref=f33e351]:
+                - link "歹" [ref=f33e352] [cursor=pointer]:
+                  - /url: /zidian/bushou-27513
+              - listitem [ref=f33e353]:
+                - link "止" [ref=f33e354] [cursor=pointer]:
+                  - /url: /zidian/bushou-27490
+              - listitem [ref=f33e355]:
+                - link "朩" [ref=f33e356] [cursor=pointer]:
+                  - /url: /zidian/bushou-26409
+              - listitem [ref=f33e357]:
+                - link "欠" [ref=f33e358] [cursor=pointer]:
+                  - /url: /zidian/bushou-27424
+              - listitem [ref=f33e359]:
+                - link "木" [ref=f33e360] [cursor=pointer]:
+                  - /url: /zidian/bushou-26408
+              - listitem [ref=f33e361]:
+                - link "月" [ref=f33e362] [cursor=pointer]:
+                  - /url: /zidian/bushou-26376
+              - listitem [ref=f33e363]:
+                - link "日" [ref=f33e364] [cursor=pointer]:
+                  - /url: /zidian/bushou-26085
+              - listitem [ref=f33e365]:
+                - link "旡" [ref=f33e366] [cursor=pointer]:
+                  - /url: /zidian/bushou-26081
+              - listitem [ref=f33e367]:
+                - link "方" [ref=f33e368] [cursor=pointer]:
+                  - /url: /zidian/bushou-26041
+              - listitem [ref=f33e369]:
+                - link "斤" [ref=f33e370] [cursor=pointer]:
+                  - /url: /zidian/bushou-26020
+              - listitem [ref=f33e371]:
+                - link "斗" [ref=f33e372] [cursor=pointer]:
+                  - /url: /zidian/bushou-26007
+              - listitem [ref=f33e373]:
+                - link "文" [ref=f33e374] [cursor=pointer]:
+                  - /url: /zidian/bushou-25991
+              - listitem [ref=f33e375]:
+                - link "攵" [ref=f33e376] [cursor=pointer]:
+                  - /url: /zidian/bushou-25909
+              - listitem [ref=f33e377]:
+                - link "攴" [ref=f33e378] [cursor=pointer]:
+                  - /url: /zidian/bushou-25908
+              - listitem [ref=f33e379]:
+                - link "支" [ref=f33e380] [cursor=pointer]:
+                  - /url: /zidian/bushou-25903
+              - listitem [ref=f33e381]:
+                - link "手" [ref=f33e382] [cursor=pointer]:
+                  - /url: /zidian/bushou-25163
+              - listitem [ref=f33e383]:
+                - link "户" [ref=f33e384] [cursor=pointer]:
+                  - /url: /zidian/bushou-25143
+              - listitem [ref=f33e385]:
+                - link "戈" [ref=f33e386] [cursor=pointer]:
+                  - /url: /zidian/bushou-25096
+              - listitem [ref=f33e387]:
+                - link "心" [ref=f33e388] [cursor=pointer]:
+                  - /url: /zidian/bushou-24515
+              - listitem [ref=f33e389]:
+                - link "尣" [ref=f33e390] [cursor=pointer]:
+                  - /url: /zidian/bushou-23587
+              - listitem [ref=f33e391]:
+                - link "⺗" [ref=f33e392] [cursor=pointer]:
+                  - /url: /zidian/bushou-11927
+              - listitem [ref=f33e393]:
+                - link "⺼" [ref=f33e394] [cursor=pointer]:
+                  - /url: /zidian/bushou-11964
+              - listitem [ref=f33e395]:
+                - link "曰" [ref=f33e396] [cursor=pointer]:
+                  - /url: /zidian/bushou-26352
+              - listitem [ref=f33e397]:
+                - link "⺿" [ref=f33e398] [cursor=pointer]:
+                  - /url: /zidian/bushou-11967
+              - listitem [ref=f33e399]:
+                - link "⻍" [ref=f33e400] [cursor=pointer]:
+                  - /url: /zidian/bushou-11981
+              - listitem [ref=f33e401]:
+                - link "艹" [ref=f33e402] [cursor=pointer]:
+                  - /url: /zidian/bushou-64093
+              - listitem [ref=f33e403]:
+                - link "龵" [ref=f33e404] [cursor=pointer]:
+                  - /url: /zidian/bushou-40885
+              - listitem [ref=f33e405]:
+                - link "⺜" [ref=f33e406] [cursor=pointer]:
+                  - /url: /zidian/bushou-11932
+              - listitem [ref=f33e407]:
+                - link "无" [ref=f33e408] [cursor=pointer]:
+                  - /url: /zidian/bushou-26080
+          - generic [ref=f33e409]:
+            - heading [level=3] [ref=f33e411]:
+              - link "#5画" [ref=f33e412] [cursor=pointer]:
+                - /url: "#bihua_5"
+            - list [ref=f33e414]:
+              - listitem [ref=f33e415]:
+                - link "龙" [ref=f33e416] [cursor=pointer]:
+                  - /url: /zidian/bushou-40857
+              - listitem [ref=f33e417]:
+                - link "鸟" [ref=f33e418] [cursor=pointer]:
+                  - /url: /zidian/bushou-40479
+              - listitem [ref=f33e419]:
+                - link "钅" [ref=f33e420] [cursor=pointer]:
+                  - /url: /zidian/bushou-38021
+              - listitem [ref=f33e421]:
+                - link "衤" [ref=f33e422] [cursor=pointer]:
+                  - /url: /zidian/bushou-34916
+              - listitem [ref=f33e423]:
+                - link "罒" [ref=f33e424] [cursor=pointer]:
+                  - /url: /zidian/bushou-32594
+              - listitem [ref=f33e425]:
+                - link "立" [ref=f33e426] [cursor=pointer]:
+                  - /url: /zidian/bushou-31435
+              - listitem [ref=f33e427]:
+                - link "禾" [ref=f33e428] [cursor=pointer]:
+                  - /url: /zidian/bushou-31166
+              - listitem [ref=f33e429]:
+                - link "穴" [ref=f33e430] [cursor=pointer]:
+                  - /url: /zidian/bushou-31348
+              - listitem [ref=f33e431]:
+                - link "示" [ref=f33e432] [cursor=pointer]:
+                  - /url: /zidian/bushou-31034
+              - listitem [ref=f33e433]:
+                - link "石" [ref=f33e434] [cursor=pointer]:
+                  - /url: /zidian/bushou-30707
+              - listitem [ref=f33e435]:
+                - link "矢" [ref=f33e436] [cursor=pointer]:
+                  - /url: /zidian/bushou-30690
+              - listitem [ref=f33e437]:
+                - link "矛" [ref=f33e438] [cursor=pointer]:
+                  - /url: /zidian/bushou-30683
+              - listitem [ref=f33e439]:
+                - link "目" [ref=f33e440] [cursor=pointer]:
+                  - /url: /zidian/bushou-30446
+              - listitem [ref=f33e441]:
+                - link "皿" [ref=f33e442] [cursor=pointer]:
+                  - /url: /zidian/bushou-30399
+              - listitem [ref=f33e443]:
+                - link "皮" [ref=f33e444] [cursor=pointer]:
+                  - /url: /zidian/bushou-30382
+              - listitem [ref=f33e445]:
+                - link "白" [ref=f33e446] [cursor=pointer]:
+                  - /url: /zidian/bushou-30333
+              - listitem [ref=f33e447]:
+                - link "癶" [ref=f33e448] [cursor=pointer]:
+                  - /url: /zidian/bushou-30326
+              - listitem [ref=f33e449]:
+                - link "疒" [ref=f33e450] [cursor=pointer]:
+                  - /url: /zidian/bushou-30098
+              - listitem [ref=f33e451]:
+                - link "疋" [ref=f33e452] [cursor=pointer]:
+                  - /url: /zidian/bushou-30091
+              - listitem [ref=f33e453]:
+                - link "田" [ref=f33e454] [cursor=pointer]:
+                  - /url: /zidian/bushou-30000
+              - listitem [ref=f33e455]:
+                - link "用" [ref=f33e456] [cursor=pointer]:
+                  - /url: /zidian/bushou-29992
+              - listitem [ref=f33e457]:
+                - link "玄" [ref=f33e458] [cursor=pointer]:
+                  - /url: /zidian/bushou-29572
+              - listitem [ref=f33e459]:
+                - link "生" [ref=f33e460] [cursor=pointer]:
+                  - /url: /zidian/bushou-29983
+              - listitem [ref=f33e461]:
+                - link "四" [ref=f33e462] [cursor=pointer]:
+                  - /url: /zidian/bushou-22235
+              - listitem [ref=f33e463]:
+                - link "巨" [ref=f33e464] [cursor=pointer]:
+                  - /url: /zidian/bushou-24040
+              - listitem [ref=f33e465]:
+                - link "甘" [ref=f33e466] [cursor=pointer]:
+                  - /url: /zidian/bushou-29976
+              - listitem [ref=f33e467]:
+                - link "瓜" [ref=f33e468] [cursor=pointer]:
+                  - /url: /zidian/bushou-29916
+              - listitem [ref=f33e469]:
+                - link "玉" [ref=f33e470] [cursor=pointer]:
+                  - /url: /zidian/bushou-29577
+              - listitem [ref=f33e471]:
+                - link "氺" [ref=f33e472] [cursor=pointer]:
+                  - /url: /zidian/bushou-27706
+              - listitem [ref=f33e473]:
+                - link "母" [ref=f33e474] [cursor=pointer]:
+                  - /url: /zidian/bushou-27597
+              - listitem [ref=f33e475]:
+                - link "业" [ref=f33e476] [cursor=pointer]:
+                  - /url: /zidian/bushou-19994
+              - listitem [ref=f33e477]:
+                - link "歺" [ref=f33e478] [cursor=pointer]:
+                  - /url: /zidian/bushou-27514
+              - listitem [ref=f33e479]:
+                - link "⺻" [ref=f33e480] [cursor=pointer]:
+                  - /url: /zidian/bushou-11963
+          - generic [ref=f33e481]:
+            - heading [level=3] [ref=f33e483]:
+              - link "#6画" [ref=f33e484] [cursor=pointer]:
+                - /url: "#bihua_6"
+            - list [ref=f33e486]:
+              - listitem [ref=f33e487]:
+                - link "齐" [ref=f33e488] [cursor=pointer]:
+                  - /url: /zidian/bushou-40784
+              - listitem [ref=f33e489]:
+                - link "页" [ref=f33e490] [cursor=pointer]:
+                  - /url: /zidian/bushou-39029
+              - listitem [ref=f33e491]:
+                - link "西" [ref=f33e492] [cursor=pointer]:
+                  - /url: /zidian/bushou-35199
+              - listitem [ref=f33e493]:
+                - link "衣" [ref=f33e494] [cursor=pointer]:
+                  - /url: /zidian/bushou-34915
+              - listitem [ref=f33e495]:
+                - link "血" [ref=f33e496] [cursor=pointer]:
+                  - /url: /zidian/bushou-34880
+              - listitem [ref=f33e497]:
+                - link "虫" [ref=f33e498] [cursor=pointer]:
+                  - /url: /zidian/bushou-34411
+              - listitem [ref=f33e499]:
+                - link "虍" [ref=f33e500] [cursor=pointer]:
+                  - /url: /zidian/bushou-34381
+              - listitem [ref=f33e501]:
+                - link "艸" [ref=f33e502] [cursor=pointer]:
+                  - /url: /zidian/bushou-33400
+              - listitem [ref=f33e503]:
+                - link "色" [ref=f33e504] [cursor=pointer]:
+                  - /url: /zidian/bushou-33394
+              - listitem [ref=f33e505]:
+                - link "艮" [ref=f33e506] [cursor=pointer]:
+                  - /url: /zidian/bushou-33390
+              - listitem [ref=f33e507]:
+                - link "舟" [ref=f33e508] [cursor=pointer]:
+                  - /url: /zidian/bushou-33311
+              - listitem [ref=f33e509]:
+                - link "舌" [ref=f33e510] [cursor=pointer]:
+                  - /url: /zidian/bushou-33292
+              - listitem [ref=f33e511]:
+                - link "臼" [ref=f33e512] [cursor=pointer]:
+                  - /url: /zidian/bushou-33276
+              - listitem [ref=f33e513]:
+                - link "至" [ref=f33e514] [cursor=pointer]:
+                  - /url: /zidian/bushou-33267
+              - listitem [ref=f33e515]:
+                - link "自" [ref=f33e516] [cursor=pointer]:
+                  - /url: /zidian/bushou-33258
+              - listitem [ref=f33e517]:
+                - link "臣" [ref=f33e518] [cursor=pointer]:
+                  - /url: /zidian/bushou-33251
+              - listitem [ref=f33e519]:
+                - link "肉" [ref=f33e520] [cursor=pointer]:
+                  - /url: /zidian/bushou-32905
+              - listitem [ref=f33e521]:
+                - link "聿" [ref=f33e522] [cursor=pointer]:
+                  - /url: /zidian/bushou-32895
+              - listitem [ref=f33e523]:
+                - link "耳" [ref=f33e524] [cursor=pointer]:
+                  - /url: /zidian/bushou-32819
+              - listitem [ref=f33e525]:
+                - link "耒" [ref=f33e526] [cursor=pointer]:
+                  - /url: /zidian/bushou-32786
+              - listitem [ref=f33e527]:
+                - link "而" [ref=f33e528] [cursor=pointer]:
+                  - /url: /zidian/bushou-32780
+              - listitem [ref=f33e529]:
+                - link "行" [ref=f33e530] [cursor=pointer]:
+                  - /url: /zidian/bushou-34892
+              - listitem [ref=f33e531]:
+                - link "羽" [ref=f33e532] [cursor=pointer]:
+                  - /url: /zidian/bushou-32701
+              - listitem [ref=f33e533]:
+                - link "羊" [ref=f33e534] [cursor=pointer]:
+                  - /url: /zidian/bushou-32650
+              - listitem [ref=f33e535]:
+                - link "缶" [ref=f33e536] [cursor=pointer]:
+                  - /url: /zidian/bushou-32566
+              - listitem [ref=f33e537]:
+                - link "糹" [ref=f33e538] [cursor=pointer]:
+                  - /url: /zidian/bushou-31993
+              - listitem [ref=f33e539]:
+                - link "糸" [ref=f33e540] [cursor=pointer]:
+                  - /url: /zidian/bushou-31992
+              - listitem [ref=f33e541]:
+                - link "网" [ref=f33e542] [cursor=pointer]:
+                  - /url: /zidian/bushou-32593
+              - listitem [ref=f33e543]:
+                - link "老" [ref=f33e544] [cursor=pointer]:
+                  - /url: /zidian/bushou-32769
+              - listitem [ref=f33e545]:
+                - link "竹" [ref=f33e546] [cursor=pointer]:
+                  - /url: /zidian/bushou-31481
+              - listitem [ref=f33e547]:
+                - link "米" [ref=f33e548] [cursor=pointer]:
+                  - /url: /zidian/bushou-31859
+              - listitem [ref=f33e549]:
+                - link "⺮" [ref=f33e550] [cursor=pointer]:
+                  - /url: /zidian/bushou-11950
+              - listitem [ref=f33e551]:
+                - link "⺶" [ref=f33e552] [cursor=pointer]:
+                  - /url: /zidian/bushou-11958
+              - listitem [ref=f33e553]:
+                - link "⺷" [ref=f33e554] [cursor=pointer]:
+                  - /url: /zidian/bushou-11959
+              - listitem [ref=f33e555]:
+                - link "先" [ref=f33e556] [cursor=pointer]:
+                  - /url: /zidian/bushou-20808
+              - listitem [ref=f33e557]:
+                - link "覀" [ref=f33e558] [cursor=pointer]:
+                  - /url: /zidian/bushou-35200
+              - listitem [ref=f33e559]:
+                - link "舛" [ref=f33e560] [cursor=pointer]:
+                  - /url: /zidian/bushou-33307
+          - generic [ref=f33e561]:
+            - heading [level=3] [ref=f33e563]:
+              - link "#7画" [ref=f33e564] [cursor=pointer]:
+                - /url: "#bihua_7"
+            - list [ref=f33e566]:
+              - listitem [ref=f33e567]:
+                - link "镸" [ref=f33e568] [cursor=pointer]:
+                  - /url: /zidian/bushou-38264
+              - listitem [ref=f33e569]:
+                - link "龟" [ref=f33e570] [cursor=pointer]:
+                  - /url: /zidian/bushou-40863
+              - listitem [ref=f33e571]:
+                - link "麦" [ref=f33e572] [cursor=pointer]:
+                  - /url: /zidian/bushou-40614
+              - listitem [ref=f33e573]:
+                - link "里" [ref=f33e574] [cursor=pointer]:
+                  - /url: /zidian/bushou-37324
+              - listitem [ref=f33e575]:
+                - link "釆" [ref=f33e576] [cursor=pointer]:
+                  - /url: /zidian/bushou-37318
+              - listitem [ref=f33e577]:
+                - link "酉" [ref=f33e578] [cursor=pointer]:
+                  - /url: /zidian/bushou-37193
+              - listitem [ref=f33e579]:
+                - link "邑" [ref=f33e580] [cursor=pointer]:
+                  - /url: /zidian/bushou-37009
+              - listitem [ref=f33e581]:
+                - link "辵" [ref=f33e582] [cursor=pointer]:
+                  - /url: /zidian/bushou-36789
+              - listitem [ref=f33e583]:
+                - link "辰" [ref=f33e584] [cursor=pointer]:
+                  - /url: /zidian/bushou-36784
+              - listitem [ref=f33e585]:
+                - link "辛" [ref=f33e586] [cursor=pointer]:
+                  - /url: /zidian/bushou-36763
+              - listitem [ref=f33e587]:
+                - link "車" [ref=f33e588] [cursor=pointer]:
+                  - /url: /zidian/bushou-36554
+              - listitem [ref=f33e589]:
+                - link "身" [ref=f33e590] [cursor=pointer]:
+                  - /url: /zidian/bushou-36523
+              - listitem [ref=f33e591]:
+                - link "足" [ref=f33e592] [cursor=pointer]:
+                  - /url: /zidian/bushou-36275
+              - listitem [ref=f33e593]:
+                - link "走" [ref=f33e594] [cursor=pointer]:
+                  - /url: /zidian/bushou-36208
+              - listitem [ref=f33e595]:
+                - link "赤" [ref=f33e596] [cursor=pointer]:
+                  - /url: /zidian/bushou-36196
+              - listitem [ref=f33e597]:
+                - link "貝" [ref=f33e598] [cursor=pointer]:
+                  - /url: /zidian/bushou-35997
+              - listitem [ref=f33e599]:
+                - link "豸" [ref=f33e600] [cursor=pointer]:
+                  - /url: /zidian/bushou-35960
+              - listitem [ref=f33e601]:
+                - link "豕" [ref=f33e602] [cursor=pointer]:
+                  - /url: /zidian/bushou-35925
+              - listitem [ref=f33e603]:
+                - link "豆" [ref=f33e604] [cursor=pointer]:
+                  - /url: /zidian/bushou-35910
+              - listitem [ref=f33e605]:
+                - link "谷" [ref=f33e606] [cursor=pointer]:
+                  - /url: /zidian/bushou-35895
+              - listitem [ref=f33e607]:
+                - link "言" [ref=f33e608] [cursor=pointer]:
+                  - /url: /zidian/bushou-35328
+              - listitem [ref=f33e609]:
+                - link "克" [ref=f33e610] [cursor=pointer]:
+                  - /url: /zidian/bushou-20811
+              - listitem [ref=f33e611]:
+                - link "角" [ref=f33e612] [cursor=pointer]:
+                  - /url: /zidian/bushou-35282
+              - listitem [ref=f33e613]:
+                - link "見" [ref=f33e614] [cursor=pointer]:
+                  - /url: /zidian/bushou-35211
+              - listitem [ref=f33e615]:
+                - link "卤" [ref=f33e616] [cursor=pointer]:
+                  - /url: /zidian/bushou-21348
+          - generic [ref=f33e617]:
+            - heading [level=3] [ref=f33e619]:
+              - link "#8画" [ref=f33e620] [cursor=pointer]:
+                - /url: "#bihua_8"
+            - list [ref=f33e622]:
+              - listitem [ref=f33e623]:
+                - link "𨸏" [ref=f33e624] [cursor=pointer]:
+                  - /url: /zidian/bushou-167439
+              - listitem [ref=f33e625]:
+                - link "龺" [ref=f33e626] [cursor=pointer]:
+                  - /url: /zidian/bushou-40890
+              - listitem [ref=f33e627]:
+                - link "齿" [ref=f33e628] [cursor=pointer]:
+                  - /url: /zidian/bushou-40831
+              - listitem [ref=f33e629]:
+                - link "黾" [ref=f33e630] [cursor=pointer]:
+                  - /url: /zidian/bushou-40702
+              - listitem [ref=f33e631]:
+                - link "鱼" [ref=f33e632] [cursor=pointer]:
+                  - /url: /zidian/bushou-40060
+              - listitem [ref=f33e633]:
+                - link "飠" [ref=f33e634] [cursor=pointer]:
+                  - /url: /zidian/bushou-39136
+              - listitem [ref=f33e635]:
+                - link "靑" [ref=f33e636] [cursor=pointer]:
+                  - /url: /zidian/bushou-38737
+              - listitem [ref=f33e637]:
+                - link "青" [ref=f33e638] [cursor=pointer]:
+                  - /url: /zidian/bushou-38738
+              - listitem [ref=f33e639]:
+                - link "非" [ref=f33e640] [cursor=pointer]:
+                  - /url: /zidian/bushou-38750
+              - listitem [ref=f33e641]:
+                - link "雨" [ref=f33e642] [cursor=pointer]:
+                  - /url: /zidian/bushou-38632
+              - listitem [ref=f33e643]:
+                - link "隹" [ref=f33e644] [cursor=pointer]:
+                  - /url: /zidian/bushou-38585
+              - listitem [ref=f33e645]:
+                - link "采" [ref=f33e646] [cursor=pointer]:
+                  - /url: /zidian/bushou-37319
+              - listitem [ref=f33e647]:
+                - link "隶" [ref=f33e648] [cursor=pointer]:
+                  - /url: /zidian/bushou-38582
+              - listitem [ref=f33e649]:
+                - link "阜" [ref=f33e650] [cursor=pointer]:
+                  - /url: /zidian/bushou-38428
+              - listitem [ref=f33e651]:
+                - link "門" [ref=f33e652] [cursor=pointer]:
+                  - /url: /zidian/bushou-38272
+              - listitem [ref=f33e653]:
+                - link "長" [ref=f33e654] [cursor=pointer]:
+                  - /url: /zidian/bushou-38263
+              - listitem [ref=f33e655]:
+                - link "金" [ref=f33e656] [cursor=pointer]:
+                  - /url: /zidian/bushou-37329
+              - listitem [ref=f33e657]:
+                - link "釒" [ref=f33e658] [cursor=pointer]:
+                  - /url: /zidian/bushou-37330
+          - generic [ref=f33e659]:
+            - heading [level=3] [ref=f33e661]:
+              - link "#9画" [ref=f33e662] [cursor=pointer]:
+                - /url: "#bihua_9"
+            - list [ref=f33e664]:
+              - listitem [ref=f33e665]:
+                - link "鬼" [ref=f33e666] [cursor=pointer]:
+                  - /url: /zidian/bushou-39740
+              - listitem [ref=f33e667]:
+                - link "骨" [ref=f33e668] [cursor=pointer]:
+                  - /url: /zidian/bushou-39592
+              - listitem [ref=f33e669]:
+                - link "香" [ref=f33e670] [cursor=pointer]:
+                  - /url: /zidian/bushou-39321
+              - listitem [ref=f33e671]:
+                - link "首" [ref=f33e672] [cursor=pointer]:
+                  - /url: /zidian/bushou-39318
+              - listitem [ref=f33e673]:
+                - link "食" [ref=f33e674] [cursor=pointer]:
+                  - /url: /zidian/bushou-39135
+              - listitem [ref=f33e675]:
+                - link "風" [ref=f33e676] [cursor=pointer]:
+                  - /url: /zidian/bushou-39080
+              - listitem [ref=f33e677]:
+                - link "頁" [ref=f33e678] [cursor=pointer]:
+                  - /url: /zidian/bushou-38913
+              - listitem [ref=f33e679]:
+                - link "音" [ref=f33e680] [cursor=pointer]:
+                  - /url: /zidian/bushou-38899
+              - listitem [ref=f33e681]:
+                - link "韭" [ref=f33e682] [cursor=pointer]:
+                  - /url: /zidian/bushou-38893
+              - listitem [ref=f33e683]:
+                - link "韋" [ref=f33e684] [cursor=pointer]:
+                  - /url: /zidian/bushou-38859
+              - listitem [ref=f33e685]:
+                - link "革" [ref=f33e686] [cursor=pointer]:
+                  - /url: /zidian/bushou-38761
+              - listitem [ref=f33e687]:
+                - link "面" [ref=f33e688] [cursor=pointer]:
+                  - /url: /zidian/bushou-38754
+              - listitem [ref=f33e689]:
+                - link "飛" [ref=f33e690] [cursor=pointer]:
+                  - /url: /zidian/bushou-39131
+          - generic [ref=f33e691]:
+            - heading [level=3] [ref=f33e693]:
+              - link "#10画" [ref=f33e694] [cursor=pointer]:
+                - /url: "#bihua_10"
+            - list [ref=f33e696]:
+              - listitem [ref=f33e697]:
+                - link "鬲" [ref=f33e698] [cursor=pointer]:
+                  - /url: /zidian/bushou-39730
+              - listitem [ref=f33e699]:
+                - link "鬥" [ref=f33e700] [cursor=pointer]:
+                  - /url: /zidian/bushou-39717
+              - listitem [ref=f33e701]:
+                - link "髟" [ref=f33e702] [cursor=pointer]:
+                  - /url: /zidian/bushou-39647
+              - listitem [ref=f33e703]:
+                - link "高" [ref=f33e704] [cursor=pointer]:
+                  - /url: /zidian/bushou-39640
+              - listitem [ref=f33e705]:
+                - link "馬" [ref=f33e706] [cursor=pointer]:
+                  - /url: /zidian/bushou-39340
+          - generic [ref=f33e707]:
+            - heading [level=3] [ref=f33e709]:
+              - link "#11画" [ref=f33e710] [cursor=pointer]:
+                - /url: "#bihua_11"
+            - list [ref=f33e712]:
+              - listitem [ref=f33e713]:
+                - link "黄" [ref=f33e714] [cursor=pointer]:
+                  - /url: /zidian/bushou-40644
+              - listitem [ref=f33e715]:
+                - link "麻" [ref=f33e716] [cursor=pointer]:
+                  - /url: /zidian/bushou-40635
+              - listitem [ref=f33e717]:
+                - link "麥" [ref=f33e718] [cursor=pointer]:
+                  - /url: /zidian/bushou-40613
+              - listitem [ref=f33e719]:
+                - link "鹿" [ref=f33e720] [cursor=pointer]:
+                  - /url: /zidian/bushou-40575
+              - listitem [ref=f33e721]:
+                - link "鹵" [ref=f33e722] [cursor=pointer]:
+                  - /url: /zidian/bushou-40565
+              - listitem [ref=f33e723]:
+                - link "鳥" [ref=f33e724] [cursor=pointer]:
+                  - /url: /zidian/bushou-40165
+              - listitem [ref=f33e725]:
+                - link "魚" [ref=f33e726] [cursor=pointer]:
+                  - /url: /zidian/bushou-39770
+          - generic [ref=f33e727]:
+            - heading [level=3] [ref=f33e729]:
+              - link "#12画" [ref=f33e730] [cursor=pointer]:
+                - /url: "#bihua_12"
+            - list [ref=f33e732]:
+              - listitem [ref=f33e733]:
+                - link "鼎" [ref=f33e734] [cursor=pointer]:
+                  - /url: /zidian/bushou-40718
+              - listitem [ref=f33e735]:
+                - link "黑" [ref=f33e736] [cursor=pointer]:
+                  - /url: /zidian/bushou-40657
+              - listitem [ref=f33e737]:
+                - link "黍" [ref=f33e738] [cursor=pointer]:
+                  - /url: /zidian/bushou-40653
+              - listitem [ref=f33e739]:
+                - link "黹" [ref=f33e740] [cursor=pointer]:
+                  - /url: /zidian/bushou-40697
+          - generic [ref=f33e741]:
+            - heading [level=3] [ref=f33e743]:
+              - link "#13画" [ref=f33e744] [cursor=pointer]:
+                - /url: "#bihua_13"
+            - list [ref=f33e746]:
+              - listitem [ref=f33e747]:
+                - link "鼠" [ref=f33e748] [cursor=pointer]:
+                  - /url: /zidian/bushou-40736
+              - listitem [ref=f33e749]:
+                - link "黽" [ref=f33e750] [cursor=pointer]:
+                  - /url: /zidian/bushou-40701
+              - listitem [ref=f33e751]:
+                - link "鼓" [ref=f33e752] [cursor=pointer]:
+                  - /url: /zidian/bushou-40723
+          - generic [ref=f33e753]:
+            - heading [level=3] [ref=f33e755]:
+              - link "#14画" [ref=f33e756] [cursor=pointer]:
+                - /url: "#bihua_14"
+            - list [ref=f33e758]:
+              - listitem [ref=f33e759]:
+                - link "齊" [ref=f33e760] [cursor=pointer]:
+                  - /url: /zidian/bushou-40778
+              - listitem [ref=f33e761]:
+                - link "鼻" [ref=f33e762] [cursor=pointer]:
+                  - /url: /zidian/bushou-40763
+          - generic [ref=f33e763]:
+            - heading [level=3] [ref=f33e765]:
+              - link "#15画" [ref=f33e766] [cursor=pointer]:
+                - /url: "#bihua_15"
+            - list [ref=f33e768]:
+              - listitem [ref=f33e769]:
+                - link "齒" [ref=f33e770] [cursor=pointer]:
+                  - /url: /zidian/bushou-40786
+          - generic [ref=f33e771]:
+            - heading [level=3] [ref=f33e773]:
+              - link "#16画" [ref=f33e774] [cursor=pointer]:
+                - /url: "#bihua_16"
+            - list [ref=f33e776]:
+              - listitem [ref=f33e777]:
+                - link "龜" [ref=f33e778] [cursor=pointer]:
+                  - /url: /zidian/bushou-40860
+              - listitem [ref=f33e779]:
+                - link "龍" [ref=f33e780] [cursor=pointer]:
+                  - /url: /zidian/bushou-40845
+          - generic [ref=f33e781]:
+            - heading [level=3] [ref=f33e783]:
+              - link "#17画" [ref=f33e784] [cursor=pointer]:
+                - /url: "#bihua_17"
+            - list [ref=f33e786]:
+              - listitem [ref=f33e787]:
+                - link "龠" [ref=f33e788] [cursor=pointer]:
+                  - /url: /zidian/bushou-40864
+      - generic [ref=f33e789]:
+        - generic [ref=f33e790]:
+          - generic [ref=f33e791]: 
+          - text: 什么是部首？
+        - generic [ref=f33e792]:
+          - paragraph [ref=f33e793]: 部首是依照汉字型态和偏旁所分的门类，而所有汉字势必分类在某个部首中。
+          - paragraph [ref=f33e794]:
+            - text: 部首的概念由东汉文字学家许慎于公元100年（永元12年）所著之《
+            - link "说文解字" [ref=f33e795] [cursor=pointer]:
+              - /url: /zidian/shuowen
+            - text: 》所创，共立540个部首。从此字书一般使用部首作为汉字的检字方式。之后的许多字书模仿《说文解字》，以部首来分类汉字。如《玉篇》（542个部首）、《类篇》（540个部首）等，它们使用的部首几乎与《
+            - link "说文解字" [ref=f33e796] [cursor=pointer]:
+              - /url: /zidian/shuowen
+            - text: 》相同，不易检索的缺点仍在。
+          - paragraph [ref=f33e797]:
+            - text: 清朝康熙五十五年（1716年）成书的《
+            - link "康熙字典" [ref=f33e798] [cursor=pointer]:
+              - /url: /zidian/kangxi
+            - text: 》的共214个部首，是后来大部分字典部首的蓝本，为了方便查询，部首跟笔划区分。
+          - paragraph [ref=f33e799]: 部首原则上是表示一组文字的共通意义，部首所在位置并不固定。汉字的90%是形声字，形声字是由表示意义的“形符”与表示发音的“声符”组成的。形声字多使用意符为部首，有助于容易判断部首的部分。然而，会意字则是完全由“形符”所组成，所以难以判断何者为部首。
+          - paragraph [ref=f33e800]:
+            - text: 为求搜寻的方便，有些部首的归类与字义无关。例如按照原则，所有象形字都应该自成部首，但这样会造成很多象形文字的部首仅有这个字。所以像是“
+            - link "甲" [ref=f33e801] [cursor=pointer]:
+              - /url: /zidian/zi-30002
+            - text: ”“
+            - link "申" [ref=f33e802] [cursor=pointer]:
+              - /url: /zidian/zi-30003
+            - text: ”“
+            - link "由" [ref=f33e803] [cursor=pointer]:
+              - /url: /zidian/zi-30001
+            - text: ”这些象形字，全部归类到“
+            - link "田部" [ref=f33e804] [cursor=pointer]:
+              - /url: /zidian/bushou-30000
+            - text: ”。另外，甚至有“
+            - link "亠部" [ref=f33e805] [cursor=pointer]:
+              - /url: /zidian/bushou-20128
+            - text: ”这种原先没有的文字，专做字形分类用而制造的部首。
+          - paragraph [ref=f33e806]:
+            - text: 偏旁是部首作为左旁或右旁时的称呼。例如“
+            - link "心部" [ref=f33e807] [cursor=pointer]:
+              - /url: /zidian/bushou-24515
+            - text: ”作为左偏旁时，如“
+            - link "情" [ref=f33e808] [cursor=pointer]:
+              - /url: /zidian/zi-24773
+            - text: ”“
+            - link "性" [ref=f33e809] [cursor=pointer]:
+              - /url: /zidian/zi-24615
+            - text: ”“
+            - link "憎" [ref=f33e810] [cursor=pointer]:
+              - /url: /zidian/zi-24974
+            - text: ”，会变形为三划的“忄”(忄是汉字部首，由“心”演变而来)。又称为“
+            - link "竖心旁" [ref=f33e811] [cursor=pointer]:
+              - /url: /zidian/bushou-24516
+            - text: ”。放在文字下方时，有“
+            - link "志" [ref=f33e812] [cursor=pointer]:
+              - /url: /zidian/zi-24535
+            - text: ”“
+            - link "慕" [ref=f33e813] [cursor=pointer]:
+              - /url: /zidian/zi-24917
+            - text: ”两种外形。但这些变化都不妨碍其归入“
+            - link "心部" [ref=f33e814] [cursor=pointer]:
+              - /url: /zidian/bushou-24515
+            - text: ”。
+          - paragraph [ref=f33e815]:
+            - text: 汉语国学网的汉语字典为您提供
+            - link "汉语拼音" [ref=f33e816] [cursor=pointer]:
+              - /url: /zidian/pinyin
+            - text: 、
+            - link "偏旁部首" [ref=f33e817] [cursor=pointer]:
+              - /url: /zidian/bushou
+            - text: 、
+            - link "汉字笔画" [ref=f33e818] [cursor=pointer]:
+              - /url: /zidian/bihua
+            - text: 等不同的索引排序方式方便查字。
+      - generic [ref=f33e819]:
+        - generic [ref=f33e820]:
+          - generic [ref=f33e821]: 
+          - text: 各个部首在汉字中的占比
+        - generic [ref=f33e822]:
+          - paragraph [ref=f33e823]: 汉语国学网汉语字典中收录各类汉字94000多个，其中字数最多的是口部，共计3439个，占比3.65%，其次是木部。
+          - paragraph [ref=f33e824]:
+            - strong [ref=f33e825]: 以下是部首占比最多的统计：
+          - table [ref=f33e826]:
+            - rowgroup [ref=f33e827]:
+              - row [ref=f33e828]:
+                - columnheader "排名" [ref=f33e829]
+                - columnheader "部首" [ref=f33e830]
+                - columnheader "占比(字数)" [ref=f33e831]
+            - rowgroup [ref=f33e832]:
+              - row [ref=f33e833]:
+                - cell "1" [ref=f33e834]
+                - cell [ref=f33e835]:
+                  - link "口部" [ref=f33e836] [cursor=pointer]:
+                    - /url: /zidian/bushou-21475
+                - cell [ref=f33e837]:
+                  - generic [ref=f33e838]:
+                    - progressbar [ref=f33e839]: 3.65%
+                    - generic: "3439"
+              - row [ref=f33e840]:
+                - cell "2" [ref=f33e841]
+                - cell [ref=f33e842]:
+                  - link "木部" [ref=f33e843] [cursor=pointer]:
+                    - /url: /zidian/bushou-26408
+                - cell [ref=f33e844]:
+                  - generic [ref=f33e845]:
+                    - progressbar [ref=f33e846]: 3.45%
+                    - generic: "3252"
+              - row [ref=f33e847]:
+                - cell "3" [ref=f33e848]
+                - cell [ref=f33e849]:
+                  - link "氵部" [ref=f33e850] [cursor=pointer]:
+                    - /url: /zidian/bushou-27701
+                - cell [ref=f33e851]:
+                  - generic [ref=f33e852]:
+                    - progressbar [ref=f33e853]: 3.01%
+                    - generic: "2835"
+              - row [ref=f33e854]:
+                - cell "4" [ref=f33e855]
+                - cell [ref=f33e856]:
+                  - link "艹部" [ref=f33e857] [cursor=pointer]:
+                    - /url: /zidian/bushou-33401
+                - cell [ref=f33e858]:
+                  - generic [ref=f33e859]:
+                    - progressbar [ref=f33e860]: 2.94%
+                    - generic: "2767"
+              - row [ref=f33e861]:
+                - cell "5" [ref=f33e862]
+                - cell [ref=f33e863]:
+                  - link "扌部" [ref=f33e864] [cursor=pointer]:
+                    - /url: /zidian/bushou-25164
+                - cell [ref=f33e865]:
+                  - generic [ref=f33e866]:
+                    - progressbar [ref=f33e867]: 2.26%
+                    - generic: "2132"
+              - row [ref=f33e868]:
+                - cell "6" [ref=f33e869]
+                - cell [ref=f33e870]:
+                  - link "火部" [ref=f33e871] [cursor=pointer]:
+                    - /url: /zidian/bushou-28779
+                - cell [ref=f33e872]:
+                  - generic [ref=f33e873]:
+                    - progressbar [ref=f33e874]: 2.05%
+                    - generic: "1926"
+              - row [ref=f33e875]:
+                - cell "7" [ref=f33e876]
+                - cell [ref=f33e877]:
+                  - link "土部" [ref=f33e878] [cursor=pointer]:
+                    - /url: /zidian/bushou-22303
+                - cell [ref=f33e879]:
+                  - generic [ref=f33e880]:
+                    - progressbar [ref=f33e881]: 2%
+                    - generic: "1885"
+              - row [ref=f33e882]:
+                - cell "8" [ref=f33e883]
+                - cell [ref=f33e884]:
+                  - link "虫部" [ref=f33e885] [cursor=pointer]:
+                    - /url: /zidian/bushou-34411
+                - cell [ref=f33e886]:
+                  - generic [ref=f33e887]:
+                    - progressbar [ref=f33e888]: 1.93%
+                    - generic: "1816"
+              - row [ref=f33e889]:
+                - cell "9" [ref=f33e890]
+                - cell [ref=f33e891]:
+                  - link "女部" [ref=f33e892] [cursor=pointer]:
+                    - /url: /zidian/bushou-22899
+                - cell [ref=f33e893]:
+                  - generic [ref=f33e894]:
+                    - progressbar [ref=f33e895]: 1.77%
+                    - generic: "1671"
+              - row [ref=f33e896]:
+                - cell "10" [ref=f33e897]
+                - cell [ref=f33e898]:
+                  - link "亻部" [ref=f33e899] [cursor=pointer]:
+                    - /url: /zidian/bushou-20155
+                - cell [ref=f33e900]:
+                  - generic [ref=f33e901]:
+                    - progressbar [ref=f33e902]: 1.66%
+                    - generic: "1565"
+              - row [ref=f33e903]:
+                - cell "11" [ref=f33e904]
+                - cell [ref=f33e905]:
+                  - link "山部" [ref=f33e906] [cursor=pointer]:
+                    - /url: /zidian/bushou-23665
+                - cell [ref=f33e907]:
+                  - generic [ref=f33e908]:
+                    - progressbar [ref=f33e909]: 1.61%
+                    - generic: "1513"
+              - row [ref=f33e910]:
+                - cell "12" [ref=f33e911]
+                - cell [ref=f33e912]:
+                  - link "日部" [ref=f33e913] [cursor=pointer]:
+                    - /url: /zidian/bushou-26085
+                - cell [ref=f33e914]:
+                  - generic [ref=f33e915]:
+                    - progressbar [ref=f33e916]: 1.46%
+                    - generic: "1375"
+              - row [ref=f33e917]:
+                - cell "13" [ref=f33e918]
+                - cell [ref=f33e919]:
+                  - link "金部" [ref=f33e920] [cursor=pointer]:
+                    - /url: /zidian/bushou-37329
+                - cell [ref=f33e921]:
+                  - generic [ref=f33e922]:
+                    - progressbar [ref=f33e923]: 1.46%
+                    - generic: "1373"
+              - row [ref=f33e924]:
+                - cell "14" [ref=f33e925]
+                - cell [ref=f33e926]:
+                  - link "言部" [ref=f33e927] [cursor=pointer]:
+                    - /url: /zidian/bushou-35328
+                - cell [ref=f33e928]:
+                  - generic [ref=f33e929]:
+                    - progressbar [ref=f33e930]: 1.45%
+                    - generic: "1367"
+              - row [ref=f33e931]:
+                - cell "15" [ref=f33e932]
+                - cell [ref=f33e933]:
+                  - link "鳥部" [ref=f33e934] [cursor=pointer]:
+                    - /url: /zidian/bushou-40165
+                - cell [ref=f33e935]:
+                  - generic [ref=f33e936]:
+                    - progressbar [ref=f33e937]: 1.42%
+                    - generic: "1336"
+              - row [ref=f33e938]:
+                - cell "16" [ref=f33e939]
+                - cell [ref=f33e940]:
+                  - link "月部" [ref=f33e941] [cursor=pointer]:
+                    - /url: /zidian/bushou-26376
+                - cell [ref=f33e942]:
+                  - generic [ref=f33e943]:
+                    - progressbar [ref=f33e944]: 1.37%
+                    - generic: "1293"
+              - row [ref=f33e945]:
+                - cell "17" [ref=f33e946]
+                - cell [ref=f33e947]:
+                  - link "阝部" [ref=f33e948] [cursor=pointer]:
+                    - /url: /zidian/bushou-38429
+                - cell [ref=f33e949]:
+                  - generic [ref=f33e950]:
+                    - progressbar [ref=f33e951]: 1.36%
+                    - generic: "1277"
+              - row [ref=f33e952]:
+                - cell "18" [ref=f33e953]
+                - cell [ref=f33e954]:
+                  - link "忄部" [ref=f33e955] [cursor=pointer]:
+                    - /url: /zidian/bushou-24516
+                - cell [ref=f33e956]:
+                  - generic [ref=f33e957]:
+                    - progressbar [ref=f33e958]: 1.33%
+                    - generic: "1253"
+              - row [ref=f33e959]:
+                - cell "19" [ref=f33e960]
+                - cell [ref=f33e961]:
+                  - link "目部" [ref=f33e962] [cursor=pointer]:
+                    - /url: /zidian/bushou-30446
+                - cell [ref=f33e963]:
+                  - generic [ref=f33e964]:
+                    - progressbar [ref=f33e965]: 1.33%
+                    - generic: "1250"
+              - row [ref=f33e966]:
+                - cell "20" [ref=f33e967]
+                - cell [ref=f33e968]:
+                  - link "足部" [ref=f33e969] [cursor=pointer]:
+                    - /url: /zidian/bushou-36275
+                - cell [ref=f33e970]:
+                  - generic [ref=f33e971]:
+                    - progressbar [ref=f33e972]: 1.3%
+                    - generic: "1220"
+              - row [ref=f33e973]:
+                - cell "21" [ref=f33e974]
+                - cell [ref=f33e975]:
+                  - link "石部" [ref=f33e976] [cursor=pointer]:
+                    - /url: /zidian/bushou-30707
+                - cell [ref=f33e977]:
+                  - generic [ref=f33e978]:
+                    - progressbar [ref=f33e979]: 1.26%
+                    - generic: "1190"
+              - row [ref=f33e980]:
+                - cell "22" [ref=f33e981]
+                - cell [ref=f33e982]:
+                  - link "魚部" [ref=f33e983] [cursor=pointer]:
+                    - /url: /zidian/bushou-39770
+                - cell [ref=f33e984]:
+                  - generic [ref=f33e985]:
+                    - progressbar [ref=f33e986]: 1.24%
+                    - generic: "1171"
+              - row [ref=f33e987]:
+                - cell "23" [ref=f33e988]
+                - cell [ref=f33e989]:
+                  - link "王部" [ref=f33e990] [cursor=pointer]:
+                    - /url: /zidian/bushou-29579
+                - cell [ref=f33e991]:
+                  - generic [ref=f33e992]:
+                    - progressbar [ref=f33e993]: 1.2%
+                    - generic: "1132"
+              - row [ref=f33e994]:
+                - cell "24" [ref=f33e995]
+                - cell [ref=f33e996]:
+                  - link "心部" [ref=f33e997] [cursor=pointer]:
+                    - /url: /zidian/bushou-24515
+                - cell [ref=f33e998]:
+                  - generic [ref=f33e999]:
+                    - progressbar [ref=f33e1000]: 1.16%
+                    - generic: "1090"
+              - row [ref=f33e1001]:
+                - cell "25" [ref=f33e1002]
+                - cell [ref=f33e1003]:
+                  - link "糹部" [ref=f33e1004] [cursor=pointer]:
+                    - /url: /zidian/bushou-31993
+                - cell [ref=f33e1005]:
+                  - generic [ref=f33e1006]:
+                    - progressbar [ref=f33e1007]: 1.15%
+                    - generic: "1084"
+              - row [ref=f33e1008]:
+                - cell "26" [ref=f33e1009]
+                - cell [ref=f33e1010]:
+                  - link "疒部" [ref=f33e1011] [cursor=pointer]:
+                    - /url: /zidian/bushou-30098
+                - cell [ref=f33e1012]:
+                  - generic [ref=f33e1013]:
+                    - progressbar [ref=f33e1014]: 1.07%
+                    - generic: "1012"
+              - row [ref=f33e1015]:
+                - cell "27" [ref=f33e1016]
+                - cell [ref=f33e1017]:
+                  - link "禾部" [ref=f33e1018] [cursor=pointer]:
+                    - /url: /zidian/bushou-31166
+                - cell [ref=f33e1019]:
+                  - generic [ref=f33e1020]:
+                    - progressbar [ref=f33e1021]: 1.02%
+                    - generic: "958"
+              - row [ref=f33e1022]:
+                - cell "28" [ref=f33e1023]
+                - cell [ref=f33e1024]:
+                  - link "⺮部" [ref=f33e1025] [cursor=pointer]:
+                    - /url: /zidian/bushou-11950
+                - cell [ref=f33e1026]:
+                  - generic [ref=f33e1027]:
+                    - progressbar [ref=f33e1028]: 0.98%
+                    - generic: "925"
+              - row [ref=f33e1029]:
+                - cell "29" [ref=f33e1030]
+                - cell [ref=f33e1031]:
+                  - link "辶部" [ref=f33e1032] [cursor=pointer]:
+                    - /url: /zidian/bushou-36790
+                - cell [ref=f33e1033]:
+                  - generic [ref=f33e1034]:
+                    - progressbar [ref=f33e1035]: 0.97%
+                    - generic: "912"
+              - row [ref=f33e1036]:
+                - cell "30" [ref=f33e1037]
+                - cell [ref=f33e1038]:
+                  - link "宀部" [ref=f33e1039] [cursor=pointer]:
+                    - /url: /zidian/bushou-23424
+                - cell [ref=f33e1040]:
+                  - generic [ref=f33e1041]:
+                    - progressbar [ref=f33e1042]: 0.88%
+                    - generic: "829"
+              - row [ref=f33e1043]:
+                - cell "31" [ref=f33e1044]
+                - cell [ref=f33e1045]:
+                  - link "竹部" [ref=f33e1046] [cursor=pointer]:
+                    - /url: /zidian/bushou-31481
+                - cell [ref=f33e1047]:
+                  - generic [ref=f33e1048]:
+                    - progressbar [ref=f33e1049]: 0.87%
+                    - generic: "823"
+              - row [ref=f33e1050]:
+                - cell "32" [ref=f33e1051]
+                - cell [ref=f33e1052]:
+                  - link "馬部" [ref=f33e1053] [cursor=pointer]:
+                    - /url: /zidian/bushou-39340
+                - cell [ref=f33e1054]:
+                  - generic [ref=f33e1055]:
+                    - progressbar [ref=f33e1056]: 0.83%
+                    - generic: "782"
+              - row [ref=f33e1057]:
+                - cell "33" [ref=f33e1058]
+                - cell [ref=f33e1059]:
+                  - link "米部" [ref=f33e1060] [cursor=pointer]:
+                    - /url: /zidian/bushou-31859
+                - cell [ref=f33e1061]:
+                  - generic [ref=f33e1062]:
+                    - progressbar [ref=f33e1063]: 0.81%
+                    - generic: "765"
+              - row [ref=f33e1064]:
+                - cell "34" [ref=f33e1065]
+                - cell [ref=f33e1066]:
+                  - link "犭部" [ref=f33e1067] [cursor=pointer]:
+                    - /url: /zidian/bushou-29357
+                - cell [ref=f33e1068]:
+                  - generic [ref=f33e1069]:
+                    - progressbar [ref=f33e1070]: 0.79%
+                    - generic: "742"
+              - row [ref=f33e1071]:
+                - cell "35" [ref=f33e1072]
+                - cell [ref=f33e1073]:
+                  - link "衤部" [ref=f33e1074] [cursor=pointer]:
+                    - /url: /zidian/bushou-34916
+                - cell [ref=f33e1075]:
+                  - generic [ref=f33e1076]:
+                    - progressbar [ref=f33e1077]: 0.76%
+                    - generic: "720"
+              - row [ref=f33e1078]:
+                - cell "36" [ref=f33e1079]
+                - cell [ref=f33e1080]:
+                  - link "車部" [ref=f33e1081] [cursor=pointer]:
+                    - /url: /zidian/bushou-36554
+                - cell [ref=f33e1082]:
+                  - generic [ref=f33e1083]:
+                    - progressbar [ref=f33e1084]: 0.75%
+                    - generic: "706"
+              - row [ref=f33e1085]:
+                - cell "37" [ref=f33e1086]
+                - cell [ref=f33e1087]:
+                  - link "广部" [ref=f33e1088] [cursor=pointer]:
+                    - /url: /zidian/bushou-24191
+                - cell [ref=f33e1089]:
+                  - generic [ref=f33e1090]:
+                    - progressbar [ref=f33e1091]: 0.72%
+                    - generic: "675"
+              - row [ref=f33e1092]:
+                - cell "38" [ref=f33e1093]
+                - cell [ref=f33e1094]:
+                  - link "雨部" [ref=f33e1095] [cursor=pointer]:
+                    - /url: /zidian/bushou-38632
+                - cell [ref=f33e1096]:
+                  - generic [ref=f33e1097]:
+                    - progressbar [ref=f33e1098]: 0.7%
+                    - generic: "662"
+              - row [ref=f33e1099]:
+                - cell "39" [ref=f33e1100]
+                - cell [ref=f33e1101]:
+                  - link "貝部" [ref=f33e1102] [cursor=pointer]:
+                    - /url: /zidian/bushou-35997
+                - cell [ref=f33e1103]:
+                  - generic [ref=f33e1104]:
+                    - progressbar [ref=f33e1105]: 0.69%
+                    - generic: "652"
+              - row [ref=f33e1106]:
+                - cell "40" [ref=f33e1107]
+                - cell [ref=f33e1108]:
+                  - link "頁部" [ref=f33e1109] [cursor=pointer]:
+                    - /url: /zidian/bushou-38913
+                - cell [ref=f33e1110]:
+                  - generic [ref=f33e1111]:
+                    - progressbar [ref=f33e1112]: 0.65%
+                    - generic: "614"
+              - row [ref=f33e1113]:
+                - cell "41" [ref=f33e1114]
+                - cell [ref=f33e1115]:
+                  - link "釒部" [ref=f33e1116] [cursor=pointer]:
+                    - /url: /zidian/bushou-37330
+                - cell [ref=f33e1117]:
+                  - generic [ref=f33e1118]:
+                    - progressbar [ref=f33e1119]: 0.63%
+                    - generic: "592"
+              - row [ref=f33e1120]:
+                - cell "42" [ref=f33e1121]
+                - cell [ref=f33e1122]:
+                  - link "巾部" [ref=f33e1123] [cursor=pointer]:
+                    - /url: /zidian/bushou-24062
+                - cell [ref=f33e1124]:
+                  - generic [ref=f33e1125]:
+                    - progressbar [ref=f33e1126]: 0.63%
+                    - generic: "591"
+              - row [ref=f33e1127]:
+                - cell "43" [ref=f33e1128]
+                - cell [ref=f33e1129]:
+                  - link "水部" [ref=f33e1130] [cursor=pointer]:
+                    - /url: /zidian/bushou-27700
+                - cell [ref=f33e1131]:
+                  - generic [ref=f33e1132]:
+                    - progressbar [ref=f33e1133]: 0.63%
+                    - generic: "589"
+              - row [ref=f33e1134]:
+                - cell "44" [ref=f33e1135]
+                - cell [ref=f33e1136]:
+                  - link "⺿部" [ref=f33e1137] [cursor=pointer]:
+                    - /url: /zidian/bushou-11967
+                - cell [ref=f33e1138]:
+                  - generic [ref=f33e1139]:
+                    - progressbar [ref=f33e1140]: 0.62%
+                    - generic: "580"
+              - row [ref=f33e1141]:
+                - cell "45" [ref=f33e1142]
+                - cell [ref=f33e1143]:
+                  - link "酉部" [ref=f33e1144] [cursor=pointer]:
+                    - /url: /zidian/bushou-37193
+                - cell [ref=f33e1145]:
+                  - generic [ref=f33e1146]:
+                    - progressbar [ref=f33e1147]: 0.61%
+                    - generic: "579"
+              - row [ref=f33e1148]:
+                - cell "46" [ref=f33e1149]
+                - cell [ref=f33e1150]:
+                  - link "刂部" [ref=f33e1151] [cursor=pointer]:
+                    - /url: /zidian/bushou-20994
+                - cell [ref=f33e1152]:
+                  - generic [ref=f33e1153]:
+                    - progressbar [ref=f33e1154]: 0.6%
+                    - generic: "565"
+              - row [ref=f33e1155]:
+                - cell "47" [ref=f33e1156]
+                - cell [ref=f33e1157]:
+                  - link "钅部" [ref=f33e1158] [cursor=pointer]:
+                    - /url: /zidian/bushou-38021
+                - cell [ref=f33e1159]:
+                  - generic [ref=f33e1160]:
+                    - progressbar [ref=f33e1161]: 0.6%
+                    - generic: "564"
+              - row [ref=f33e1162]:
+                - cell "48" [ref=f33e1163]
+                - cell [ref=f33e1164]:
+                  - link "穴部" [ref=f33e1165] [cursor=pointer]:
+                    - /url: /zidian/bushou-31348
+                - cell [ref=f33e1166]:
+                  - generic [ref=f33e1167]:
+                    - progressbar [ref=f33e1168]: 0.6%
+                    - generic: "561"
+              - row [ref=f33e1169]:
+                - cell "49" [ref=f33e1170]
+                - cell [ref=f33e1171]:
+                  - link "田部" [ref=f33e1172] [cursor=pointer]:
+                    - /url: /zidian/bushou-30000
+                - cell [ref=f33e1173]:
+                  - generic [ref=f33e1174]:
+                    - progressbar [ref=f33e1175]: 0.59%
+                    - generic: "553"
+              - row [ref=f33e1176]:
+                - cell "50" [ref=f33e1177]
+                - cell [ref=f33e1178]:
+                  - link "門部" [ref=f33e1179] [cursor=pointer]:
+                    - /url: /zidian/bushou-38272
+                - cell [ref=f33e1180]:
+                  - generic [ref=f33e1181]:
+                    - progressbar [ref=f33e1182]: 0.59%
+                    - generic: "552"
+    - generic [ref=f33e1183]:
+      - generic [ref=f33e1185]:
+        - heading "汉字大全" [level=3] [ref=f33e1186]
+        - list [ref=f33e1188]:
+          - listitem [ref=f33e1189]:
+            - link "拼音查字" [ref=f33e1190] [cursor=pointer]:
+              - /url: /zidian/pinyin
+          - listitem [ref=f33e1191]:
+            - link "部首查字" [ref=f33e1192] [cursor=pointer]:
+              - /url: /zidian/bushou
+          - listitem [ref=f33e1193]:
+            - link "笔画查字" [ref=f33e1194] [cursor=pointer]:
+              - /url: /zidian/bihua
+          - listitem [ref=f33e1195]:
+            - link "多音字大全" [ref=f33e1196] [cursor=pointer]:
+              - /url: /zidian/pinyin-duoyinzi
+          - listitem [ref=f33e1197]:
+            - link "叠字大全" [ref=f33e1198] [cursor=pointer]:
+              - /url: /zidian/diezidaquan
+          - listitem [ref=f33e1199]:
+            - link "独体字大全" [ref=f33e1200] [cursor=pointer]:
+              - /url: /zidian/dutizidaquan
+          - listitem [ref=f33e1201]:
+            - link "500个最常用字" [ref=f33e1202] [cursor=pointer]:
+              - /url: /zidian/zuichangyongzi
+          - listitem [ref=f33e1203]:
+            - link "2500个常用字" [ref=f33e1204] [cursor=pointer]:
+              - /url: /zidian/changyongzi-2500
+          - listitem [ref=f33e1205]:
+            - link "1000个次常用字" [ref=f33e1206] [cursor=pointer]:
+              - /url: /zidian/changyongzi-1000
+          - listitem [ref=f33e1207]:
+            - link "现代汉语通用字" [ref=f33e1208] [cursor=pointer]:
+              - /url: /zidian/tongyongzi
+          - listitem [ref=f33e1209]:
+            - link "通用规范汉字" [ref=f33e1210] [cursor=pointer]:
+              - /url: /zidian/guifanhanzi
+          - listitem [ref=f33e1211]:
+            - link "简繁汉字对照表" [ref=f33e1212] [cursor=pointer]:
+              - /url: /zidian/jianfan
+          - listitem [ref=f33e1213]:
+            - link "笔画最多汉字" [ref=f33e1214] [cursor=pointer]:
+              - /url: /zidian/bihua-top
+          - listitem [ref=f33e1215]:
+            - link "规范字繁体字对照" [ref=f33e1216] [cursor=pointer]:
+              - /url: /zidian/guifanzi-jianfan
+      - generic [ref=f33e1217]:
+        - generic [ref=f33e1218]:
+          - heading "拼音查字" [level=3] [ref=f33e1219]
+          - list [ref=f33e1221]:
+            - listitem [ref=f33e1222]:
+              - link "A" [ref=f33e1223] [cursor=pointer]:
+                - /url: /zidian/pinyin#A
+            - listitem [ref=f33e1224]:
+              - link "B" [ref=f33e1225] [cursor=pointer]:
+                - /url: /zidian/pinyin#B
+            - listitem [ref=f33e1226]:
+              - link "C" [ref=f33e1227] [cursor=pointer]:
+                - /url: /zidian/pinyin#C
+            - listitem [ref=f33e1228]:
+              - link "D" [ref=f33e1229] [cursor=pointer]:
+                - /url: /zidian/pinyin#D
+            - listitem [ref=f33e1230]:
+              - link "E" [ref=f33e1231] [cursor=pointer]:
+                - /url: /zidian/pinyin#E
+            - listitem [ref=f33e1232]:
+              - link "F" [ref=f33e1233] [cursor=pointer]:
+                - /url: /zidian/pinyin#F
+            - listitem [ref=f33e1234]:
+              - link "G" [ref=f33e1235] [cursor=pointer]:
+                - /url: /zidian/pinyin#G
+            - listitem [ref=f33e1236]:
+              - link "H" [ref=f33e1237] [cursor=pointer]:
+                - /url: /zidian/pinyin#H
+            - listitem [ref=f33e1238]:
+              - link "J" [ref=f33e1239] [cursor=pointer]:
+                - /url: /zidian/pinyin#J
+            - listitem [ref=f33e1240]:
+              - link "K" [ref=f33e1241] [cursor=pointer]:
+                - /url: /zidian/pinyin#K
+            - listitem [ref=f33e1242]:
+              - link "L" [ref=f33e1243] [cursor=pointer]:
+                - /url: /zidian/pinyin#L
+            - listitem [ref=f33e1244]:
+              - link "M" [ref=f33e1245] [cursor=pointer]:
+                - /url: /zidian/pinyin#M
+            - listitem [ref=f33e1246]:
+              - link "N" [ref=f33e1247] [cursor=pointer]:
+                - /url: /zidian/pinyin#N
+            - listitem [ref=f33e1248]:
+              - link "O" [ref=f33e1249] [cursor=pointer]:
+                - /url: /zidian/pinyin#O
+            - listitem [ref=f33e1250]:
+              - link "P" [ref=f33e1251] [cursor=pointer]:
+                - /url: /zidian/pinyin#P
+            - listitem [ref=f33e1252]:
+              - link "Q" [ref=f33e1253] [cursor=pointer]:
+                - /url: /zidian/pinyin#Q
+            - listitem [ref=f33e1254]:
+              - link "R" [ref=f33e1255] [cursor=pointer]:
+                - /url: /zidian/pinyin#R
+            - listitem [ref=f33e1256]:
+              - link "S" [ref=f33e1257] [cursor=pointer]:
+                - /url: /zidian/pinyin#S
+            - listitem [ref=f33e1258]:
+              - link "T" [ref=f33e1259] [cursor=pointer]:
+                - /url: /zidian/pinyin#T
+            - listitem [ref=f33e1260]:
+              - link "W" [ref=f33e1261] [cursor=pointer]:
+                - /url: /zidian/pinyin#W
+            - listitem [ref=f33e1262]:
+              - link "X" [ref=f33e1263] [cursor=pointer]:
+                - /url: /zidian/pinyin#X
+            - listitem [ref=f33e1264]:
+              - link "Y" [ref=f33e1265] [cursor=pointer]:
+                - /url: /zidian/pinyin#Y
+            - listitem [ref=f33e1266]:
+              - link "Z" [ref=f33e1267] [cursor=pointer]:
+                - /url: /zidian/pinyin#Z
+        - generic [ref=f33e1268]:
+          - heading "四角号码" [level=3] [ref=f33e1269]
+          - list [ref=f33e1271]:
+            - listitem [ref=f33e1272]:
+              - link "0开头" [ref=f33e1273] [cursor=pointer]:
+                - /url: /zidian/sijiao-0
+            - listitem [ref=f33e1274]:
+              - link "1开头" [ref=f33e1275] [cursor=pointer]:
+                - /url: /zidian/sijiao-1
+            - listitem [ref=f33e1276]:
+              - link "2开头" [ref=f33e1277] [cursor=pointer]:
+                - /url: /zidian/sijiao-2
+            - listitem [ref=f33e1278]:
+              - link "3开头" [ref=f33e1279] [cursor=pointer]:
+                - /url: /zidian/sijiao-3
+            - listitem [ref=f33e1280]:
+              - link "4开头" [ref=f33e1281] [cursor=pointer]:
+                - /url: /zidian/sijiao-4
+            - listitem [ref=f33e1282]:
+              - link "5开头" [ref=f33e1283] [cursor=pointer]:
+                - /url: /zidian/sijiao-5
+            - listitem [ref=f33e1284]:
+              - link "6开头" [ref=f33e1285] [cursor=pointer]:
+                - /url: /zidian/sijiao-6
+            - listitem [ref=f33e1286]:
+              - link "7开头" [ref=f33e1287] [cursor=pointer]:
+                - /url: /zidian/sijiao-7
+            - listitem [ref=f33e1288]:
+              - link "8开头" [ref=f33e1289] [cursor=pointer]:
+                - /url: /zidian/sijiao-8
+            - listitem [ref=f33e1290]:
+              - link "9开头" [ref=f33e1291] [cursor=pointer]:
+                - /url: /zidian/sijiao-9
+        - generic [ref=f33e1292]:
+          - heading "笔画查字" [level=3] [ref=f33e1293]
+          - list [ref=f33e1295]:
+            - listitem [ref=f33e1296]:
+              - link "1画" [ref=f33e1297] [cursor=pointer]:
+                - /url: /zidian/bihua-1
+            - listitem [ref=f33e1298]:
+              - link "2画" [ref=f33e1299] [cursor=pointer]:
+                - /url: /zidian/bihua-2
+            - listitem [ref=f33e1300]:
+              - link "3画" [ref=f33e1301] [cursor=pointer]:
+                - /url: /zidian/bihua-3
+            - listitem [ref=f33e1302]:
+              - link "4画" [ref=f33e1303] [cursor=pointer]:
+                - /url: /zidian/bihua-4
+            - listitem [ref=f33e1304]:
+              - link "5画" [ref=f33e1305] [cursor=pointer]:
+                - /url: /zidian/bihua-5
+            - listitem [ref=f33e1306]:
+              - link "6画" [ref=f33e1307] [cursor=pointer]:
+                - /url: /zidian/bihua-6
+            - listitem [ref=f33e1308]:
+              - link "7画" [ref=f33e1309] [cursor=pointer]:
+                - /url: /zidian/bihua-7
+            - listitem [ref=f33e1310]:
+              - link "8画" [ref=f33e1311] [cursor=pointer]:
+                - /url: /zidian/bihua-8
+            - listitem [ref=f33e1312]:
+              - link "9画" [ref=f33e1313] [cursor=pointer]:
+                - /url: /zidian/bihua-9
+            - listitem [ref=f33e1314]:
+              - link "10画" [ref=f33e1315] [cursor=pointer]:
+                - /url: /zidian/bihua-10
+            - listitem [ref=f33e1316]:
+              - link "11画" [ref=f33e1317] [cursor=pointer]:
+                - /url: /zidian/bihua-11
+            - listitem [ref=f33e1318]:
+              - link "12画" [ref=f33e1319] [cursor=pointer]:
+                - /url: /zidian/bihua-12
+            - listitem [ref=f33e1320]:
+              - link "13画" [ref=f33e1321] [cursor=pointer]:
+                - /url: /zidian/bihua-13
+            - listitem [ref=f33e1322]:
+              - link "14画" [ref=f33e1323] [cursor=pointer]:
+                - /url: /zidian/bihua-14
+            - listitem [ref=f33e1324]:
+              - link "15画" [ref=f33e1325] [cursor=pointer]:
+                - /url: /zidian/bihua-15
+            - listitem [ref=f33e1326]:
+              - link "16画" [ref=f33e1327] [cursor=pointer]:
+                - /url: /zidian/bihua-16
+            - listitem [ref=f33e1328]:
+              - link "17画" [ref=f33e1329] [cursor=pointer]:
+                - /url: /zidian/bihua-17
+            - listitem [ref=f33e1330]:
+              - link "18画" [ref=f33e1331] [cursor=pointer]:
+                - /url: /zidian/bihua-18
+            - listitem [ref=f33e1332]:
+              - link "19画" [ref=f33e1333] [cursor=pointer]:
+                - /url: /zidian/bihua-19
+            - listitem [ref=f33e1334]:
+              - link "20画" [ref=f33e1335] [cursor=pointer]:
+                - /url: /zidian/bihua-20
+            - listitem:
+              - generic [ref=f33e1336] [cursor=pointer]: 显示 21-84 画
+              - list:
+                - listitem [ref=f33e1337]:
+                  - link "21画" [ref=f33e1338] [cursor=pointer]:
+                    - /url: /zidian/bihua-21
+                - listitem [ref=f33e1339]:
+                  - link "22画" [ref=f33e1340] [cursor=pointer]:
+                    - /url: /zidian/bihua-22
+                - listitem [ref=f33e1341]:
+                  - link "23画" [ref=f33e1342] [cursor=pointer]:
+                    - /url: /zidian/bihua-23
+                - listitem [ref=f33e1343]:
+                  - link "24画" [ref=f33e1344] [cursor=pointer]:
+                    - /url: /zidian/bihua-24
+                - listitem [ref=f33e1345]:
+                  - link "25画" [ref=f33e1346] [cursor=pointer]:
+                    - /url: /zidian/bihua-25
+                - listitem [ref=f33e1347]:
+                  - link "26画" [ref=f33e1348] [cursor=pointer]:
+                    - /url: /zidian/bihua-26
+                - listitem [ref=f33e1349]:
+                  - link "27画" [ref=f33e1350] [cursor=pointer]:
+                    - /url: /zidian/bihua-27
+                - listitem [ref=f33e1351]:
+                  - link "28画" [ref=f33e1352] [cursor=pointer]:
+                    - /url: /zidian/bihua-28
+                - listitem [ref=f33e1353]:
+                  - link "29画" [ref=f33e1354] [cursor=pointer]:
+                    - /url: /zidian/bihua-29
+                - listitem [ref=f33e1355]:
+                  - link "30画" [ref=f33e1356] [cursor=pointer]:
+                    - /url: /zidian/bihua-30
+                - listitem [ref=f33e1357]:
+                  - link "31画" [ref=f33e1358] [cursor=pointer]:
+                    - /url: /zidian/bihua-31
+                - listitem [ref=f33e1359]:
+                  - link "32画" [ref=f33e1360] [cursor=pointer]:
+                    - /url: /zidian/bihua-32
+                - listitem [ref=f33e1361]:
+                  - link "33画" [ref=f33e1362] [cursor=pointer]:
+                    - /url: /zidian/bihua-33
+                - listitem [ref=f33e1363]:
+                  - link "34画" [ref=f33e1364] [cursor=pointer]:
+                    - /url: /zidian/bihua-34
+                - listitem [ref=f33e1365]:
+                  - link "35画" [ref=f33e1366] [cursor=pointer]:
+                    - /url: /zidian/bihua-35
+                - listitem [ref=f33e1367]:
+                  - link "36画" [ref=f33e1368] [cursor=pointer]:
+                    - /url: /zidian/bihua-36
+                - listitem [ref=f33e1369]:
+                  - link "37画" [ref=f33e1370] [cursor=pointer]:
+                    - /url: /zidian/bihua-37
+                - listitem [ref=f33e1371]:
+                  - link "38画" [ref=f33e1372] [cursor=pointer]:
+                    - /url: /zidian/bihua-38
+                - listitem [ref=f33e1373]:
+                  - link "39画" [ref=f33e1374] [cursor=pointer]:
+                    - /url: /zidian/bihua-39
+                - listitem [ref=f33e1375]:
+                  - link "40画" [ref=f33e1376] [cursor=pointer]:
+                    - /url: /zidian/bihua-40
+                - listitem [ref=f33e1377]:
+                  - link "41画" [ref=f33e1378] [cursor=pointer]:
+                    - /url: /zidian/bihua-41
+                - listitem [ref=f33e1379]:
+                  - link "42画" [ref=f33e1380] [cursor=pointer]:
+                    - /url: /zidian/bihua-42
+                - listitem [ref=f33e1381]:
+                  - link "43画" [ref=f33e1382] [cursor=pointer]:
+                    - /url: /zidian/bihua-43
+                - listitem [ref=f33e1383]:
+                  - link "44画" [ref=f33e1384] [cursor=pointer]:
+                    - /url: /zidian/bihua-44
+                - listitem [ref=f33e1385]:
+                  - link "46画" [ref=f33e1386] [cursor=pointer]:
+                    - /url: /zidian/bihua-46
+                - listitem [ref=f33e1387]:
+                  - link "48画" [ref=f33e1388] [cursor=pointer]:
+                    - /url: /zidian/bihua-48
+                - listitem [ref=f33e1389]:
+                  - link "52画" [ref=f33e1390] [cursor=pointer]:
+                    - /url: /zidian/bihua-52
+                - listitem [ref=f33e1391]:
+                  - link "53画" [ref=f33e1392] [cursor=pointer]:
+                    - /url: /zidian/bihua-53
+                - listitem [ref=f33e1393]:
+                  - link "58画" [ref=f33e1394] [cursor=pointer]:
+                    - /url: /zidian/bihua-58
+                - listitem [ref=f33e1395]:
+                  - link "64画" [ref=f33e1396] [cursor=pointer]:
+                    - /url: /zidian/bihua-64
+                - listitem [ref=f33e1397]:
+                  - link "76画" [ref=f33e1398] [cursor=pointer]:
+                    - /url: /zidian/bihua-76
+                - listitem [ref=f33e1399]:
+                  - link "84画" [ref=f33e1400] [cursor=pointer]:
+                    - /url: /zidian/bihua-84
+  - contentinfo [ref=f33e1401]:
+    - generic [ref=f33e1403]:
+      - generic [ref=f33e1404]: © 2026 汉语国学
+      - link "在线反馈" [ref=f33e1405] [cursor=pointer]:
+        - /url: /supports
+  - generic [ref=f33e1406]:
+    - button " 分享" [ref=f33e1407] [cursor=pointer]:
+      - generic [ref=f33e1408]: 
+      - generic [ref=f33e1409]: 分享
+    - button " 手机" [ref=f33e1410] [cursor=pointer]:
+      - generic [ref=f33e1411]: 
+      - generic [ref=f33e1412]: 手机
+    - button " 反馈" [ref=f33e1413] [cursor=pointer]:
+      - generic [ref=f33e1414]: 
+      - generic [ref=f33e1415]: 反馈
