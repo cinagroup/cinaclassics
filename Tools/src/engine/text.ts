@@ -60,20 +60,15 @@ export function buildRules(cfg: {
  * （含全部标记与补齐空格，供排版主循环逐字消费）。
  * rowNum 为当前（多栏模式下已折算的）每列字数。
  * opts.stripBookMarks：mr 版 if_book_vline=1 时，计数副本额外去除《》
- * opts.stripT：主版去除行首 T 标记及其后 1 字（顶格处理中该字上移一位；mr 版无此标记，传 false）
- * opts.commentPerCell：夹注计数粒度——每大字格容纳的小字数（疏排 2＝双行各占一格；
- * 宋式密排 rows×2，如 2 行密排为 4）。缺省 2，与原版一致。
- * opts.paraFlow：宋式段落连排——段末不补齐到列尾（除文件首段[卷题]须换列起排）；
- * 缺省 false＝原版行为（每段从新列顶部起排）。
+ * opts.stripT：主版去除行首 T 标记及其后 1 字（mr 版无此标记，传 false）
  */
 export function prepareText(
   content: string,
   rowNum: number,
   rules: TextPrepRules,
-  opts?: { stripBookMarks?: boolean; stripT?: boolean; commentPerCell?: number; paraFlow?: boolean },
+  opts?: { stripBookMarks?: boolean; stripT?: boolean },
 ): string {
   let dat = '';
-  let firstParaSeen = false;
   for (const rawLine of content.split(/\r?\n/)) {
     let s = rawLine;
     if (s.trim() === '') continue;
@@ -115,22 +110,19 @@ export function prepareText(
     if (opts?.stripBookMarks) {
       s = s.split('《').join('').split('》').join('');
     }
-    // 夹注计数：每 perCell 个小字占一个正文字位，余数向上取整
-    const perCell = opts?.commentPerCell ?? 2;
+    // 夹批双排计数：逐个标注取半，奇数向上取整
     for (const m of s.matchAll(/【(.*?)】/gu)) {
       const len = [...m[1]].length;
-      rnum += len % perCell === 0 ? len / perCell : Math.trunc(len / perCell) + 1;
+      rnum += len % 2 === 0 ? len / 2 : Math.trunc(len / 2) + 1;
     }
     s = s.replace(/【.*?】/gu, '');
 
     const chars = [...s];
     const total = chars.length + rnum;
-    // 段落末尾补齐至列高整数倍；宋式连排（paraFlow）时除文件首段（卷题）外不补齐
+    // 段落末尾补齐至列高整数倍
     const spacesNum = rowNum - total + Math.trunc(total / rowNum) * rowNum;
     dat += tmpstr;
-    const padFirst = opts?.paraFlow ? !firstParaSeen : true;
-    firstParaSeen = true;
-    if ((spacesNum > 0 && spacesNum < rowNum) && (padFirst || !opts?.paraFlow)) dat += ' '.repeat(spacesNum);
+    if (spacesNum > 0 && spacesNum < rowNum) dat += ' '.repeat(spacesNum);
   }
   return dat;
 }
