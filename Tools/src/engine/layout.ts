@@ -179,6 +179,8 @@ export async function runLayout(
   const commentNopSet = rules.commentNopSet;
   const textComma90Set = charSet(str(book, 'text_comma_90'));
   const commentComma90Set = charSet(str(book, 'comment_comma_90'));
+  // 宋式段落连排：段末不补齐换列（总目/附录等行式文件除外）
+  const ifParaFlow = flag(book, 'if_para_flow');
 
   // 背景参数
   const W = num(canvas, 'canvas_width');
@@ -289,7 +291,10 @@ export async function runLayout(
   await Promise.all(
     Array.from({ length: Math.max(0, hi - lo + 1) }, (_, k) => lo + k).map(async (tid) => {
       const content = await assets.readText(textKeys[tid - 1]);
-      dats[tid] = content === null ? '' : prepareText(content, rowNum, rules, { commentPerCell });
+      const isLineFile = (ifText000 && tid === 1) || (ifText999 && tid === textKeys.length);
+      dats[tid] = content === null
+        ? ''
+        : prepareText(content, rowNum, rules, { commentPerCell, paraFlow: ifParaFlow && !isLineFile });
     }),
   );
 
