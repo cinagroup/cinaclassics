@@ -60,13 +60,15 @@ export function buildRules(cfg: {
  * （含全部标记与补齐空格，供排版主循环逐字消费）。
  * rowNum 为当前（多栏模式下已折算的）每列字数。
  * opts.stripBookMarks：mr 版 if_book_vline=1 时，计数副本额外去除《》
- * opts.stripT：主版去除行首 T 标记及其后 1 字（mr 版无此标记，传 false）
+ * opts.stripT：主版去除行首 T 标记及其后 1 字（顶格处理中该字上移一位；mr 版无此标记，传 false）
+ * opts.commentPerCell：夹注计数粒度——每大字格容纳的小字数（疏排 2＝双行各占一格；
+ * 宋式密排 rows×2，如 2 行密排为 4）。缺省 2，与原版一致。
  */
 export function prepareText(
   content: string,
   rowNum: number,
   rules: TextPrepRules,
-  opts?: { stripBookMarks?: boolean; stripT?: boolean },
+  opts?: { stripBookMarks?: boolean; stripT?: boolean; commentPerCell?: number },
 ): string {
   let dat = '';
   for (const rawLine of content.split(/\r?\n/)) {
@@ -110,10 +112,11 @@ export function prepareText(
     if (opts?.stripBookMarks) {
       s = s.split('《').join('').split('》').join('');
     }
-    // 夹批双排计数：逐个标注取半，奇数向上取整
+    // 夹注计数：每 perCell 个小字占一个正文字位，余数向上取整
+    const perCell = opts?.commentPerCell ?? 2;
     for (const m of s.matchAll(/【(.*?)】/gu)) {
       const len = [...m[1]].length;
-      rnum += len % 2 === 0 ? len / 2 : Math.trunc(len / 2) + 1;
+      rnum += len % perCell === 0 ? len / perCell : Math.trunc(len / perCell) + 1;
     }
     s = s.replace(/【.*?】/gu, '');
 

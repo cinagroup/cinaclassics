@@ -201,6 +201,12 @@ export async function runLayout(
   // ---------- 位置坐标网格 ----------
   const cw = (W - marginLeft - marginRight - lcWidth) / colNum;
   const rh = (H - marginTop - marginBottom) / rowNum;
+  // 宋式夹注密排：每大字格纵向容纳 commentRows 行小注（1=原版疏排，各行公式退化回原版）
+  const commentRows = flag(book, 'if_comment_dense')
+    ? Math.max(1, num(book, 'comment_rows_per_cell', 2))
+    : 1;
+  const commentPerCell = commentRows * 2; // 每格小字位：右行+左行 × 行数
+  const commentSlotH = rh / commentRows; // 每行小注的纵向格距
   const posL: [number, number][] = [[0, 0]]; // 下标 0 占位
   const posR: [number, number][] = [[0, 0]];
 
@@ -283,7 +289,7 @@ export async function runLayout(
   await Promise.all(
     Array.from({ length: Math.max(0, hi - lo + 1) }, (_, k) => lo + k).map(async (tid) => {
       const content = await assets.readText(textKeys[tid - 1]);
-      dats[tid] = content === null ? '' : prepareText(content, rowNum, rules);
+      dats[tid] = content === null ? '' : prepareText(content, rowNum, rules, { commentPerCell });
     }),
   );
 
@@ -492,22 +498,28 @@ export async function runLayout(
       if (rchars.length > 0) {
         const rctmp = rchars.filter((ch) => !commentNopSet.has(ch)).join('');
         const rlen = [...rctmp].length;
-        const cnt = rlen % 2 === 0 ? rlen / 2 : trunc(rlen / 2) + 1;
+        const cnt = rlen % commentPerCell === 0
+          ? rlen / commentPerCell
+          : trunc(rlen / commentPerCell) + 1;
         // Perl 原版条件为 $pcnt+1 % $row_num == 0（% 优先级高于 +，恒为 $pcnt+1==0 永假），
         // 因此 pcol 恒为 int(pcnt/row_num)+1
         const pcol = trunc(pcnt / rowNum) + 1;
 
         const start = trunc(pcnt) + 1;
         const rPos: [number, number][] = [];
-        // 与 Perl 切片语义一致：批注双排先取右半列再取左半列
+        // 列优先取位：右行自上而下占满，再左行（疏排 rows=1 时即原版双排切片）
         if (pcnt + cnt <= pcol * rowNum) {
           const end = trunc(pcnt + cnt);
-          for (let k = start; k <= end; k++) rPos.push(posR[k]);
-          for (let k = start; k <= end; k++) rPos.push(posL[k]);
+          for (let k = start; k <= end; k++)
+            for (let r = 0; r < commentRows; r++) rPos.push([posR[k][0], posR[k][1] + commentSlotH * (commentRows - 1 - r)]);
+          for (let k = start; k <= end; k++)
+            for (let r = 0; r < commentRows; r++) rPos.push([posL[k][0], posL[k][1] + commentSlotH * (commentRows - 1 - r)]);
         } else {
           const end = pcol * rowNum;
-          for (let k = start; k <= end; k++) rPos.push(posR[k]);
-          for (let k = start; k <= end; k++) rPos.push(posL[k]);
+          for (let k = start; k <= end; k++)
+            for (let r = 0; r < commentRows; r++) rPos.push([posR[k][0], posR[k][1] + commentSlotH * (commentRows - 1 - r)]);
+          for (let k = start; k <= end; k++)
+            for (let r = 0; r < commentRows; r++) rPos.push([posL[k][0], posL[k][1] + commentSlotH * (commentRows - 1 - r)]);
         }
 
         let rpref: [number, number] | undefined;
@@ -530,6 +542,7 @@ export async function runLayout(
           let fcolor = commentFontColor;
           let fdgrees = param.rotate;
           if (ifFontMetricAdjust) fsize *= fontScale[fn] ?? 1;
+          if (commentRows > 1 && fsize > commentSlotH) fsize = commentSlotH;
           let fx: number;
           let fy: number;
 
@@ -544,14 +557,14 @@ export async function runLayout(
             if (!rpref) { rchars.unshift(rc); continue outer; }
             [fx, fy] = rpref;
             fx += (cw - fsize * 2) / 4;
-            fy += (rh - fsize) / 4;
+            fy += (commentSlotH - fsize) / 4;
             if (commentComma90Set.has(rc)) {
               fdgrees = -90;
               fsize *= commentComma90Size;
               fx += (cw / 2) * commentComma90X;
               fy += rh * commentComma90Y;
             }
-            pcnt += 0.5;
+            pcnt += 1 / commentPerCell;
           }
           if (debugBlue && fn !== cfns[0]) fcolor = 'blue';
 
@@ -610,7 +623,7 @@ export async function runLayout(
           lastChar = rc;
         }
         if (rchars.length > 0) continue outer;
-        pcnt = trunc(pcnt + 0.5);
+        pcnt = trunc(pcnt + 1 - 1 / commentPerCell);
         if (pcnt === pageCharsNum) continue outer;
       }
 
