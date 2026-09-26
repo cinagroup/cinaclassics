@@ -1,3 +1,13 @@
+<!-- 品牌标识：海内集团（CinaGroup）横版中英组合 logo
+     来源：github.com/cinagroup/cinabrand（v2.1.1）assets/heritage/cinagroup-horizontal-832.png
+     与其反白版 cinagroup-horizontal-white-832.png（832×288，SHA-256 见该仓库 assets/heritage/manifest.json）
+     深色主题自动切换反白版；按品牌规范，反白版仅文字反白，左侧全彩图案保持不变 -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/brand/cinagroup-horizontal-white-832.png">
+  <source media="(prefers-color-scheme: light)" srcset="assets/brand/cinagroup-horizontal-832.png">
+  <img alt="海内集团 CinaGroup" src="assets/brand/cinagroup-horizontal-832.png" width="416" height="144">
+</picture>
+
 # Cinaclassics · 海内典籍
 
 本项目收录 **15,000 余部** 中国古代文献，全部为 **Markdown（.md）格式、UTF-8 编码**，按传统经史子集之外的「十藏」体系分类组织，便于在线阅读、全文检索与二次开发（如构建古籍语料库、全文数据库、检索系统等）。
@@ -34,6 +44,7 @@ cinaclassics/
 ├── 诗藏/          # 诗词曲赋
 ├── 艺藏/          # 艺术典籍
 ├── 易藏/          # 易学典籍
+├── assets/        # 品牌标识素材（海内集团横版 Logo）
 ├── Tools/         # 排版引擎与排版素材（见下文「排版引擎」）
 ├── 使用须知.md
 └── README.md
