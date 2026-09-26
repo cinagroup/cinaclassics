@@ -2,11 +2,13 @@
      来源：github.com/cinagroup/cinabrand（v2.1.1）assets/heritage/cinagroup-horizontal-832.png
      与其反白版 cinagroup-horizontal-white-832.png（832×288，SHA-256 见该仓库 assets/heritage/manifest.json）
      深色主题自动切换反白版；按品牌规范，反白版仅文字反白，左侧全彩图案保持不变 -->
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/brand/cinagroup-horizontal-white-832.png">
-  <source media="(prefers-color-scheme: light)" srcset="assets/brand/cinagroup-horizontal-832.png">
-  <img alt="海内集团 CinaGroup" src="assets/brand/cinagroup-horizontal-832.png" width="416" height="144">
-</picture>
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/brand/cinagroup-horizontal-white-832.png">
+    <source media="(prefers-color-scheme: light)" srcset="assets/brand/cinagroup-horizontal-832.png">
+    <img alt="海内集团 CinaGroup" src="assets/brand/cinagroup-horizontal-832.png" width="416" height="144">
+  </picture>
+</div>
 
 # Cinaclassics · 海内典籍
 
