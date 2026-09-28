@@ -1,0 +1,12 @@
+{
+  "id": "02",
+  "title": "說文解字",
+  "author": "東漢許慎著",
+  "stamps": false,
+  "texts": [
+    {
+      "file": "01.md",
+      "label": "（一 部"
+    }
+  ]
+}

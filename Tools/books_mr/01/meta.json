@@ -1,0 +1,12 @@
+{
+  "id": "01",
+  "title": "賈府族譜",
+  "author": "",
+  "stamps": false,
+  "texts": [
+    {
+      "file": "01.md",
+      "label": "一世"
+    }
+  ]
+}

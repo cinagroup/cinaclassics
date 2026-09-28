@@ -1,0 +1,12 @@
+node_modules/
+.wrangler/
+.r2build/
+.dev.vars
+*.log
+
+# 校勘中间产物（43GB 缓存/日志，不入库）
+collation/
+# 输出产物（PDF/检查图，不入库）
+out/
+# 字体文件（大体积/商业字体，不入库）
+fonts/

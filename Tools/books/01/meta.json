@@ -1,0 +1,12 @@
+{
+  "id": "01",
+  "title": "虞初新志",
+  "author": "清张潮輯",
+  "stamps": true,
+  "texts": [
+    {
+      "file": "01.md",
+      "label": "虞初新志卷之一"
+    }
+  ]
+}
