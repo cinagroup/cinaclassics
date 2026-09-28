@@ -6,7 +6,9 @@ node_modules/
 
 # 校勘中间产物（43GB 缓存/日志，不入库）
 collation/
-# 输出产物（PDF/检查图，不入库）
-out/
-# 字体文件（大体积/商业字体，不入库）
-fonts/
+# out 输出产物：仅入库 PDF 成品，检查图/中间目录忽略
+out/*
+!out/*.pdf
+# 字体文件：仅入库开源字体（花园明朝 HanaMinA/B、齐伋体 qiji-combo），商业字体忽略
+fonts/HYFangZhuanU.ttf
+fonts/HYZhuanShuF.ttf
